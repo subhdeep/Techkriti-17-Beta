@@ -1,0 +1,116 @@
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-image: url("/images/3.jpg");
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.back-image {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/images/3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+#my-nav {
+  padding-top: 4%;
+}
+
+.nav-font {
+  font-family: 'Raleway', sans-serif;
+  font-size: 150%;
+}
+
+.nav-pad {
+  padding: 1% !important;
+}
+
+.nav-hover:hover {
+  background-color: rgba(255, 0, 0, .3);
+}
+
+/* TODO: Add media query to make heading responsive */
+#techkriti {
+  margin-top: 30%;
+  margin-bottom: 0;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8em;
+  font-weight: 900;
+}
+
+#subtitle {
+  margin-top: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3em;
+}
+
+#Graph {
+  position: fixed;
+  display: inline;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+}
+
+#togglebtn {
+  opacity: 0;
+}
+
+#togglebtn:hover {
+  opacity: 1;
+  border: 1px solid white;
+}
+
+.bottom-graph {¬
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.frequency {
+  background-color: rgba(183, 185, 182, 0.75);
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  -webkit-transition-property: height;
+  -moz-transition-property: height;
+  transition-property: height;
+  -webkit-transition-duration: 150ms;
+  -moz-transition-duration: 150ms;
+  transition-duration: 150ms;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  transition-delay: 0;
+}
+
+.bottom-graph.frequency-time-large .frequency {
+  background-color: rgba(183, 185, 182, 0.4);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
