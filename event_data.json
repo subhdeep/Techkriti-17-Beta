@@ -1,0 +1,4 @@
+[{ "big":"learn angular1", "small":"hi","tabs":3,"valuesoftab":"a,b,c" },
+ { "big":"learn angular2", "small":"hello","tabs":4,"valuesoftab":"a,b,c,d" },
+ { "big":"learn angular3", "small":"tata","tabs":4,"valuesoftab":"a,b,c,d" },
+ { "big":"learn angular5", "small":"bye","tabs":3,"valuesoftab":"a,b,c" }]
