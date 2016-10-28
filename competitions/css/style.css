@@ -60,6 +60,11 @@ a {
 
 .heading {
   position: relative;
+  top: 0vmax;
+  transition-property: top;
+  transition-duration: .1s;
+  transition-timing-function:cubic-bezier(.85,.20,.82,.44);
+  transition-delay: .15s 
 }
 
 .fa {
@@ -67,6 +72,10 @@ a {
   background-color: black;
   padding-left: 0.5vmax;
   padding-right: 0.5vmax;
+  top: 0vmax;
+  transition-property: top;
+  transition-duration: .2s;
+  transition-timing-function:cubic-bezier(.15,.91,.46,1.04);
 }
 
 .comp-box:hover .fa {
@@ -80,6 +89,12 @@ a {
   opacity: 0;
   color: red;
   position: relative;
+  top: 0vmax;
+  transition-property: top, opacity;
+  transition-duration: .3s;
+  transition-timing-function:cubic-bezier(.87,.21,.82,.48);
+  transition-delay: .23s;
+
 }
 
 .comp-box:hover .description {
