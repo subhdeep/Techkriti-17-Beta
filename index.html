@@ -18,77 +18,77 @@
   </head>
   <body onmousemove="cursorMoved(event)">
     <center>
-    <div class="container">
-      <div class="row" id="my-nav">
-        <a href="#">
-          <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
-            <p class="flow-text">Home</p>
+      <div class="container">
+        <div class="row" id="my-nav">
+          <a href="#">
+            <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
+              Home
+            </div>
+          </a>
+          <a href="#">
+            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
+              Competitions
+            </div>
+          </a>
+          <a href="#">
+            <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
+              Technocruise
+            </div>
+          </a>
+          <a href="#">
+            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
+              TOSC
+            </div>
+          </a>
+          <a href="#">
+            <div class="col m2 s4 s4 center-align nav-pad nav-hover nav-font">
+              Gallery
+            </div>
+          </a>
+          <a href="#">
+            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
+              Contact Us
+            </div>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col offset-m2 m8  s12 center-align">
+            <p class="flow-text" id="techkriti">TECHKRITI' 17</p>
+            <p id='subtitle' class="flow-text"></p>
           </div>
-        </a>
-        <a href="#">
-          <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
-            <p class="flow-text">Competitions</p>
-          </div>
-        </a>
-        <a href="#">
-          <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
-            <p class="flow-text">Technocruise</p>
-          </div>
-        </a>
-        <a href="#">
-          <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
-            <p class="flow-text">TOSC</p>
-          </div>
-        </a>
-        <a href="#">
-          <div class="col m2 s4 s4 center-align nav-pad nav-hover nav-font">
-            <p class="flow-text">Gallery</p>
-          </div>
-        </a>
-        <a href="#">
-          <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
-            <p class="flow-text"> Contact Us</p>
-          </div>
-        </a>
-      </div>
-      <div class="row">
-        <div class="col offset-m2 m8  s12 center-align">
-          <p class="flow-text" id="techkriti">TECHKRITI' 17</p>
-          <p id='subtitle' class="flow-text"></p>
         </div>
       </div>
     </div>
+    <!--<div class="bottom-graph-container">¬-->
+      <!--<button id="turnoffanimations-button" onclick="toggleAnimations()" class="turnoffanimations-button">Turn off animations</button>¬-->
+      <!--</div>¬-->
+    <!--</div>-->
+  <div id="Graph">
+    <center>
+      <button id="togglebtn" class="waves-effect waves-teal white-text btn-flat" onclick="toggleAnimations()">Show Animations</button>
+    </center>
+    <div class="bottom-graph frequency-time-large" id="bottomGraph"></div>
   </div>
-  <!--<div class="bottom-graph-container">¬-->
-    <!--<button id="turnoffanimations-button" onclick="toggleAnimations()" class="turnoffanimations-button">Turn off animations</button>¬-->
-    <!--</div>¬-->
-  <!--</div>-->
-<div id="Graph">
-  <center>
-    <button id="togglebtn" class="waves-effect waves-teal white-text btn-flat" onclick="toggleAnimations()">Show Animations</button>
-  </center>
-  <div class="bottom-graph frequency-time-large" id="bottomGraph"></div>¬
-</div>
 
-<!--Scripts-->
+  <!--Scripts-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="script/frequency-graph.js"></script>
-<script>
-  // For animating the title to appear one by one
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="script/frequency-graph.js"></script>
+  <script>
+    // For animating the title to appear one by one
   var title = "Factualising Fiction";
-  $(document).ready(function() {
-    var dv = $('#subtitle');
-    dv.text("");
-    setTimeout(function() {
-      jQuery({count:0}).animate({count:title.length}, {
-        duration: 1500,
-        step: function() {
-          dv.text(title.substring(0, Math.round(this.count)));
-        }
-      });
-    }, 1000);
-  });
+$(document).ready(function() {
+  var dv = $('#subtitle');
+  dv.text("");
+  setTimeout(function() {
+    jQuery({count:0}).animate({count:title.length}, {
+      duration: 1500,
+      step: function() {
+        dv.text(title.substring(0, Math.round(this.count)));
+      }
+    });
+  }, 1000);
+});
 </script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
