@@ -1,0 +1,168 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#my-nav {
+  padding-top: 4%;
+}
+
+.nav-font {
+  font-family: 'Raleway', sans-serif;
+  /*TODO Add Media Query for container 100% for small width*/
+  font-size: 1.5vw;
+}
+
+.nav-pad {
+  padding: 1% !important;
+}
+
+.nav-hover:hover {
+  background-color: rgba(255, 0, 0, .3);
+}
+title {
+	display: none;
+}
+title:hover {
+	display: bolck;
+}
+
+
+
+.left-col {
+	border-right: 1px white solid;
+}
+
+.right-col {
+	border-left: 1px white solid;
+	margin-top: 5% !important;
+}
+
+.left-image, .right-image {
+	padding: 1% !important;
+}
+
+.left-title {
+	padding: 1% !important;
+	font-size: 200%;
+	transform: translateX(8%);
+}
+
+.right-title {
+	padding: 1% !important;
+	font-size: 200%;
+	transform: translateX(-8%);
+}
+
+.left-text-box, .right-text-box {
+	padding: 1% !important;
+}
+
+.left-text, .right-text {
+	font-size: 100%;
+}
+
+.left-card {
+	padding-left: 10%!important;
+	padding-right: 10%!important;
+	padding-top: 	2%!important;
+	padding-bottom: 2%!important;
+	border: 2px solid transparent;
+}
+
+.right-card {
+	padding-left: 10%!important;
+	padding-right: 10%!important;
+	padding-top: 2%!important;
+	padding-bottom: 2%!important;
+	border: 2px solid transparent;
+}
+
+.left-card {
+	position: relative;
+ 	display: block;
+ 	overflow: hidden;
+}
+
+.right-card {
+	position: relative;
+ 	display: block;
+ 	overflow: hidden;
+}
+
+.left-card:before {
+	box-sizing: border-box;
+	transform: translateX(100%);
+ 	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	border-top: 2px solid transparent;
+	border-left: 2px solid transparent;
+}
+
+.left-card:after {
+	box-sizing: border-box;
+	transform: translateX(-100%);
+ 	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	border-bottom: 2px solid transparent;
+}
+
+.left-card:hover:before {
+	transition: .2s transform linear 0s, .2s height linear .2s;
+	transform: translateX(0);
+	height: 100%;
+	border-color: white;
+}
+
+.left-card:hover:after {
+	transition: .2s transform linear 0.4s;
+	transform: translateX(0);
+	border-color: white;
+}
+
+
+.right-card:before {
+	box-sizing: border-box;
+	transform: translateX(-100%);
+ 	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 2px;
+	border-top: 2px solid transparent;
+	border-right: 2px solid transparent;
+}
+
+.right-card:after {
+	box-sizing: border-box;
+	transform: translateX(100%);
+ 	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 2px;
+	border-bottom: 2px solid transparent;
+}
+
+.right-card:hover:before {
+	transition: .2s transform linear 0s, .2s height linear .2s;
+	transform: translateX(0);
+	height: 100%;
+	border-color: white;
+}
+
+.right-card:hover:after {
+	transition: .2s transform linear 0.4s;
+	transform: translateX(0);
+	border-color: white;
+}
