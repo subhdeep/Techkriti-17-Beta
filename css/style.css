@@ -34,7 +34,8 @@ a {
 
 .nav-font {
   font-family: 'Raleway', sans-serif;
-  font-size: 150%;
+  /*TODO Add Media Query for container 100% for small width*/
+  font-size: 1.5vw;
 }
 
 .nav-pad {
@@ -47,18 +48,30 @@ a {
 
 /* TODO: Add media query to make heading responsive */
 #techkriti {
+<<<<<<< HEAD
   margin-top: 30%;
   margin-bottom: 0;
   color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 8em;
+=======
+  margin-top: 30vh;
+  margin-bottom: 0;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 5vw; 
+>>>>>>> events
   font-weight: 900;
 }
 
 #subtitle {
   margin-top: 0;
   font-family: 'Raleway', sans-serif;
+<<<<<<< HEAD
   font-size: 3em;
+=======
+  font-size: 2vw;
+>>>>>>> events
 }
 
 #Graph {
@@ -66,6 +79,10 @@ a {
   display: inline;
   height: 50px;
   width: 100%;
+<<<<<<< HEAD
+=======
+  left: 0;
+>>>>>>> events
   bottom: 0;
 }
 
