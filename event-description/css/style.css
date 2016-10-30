@@ -112,7 +112,7 @@ a {
 #event-desc {
   font-family: 'Raleway', sans-serif;
   font-size: 1.0vw;
-  overflow: scroll;
+  overflow-y: scroll;
   animation-name: event2;
   animation-duration: .7s;
   animation-iteration-count: 1;
