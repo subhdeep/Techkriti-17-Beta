@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Techkriti'17
+    </title>
+    <meta charset="utf-8"> <!-- set character encoding for the document -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <script>
+	function cursorMoved(e){
+	}
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body onmousemove="cursorMoved(event)">
+    <center>
+      <div class="container">
+        <div class="row" id="my-nav">
+         
+          <a href="/">
+            <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
+              Home
+            </div>
+          </a>
+          <a href="/competitions">
+            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
+              Competitions
+            </div>
+          </a>
+          <a href="/technocruise">
+            <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
+              Technocruise
+            </div>
+          </a>
+          <a href="/tosc">
+            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
+              TOSC
+            </div>
+          </a>
+          <a href="/about">
+            <div class="col m2 s4 s4 center-align nav-pad nav-hover nav-font">
+              Gallery
+            </div>
+          </a>
+          <a href="/contact">
+            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
+              Contact Us
+            </div>
+          </a>
+        </div>
+        <div class="row">
+          <div class="col offset-m2 m8  s12 center-align">
+            <p class="flow-text" id="techkriti">TECHKRITI' 17</p>
+            <p id='subtitle' class="flow-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--<div class="bottom-graph-container">¬-->
+      <!--<button id="turnoffanimations-button" onclick="toggleAnimations()" class="turnoffanimations-button">Turn off animations</button>¬-->
+      <!--</div>¬-->
+    <!--</div>-->
+  <div id="Graph">
+    <center>
+      <button id="togglebtn" class="waves-effect waves-teal white-text btn-flat" onclick="toggleAnimations()">Show Animations</button>
+    </center>
+    <div class="bottom-graph frequency-time-large" id="bottomGraph"></div>
+  </div>
+  <div class="social">
+        <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
+        <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+        <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+        <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+        <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713">
+            <i class="fa fa-linkedin"></i>
+        </a>
+    </div>
+  <script src="script/frequency-graph.js"></script>
+  <script>
+  var title = "Factualising                        Fictions";
+window.addEventListener('load',function(){
+	var subtitlediv = document.getElementById('subtitle');
+	var count = 0;
+	var interval = setInterval(function(){
+		if(count != 0 && title[count - 1] != ' '){
+			subtitlediv.innerHTML = title.substring(0,count);
+		}
+		if(count == title.length){
+			clearInterval(interval);
+		}
+		count++;
+	},40);	
+});
+</script>
+</center>
+</body>
+</html>
+
