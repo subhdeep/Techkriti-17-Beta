@@ -1,0 +1,17 @@
+$navheight:64px;
+$bg-color:#fefefe;
+html,body{
+	margin: 0;
+	height:100%;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+*,*:after,*:before{
+	box-sizing:border-box;
+}
+body{
+	font-family: Roboto-Regular;
+	background-color: $bg-color;
+}

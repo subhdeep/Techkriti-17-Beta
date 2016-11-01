@@ -1,0 +1,103 @@
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-image: url("/images/3.jpg");
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#my-nav {
+  padding-top: 4%;
+}
+
+.nav-font {
+  font-family: 'Raleway', sans-serif;
+  /*TODO Add Media Query for container 100% for small width*/
+  font-size: 1.5vmax;
+}
+
+.nav-pad {
+  padding: 1% !important;
+}
+
+.nav-hover:hover {
+  background-color: rgba(255, 0, 0, .3);
+}
+
+#comp-container {
+  margin-top: 15vmax;
+  height: 15vmax;
+}
+
+.comp-box {
+  padding: 1vmax !important;
+  height:100%;
+}
+
+.comp-border {
+  border: .25vmax solid white;
+  height: 100%;
+  padding-top: 4vmax;
+}
+
+.comp-border .valign {
+  width: 100%;
+  text-align: center;
+}
+
+.heading {
+  position: relative;
+  top: 0vmax;
+  transition-property: top;
+  transition-duration: .1s;
+  transition-timing-function:cubic-bezier(.85,.20,.82,.44);
+  transition-delay: .15s 
+}
+
+.fa {
+  position: relative;
+  background-color: black;
+  padding-left: 0.5vmax;
+  padding-right: 0.5vmax;
+  top: 0vmax;
+  transition-property: top;
+  transition-duration: .2s;
+  transition-timing-function:cubic-bezier(.15,.91,.46,1.04);
+}
+
+.comp-box:hover .fa {
+  top: -5.2vmax;
+}
+.comp-box:hover .heading {
+  top: -5.2vmax;
+}
+
+.comp-box .description {
+  opacity: 0;
+  color: red;
+  position: relative;
+  top: 0vmax;
+  transition-property: top, opacity;
+  transition-duration: .3s;
+  transition-timing-function:cubic-bezier(.87,.21,.82,.48);
+  transition-delay: .23s;
+
+}
+
+.comp-box:hover .description {
+  opacity: 1;
+  top: -5.2vmax;
+}
