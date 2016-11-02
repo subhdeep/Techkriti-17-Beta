@@ -1,3 +1,44 @@
+  .social {
+    position: fixed;
+    top: calc(50% - 132px);
+    left: 0px;
+    height: 235px;
+    width: 60px;
+    }
+    .social a {
+        position: relative;
+        float: right;
+        height: 50px;
+        line-height: 50px;
+        width: 50px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(196, 26, 30);
+        font-size: 16px;
+        text-align: center;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        border-radius: 50%;
+        transition: all 300ms ease;
+    }
+    .gp{
+      background-color:#DB4437!important; 
+    }
+    .fb{
+      background-color:#3F5C9A!important;       
+    }
+    .tw{
+      background-color: #55ACEE!important
+    }
+    .yt{
+      background-color: #C41A1E!important
+    }
+    .ln{
+      background-color: #0778B5!important
+    }
+
+nav a{
+  padding: 0px !important
+}
 html {
   height: 100vh;
 }

@@ -62,9 +62,8 @@ a {
   position: relative;
   top: 0vmax;
   transition-property: top;
-  transition-duration: .1s;
-  transition-timing-function:cubic-bezier(.85,.20,.82,.44);
-  transition-delay: .15s 
+  transition:0.2s ease-in;
+  transition-delay: .1s 
 }
 
 .fa {
@@ -73,13 +72,14 @@ a {
   padding-left: 0.5vmax;
   padding-right: 0.5vmax;
   top: 0vmax;
+
   transition-property: top;
-  transition-duration: .2s;
-  transition-timing-function:cubic-bezier(.15,.91,.46,1.04);
+  transition:0.3s ease-in;
 }
 
 .comp-box:hover .fa {
   top: -5.2vmax;
+
 }
 .comp-box:hover .heading {
   top: -5.2vmax;
