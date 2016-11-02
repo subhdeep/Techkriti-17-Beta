@@ -40,24 +40,24 @@ a {
 .event-font {
   font-family: 'Raleway', sans-serif;
   /*TODO Add Media Query for container 100% for small width*/
-  font-size: 1.2vmax;
+  font-size: 1.5vmax;
 }
 
 .event-list-font {
   font-family: 'Raleway', sans-serif;
   /*TODO Add Media Query for container 100% for small width*/
-  font-size: .9vmax;
+  font-size: 1.2vmax;
 }
 
 #event-container {
-  margin-top: 10.5vmax;
-  height: 15vmax;
+  margin-top: 3vmax;
+  height: 18vmax;
   overflow-y: hidden;
 }
 
 #event-container2 {
-  margin-top: 0vmax;
-  height: 15vmax;
+  margin-top: 4vmax;
+  height: 18vmax;
   overflow-y: hidden;
 }
 
