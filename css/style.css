@@ -1,3 +1,12 @@
+#mob-nav-items {
+  padding: 2%;
+  font-size: 4vh;
+  text-transform: uppercase;
+}
+
+.mob-hover ul li:hover  {
+  background-color: rgb(196, 26, 30);
+}
   .social {
     position: fixed;
     top: calc(50% - 132px);
@@ -45,9 +54,10 @@ html {
 
 body {
   margin: 0;
-  background-image: url("/images/3.jpg");
+  background-image: url("/images/homepage.jpg");
   background-repeat:no-repeat;
-  background-size: contain;
+  /*background-size: cover;*/
+  background-size: cover;
   background-position: center center;
   background-color: #000000;
   color: white;
