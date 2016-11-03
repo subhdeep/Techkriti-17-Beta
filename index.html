@@ -7,46 +7,47 @@
     <meta charset="utf-8"> <!-- set character encoding for the document -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--Stylesheets-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
-
-    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-
-    <!--Custom Stylesheet-->
+    <script>
+	function cursorMoved(e){
+	}
+    </script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body onmousemove="cursorMoved(event)">
     <center>
       <div class="container">
-        <div class="row" id="my-nav">
-          <a href="#">
-            <div class="col m2 s4 center-align nav-pad nav-hover nav-font waves-effect waves-light">
+        <div class="row hide-on-small-only" id="my-nav">         
+          <a href="/">
+            <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
               Home
             </div>
           </a>
-          <a href="competitions/index.html">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font waves-effect waves-light">
+          <a href="/competitions">
+            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
               Competitions
             </div>
           </a>
-          <a href="https://techkriti.org/zonals">
-            <div class="col m2 s4 center-align nav-pad nav-hover nav-font waves-effect waves-light">
+          <a href="/technocruise">
+            <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
               Technocruise
             </div>
           </a>
-          <a href="https://techkriti.org/tosc">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font waves-effect waves-light">
+          <a href="/tosc">
+            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
               TOSC
             </div>
           </a>
-          <a href="About/index.html">
-            <div class="col m2 s4 s4 center-align nav-pad nav-hover nav-font waves-effect waves-light">
+          <a href="/about">
+            <div class="col m2 s4 s4 center-align nav-pad nav-hover nav-font">
               Gallery
             </div>
           </a>
-          <a href="#">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font waves-effect waves-light">
+          <a href="/contact">
+            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
               Contact Us
             </div>
           </a>
@@ -59,6 +60,7 @@
         </div>
       </div>
     </div>
+    
     <!--<div class="bottom-graph-container">¬-->
       <!--<button id="turnoffanimations-button" onclick="toggleAnimations()" class="turnoffanimations-button">Turn off animations</button>¬-->
       <!--</div>¬-->
@@ -69,30 +71,47 @@
     </center>
     <div class="bottom-graph frequency-time-large" id="bottomGraph"></div>
   </div>
-
-  <!--Scripts-->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <div class="social hide-on-small-only">
+        <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
+        <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+        <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+        <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+        <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713"><i class="fa fa-linkedin"></i></a>
+  </div>
+  <div class="row social-mobile hide-on-med-and-up">
+    <div class="col s2 offset-s1">
+      <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </div>
   <script src="script/frequency-graph.js"></script>
   <script>
-    // For animating the title to appear one by one
-  var title = "Factualising Fiction";
-$(document).ready(function() {
-  var dv = $('#subtitle');
-  dv.text("");
-  setTimeout(function() {
-    jQuery({count:0}).animate({count:title.length}, {
-      duration: 1500,
-      step: function() {
-        dv.text(title.substring(0, Math.round(this.count)));
-      }
-    });
-  }, 1000);
+  var title = "Factualising                        Fictions";
+window.addEventListener('load',function(){
+	var subtitlediv = document.getElementById('subtitle');
+	var count = 0;
+	var interval = setInterval(function(){
+		if(count != 0 && title[count - 1] != ' '){
+			subtitlediv.innerHTML = title.substring(0,count);
+		}
+		if(count == title.length){
+			clearInterval(interval);
+		}
+		count++;
+	},40);	
 });
 </script>
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 </center>
 </body>
 </html>
-
