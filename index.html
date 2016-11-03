@@ -10,44 +10,62 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
     <script>
-	function cursorMoved(e){
-	}
+      function cursorMoved(e){
+      }
     </script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body onmousemove="cursorMoved(event)">
-    <center>
+    <div class="hide-on-med-and-up">
+      <div onclick="navi()">
+      <i class="material-icons">view_quilt</i>
+      </div>
+      <center>
+        <div id="mob-nav">
+          <div class="mob-hover col s12">
+            <ul id="mob-nav-items">
+              <li>Home</li>
+              <li>Competitions</li>
+              <li>Technocruise</li>
+              <li>TOSC</li>
+              <li>Gallery</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="row hide-on-small-only" id="my-nav">         
           <a href="/">
-            <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
+            <div class="col m2 hide-on-small-only center-align nav-pad nav-hover nav-font">
               Home
             </div>
           </a>
           <a href="/competitions">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
+            <div class="col m2  hide-on-small-only offset-s4 s4 center-align nav-pad nav-hover nav-font">
               Competitions
             </div>
           </a>
           <a href="/technocruise">
-            <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
+            <div class="col m2 s4  hide-on-small-only center-align nav-pad nav-hover nav-font">
               Technocruise
             </div>
           </a>
           <a href="/tosc">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
+            <div class="col m2 offset-s4 s4  hide-on-small-only center-align nav-pad nav-hover nav-font">
               TOSC
             </div>
           </a>
           <a href="/about">
-            <div class="col m2 s4 s4 center-align nav-pad nav-hover nav-font">
+            <div class="col m2 s4 s4  hide-on-small-only center-align nav-pad nav-hover nav-font">
               Gallery
             </div>
           </a>
           <a href="/contact">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
+            <div class="col m2 offset-s4 s4  hide-on-small-only center-align nav-pad nav-hover nav-font">
               Contact Us
             </div>
           </a>
@@ -60,7 +78,7 @@
         </div>
       </div>
     </div>
-    
+
     <!--<div class="bottom-graph-container">¬-->
       <!--<button id="turnoffanimations-button" onclick="toggleAnimations()" class="turnoffanimations-button">Turn off animations</button>¬-->
       <!--</div>¬-->
@@ -97,19 +115,34 @@
   </div>
   <script src="script/frequency-graph.js"></script>
   <script>
-  var title = "Factualising                        Fictions";
+    var nav = document.getElementById('mob-nav');
+nav.style.display = "none";
+var flag = 0;
+function navi() {
+  if(flag == 0) {
+     document.getElementById('mob-nav').style.display = "block";
+    flag = 1;
+  }
+  else {
+     document.getElementById('mob-nav').style.display = "none";
+    flag = 0;
+  }
+}
+  </script>
+  <script>
+    var title = "Factualising               Fictions";
 window.addEventListener('load',function(){
-	var subtitlediv = document.getElementById('subtitle');
-	var count = 0;
-	var interval = setInterval(function(){
-		if(count != 0 && title[count - 1] != ' '){
-			subtitlediv.innerHTML = title.substring(0,count);
-		}
-		if(count == title.length){
-			clearInterval(interval);
-		}
-		count++;
-	},40);	
+  var subtitlediv = document.getElementById('subtitle');
+  var count = 0;
+  var interval = setInterval(function(){
+    if(count != 0 && title[count - 1] != ' '){
+      subtitlediv.innerHTML = title.substring(0,count);
+    }
+    if(count == title.length){
+      clearInterval(interval);
+    }
+    count++;
+  },40);
 });
 </script>
 </center>
