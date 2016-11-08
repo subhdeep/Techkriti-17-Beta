@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Techkriti'17
+    </title>
+    <meta charset="utf-8"> <!-- set character encoding for the document -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">    
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(".cl-effect-4 a").on('click',function(){
+           $(this).addClass('active');
+           console.log('gg');
+           $(this).siblings().removeClass('active');
+      });
+    </script>
+  </head>
+  <body onmousemove="cursorMoved(event)">
+  <img id="robo" src="images/3.jpg" >
+    <video autoplay="" loop=""  id="bgvid-cover" >
+                  <source src="new.mp4" type="video/mp4">
+    </video>
+    <center>
+      <div class="container">
+         <div class="row" id="my-nav">
+         <nav class="cl-effect-4" style="    background-color: rgba(29, 28, 28,0.5);">
+          <a class="active" href="/">
+              Home
+          </a>
+          <a href="/competitions">
+              Competitions
+          </a>
+          <a href="https://www.techkriti.org/zonals/">
+              Technocruise
+          </a>
+          <a href="https://www.techkriti.org/tosc">
+              TOSC
+          </a>
+          <a href="/about">
+              About
+          </a>
+          <a href="/contact">
+              Contact Us
+          </a>
+          </nav>
+        </div>
+        <div class="row">
+          <div class="col offset-m2 m8  s12 center-align"  style="
+    top: 25vh;
+    position: relative;
+">
+            <!-- <p class="flow-text" id="techkriti">TECHKRITI' 17</p>
+            <p id='subtitle' class="flow-text"></p>-->
+            <img class="log" src="images/logo.png">
+                        <p id="date" style="font-size: 2vw;margin-top: 0px;"> </p> 
+
+<!--             <img src="images/logo-1.png">
+ -->          </div>
+        </div>
+      </div>
+    </div>
+    <div class="social">
+        <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
+        <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+        <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+        <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+        <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713">
+            <i class="fa fa-linkedin"></i>
+        </a>
+    </div>
+    <!--<div class="bottom-graph-container">¬-->
+      <!--<button id="turnoffanimations-button" onclick="toggleAnimations()" class="turnoffanimations-button">Turn off animations</button>¬-->
+      <!--</div>¬-->
+    <!--</div>-->
+  <div id="Graph">
+    <center>
+      <button id="togglebtn" class="waves-effect waves-teal white-text btn-flat" onclick="toggleAnimations()">Show Animations</button>
+    </center>
+    <div class="bottom-graph frequency-time-large" id="bottomGraph"></div>
+  </div>
+  
+  <script src="script/frequency-graph.js"></script>
+  <script>
+  var title = "Factualising                        Fictions";
+window.addEventListener('load',function(){
+	//var subtitlediv = document.getElementById('subtitle');
+	//var count = 0;
+	/*var interval = setInterval(function(){
+		if(count != 0 && title[count - 1] != ' '){
+			subtitlediv.innerHTML = title.substring(0,count);
+		}
+		if(count == title.length){
+			clearInterval(interval);
+		}
+		count++;
+	},40);*/
+
+  $('.log').delay(800).fadeIn(2000);
+  setInterval(function(){document.getElementById('date').innerHTML=' 23rd-26th March 2017';},1500);
+
+});
+</script>
+</center>
+</body>
+</html>
+

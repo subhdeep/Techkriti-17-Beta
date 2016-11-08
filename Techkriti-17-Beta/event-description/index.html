@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Techkriti'17
+    </title>
+    <meta charset="utf-8"> <!-- set character encoding for the document -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Custom Stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <center>
+        <center>
+    <div class="row" id="my-nav">
+         <nav class="cl-effect-4" style="background-color: transparent;">
+          <a href="/">
+              Home
+          </a>
+          <a class="active" href="/competitions">
+              Competitions
+          </a>
+          <a href="https://www.techkriti.org/zonals/">
+              Technocruise
+          </a>
+          <a href="https://www.techkriti.org/tosc">
+              TOSC
+          </a>
+          <a href="/about">
+              About
+          </a>
+          <a href="/contact">
+              Contact Us
+          </a>
+          </nav>
+        </div>
+        </center>
+        <div class="social">
+        <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
+        <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+        <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+        <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+        <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713">
+            <i class="fa fa-linkedin"></i>
+        </a>
+    </div>
+        <div class="row">
+          <div class="col m10 s12">
+            <div class="event-desc-holder">
+              <div id="event-name">
+                Event Name
+              </div>
+              <div id="event-desc">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante neque, placerat ac eleifend eget, feugiat hendrerit augue. Quisque congue velit consectetur risus porttitor, pharetra mollis diam iaculis. Aenean interdum congue lacus a dignissim. Donec sit amet porttitor eros. 
+                  Ut massa sapien, rhoncus sit amet orci in, tincidunt venenatis leo. 
+                  Nullam dolor lacus, consectetur sit amet 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col m2">
+            <div class="event-attr-holder">
+              <ul class="center-align event-nav event-nav-font">
+                <li>Prop1</li>
+                <li>Prop1</li>
+                <li>Prop1</li>
+                <li>Prop1</li>
+                <li>Prop1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+  </div>
+  <div id="event-links">
+    <ul>
+      <li>Event 1</li>
+      <li>Event 1</li>
+      <li>Event 1</li>
+      <li>Event 1</li>
+      <li>Event 1</li>
+    </ul>
+  </div>
+  <div class="more-events">
+    More Events &darr;
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <script src="jquery.mousewheel.min.js"></script>
+  <script>
+    $(document).mousewheel(function(event) {
+      var subtraction = $(document).height() - $(window).height() - $(document).scrollTop();
+      subtraction = subtraction>0 ? subtraction : -subtraction;
+      if (event.deltaY < 0 && subtraction<=5) {
+        $("#event-links").slideDown("slow", function() {});
+      } else if (event.deltaY > 0) {
+        $("#event-links").slideUp("slow", function() {});
+      }
+    });
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,133 @@
+.tech{
+      background-image: url(technical.png);
+    background-size: 100% 100%;
+    background-position: 0px;
+    background-color: rgba(0,0,0,0.2);
+}
+.soc {
+      background-image: url(social.png);
+    background-size: 100% 100%;
+    background-position: 0px;
+    background-color: rgba(0,0,0,0.2);
+}
+.inter {
+      background-image: url(international.png);
+    background-size: 100% 100%;
+    background-position: 0px;
+    background-color: rgba(0,0,0,0.2);
+}
+.entre {
+      background-image: url(entrepreneur.png);
+    background-size: 100% 100%;
+    background-position: 0px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background-image: url("/images/3.jpg");
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#my-nav {
+  padding-top: 4%;
+}
+
+.nav-font {
+  font-family: 'Raleway', sans-serif;
+  /*TODO Add Media Query for container 100% for small width*/
+  font-size: 1.5vmax;
+}
+
+.nav-pad {
+  padding: 1% !important;
+}
+
+.nav-hover:hover {
+  background-color: rgba(255, 0, 0, .3);
+}
+
+#comp-container {
+  margin-top: 12vmax;
+  height: 15vmax;
+}
+
+.comp-box {
+  padding: 1vmax !important;
+  height:100%;
+}
+
+.comp-border {
+  border: .25vmax solid white;
+  height: 115%;
+  overflow: hidden;
+  padding-top: 4vmax;
+}
+
+.comp-border .valign {
+  width: 100%;
+  text-align: center;
+}
+
+.heading {
+      background-color: rgba(0,0,0,0.6);
+  position: relative;
+  top: 0vmax;
+  transition-property: top;
+  transition:0.2s ease-in;
+  transition-delay: .1s 
+}
+
+.fa1 {
+  position: relative;
+  background-color: black;
+  padding-left: 0.5vmax;
+  padding-right: 0.5vmax;
+  top: 0vmax;
+
+  transition-property: top;
+  transition:0.3s ease-in;
+}
+
+.comp-box:hover .fa {
+  top: -5.2vmax;
+
+}
+.comp-box:hover .heading {
+  top: -4.1vmax;
+}
+
+.comp-box .description {
+  opacity: 0;
+  position: relative;
+      color: #0b0101;
+    padding: 60px 0px;
+  top: 0vmax;
+  transition-property: top, opacity;
+  transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0.71, 0.76, 0.1, 0.13);  transition-delay: .23s;
+      background-color: rgba(255,255,255,0.8);
+    min-height: 250px;
+
+}
+
+.comp-box:hover .description {
+  opacity: 1;
+  top: -5.2vmax;
+}

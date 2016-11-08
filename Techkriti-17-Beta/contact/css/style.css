@@ -1,0 +1,244 @@
+.oc .spinner {
+    border: 10px solid #01162d !important;
+    border-right-color: #17217b !important;
+    border-bottom-color: #17217b!important;
+}
+.event .spinner {
+    border: 10px solid #032515!important;
+    border-right-color: #28b170!important;
+    border-bottom-color: #28b170!important;
+}
+.marketing .spinner {
+    border: 10px solid #1e1523!important;
+    border-right-color: #573d67!important;
+    border-bottom-color: #573d67!important;
+}
+.pr .spinner {
+    border: 10px solid #081e21!important;
+    border-right-color: #3e8a94!important;
+    border-bottom-color: #3e8a94!important;
+}
+.media .spinner {
+    border: 10px solid #20291e!important;
+    border-right-color: #5ee84a!important;
+    border-bottom-color: #5ee84a!important;
+}
+.finance .spinner {
+    border: 10px solid #372e3a!important;
+    border-right-color: #734b7d!important;
+    border-bottom-color: #734b7d!important;
+}
+.design .spinner {
+    border: 10px solid #25211b!important;
+    border-right-color: #da9625!important;
+    border-bottom-color: #da9625!important;
+}
+.web .spinner{
+    border: 10px solid #01162d !important;
+    border-right-color: #17217b !important;
+    border-bottom-color: #17217b!important;
+
+}
+
+.showm .spinner{
+
+    border: 10px solid #081e21!important;
+    border-right-color: #3e8a94!important;
+    border-bottom-color: #3e8a94!important;
+
+}
+
+.security .spinner{
+   border: 10px solid #032515!important;
+    border-right-color: #28b170!important;
+    border-bottom-color: #28b170!important;
+}
+
+.contacts .dep .person .name:after {
+    height: 2px;
+    width: 100%;
+    background-color: #0f0a0a;
+    margin-top: 4px;
+    background: linear-gradient(to left, rgba(255,255,255,0) 10%, #491818 25%, #817171 75%, #051228 90%, rgba(255,255,255,0) 100%);
+    display: block;
+    content: " ";
+}
+.contacts .dep .title{
+
+    width: 100%;
+    padding-bottom: 25px;
+
+    font-size: 28px;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    font-family: raleway;
+}
+
+.fa-facebook-square:hover{
+  color: rgb(58, 88, 155)
+}
+.fa-envelope-square:hover{
+  color: rgb(6, 154, 254)
+}
+.fa-linkedin-square:hover{
+   color: rgb(0, 122, 185)
+}
+html {
+  height: 100vh;
+}
+
+body {
+      margin: 0;
+    background-image: url(contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#my-nav {
+  padding-top: 4%;
+}
+
+.nav-font {
+  font-family: 'Raleway', sans-serif;
+  /*TODO Add Media Query for container 100% for small width*/
+  font-size: 1.5vmax;
+}
+
+.nav-pad {
+  padding: 1% !important;
+}
+
+.nav-hover:hover {
+  background-color: rgba(255, 0, 0, .3);
+}
+
+.event-font {
+  font-family: 'Raleway', sans-serif;
+  /*TODO Add Media Query for container 100% for small width*/
+  font-size: 1.2vmax;
+}
+
+.event-list-font {
+  font-family: 'Raleway', sans-serif;
+  /*TODO Add Media Query for container 100% for small width*/
+  font-size: .9vmax;
+}
+
+#event-container {
+  margin-top: 10.5vmax;
+  height: 15vmax;
+  overflow-y: hidden;
+}
+
+#event-container2 {
+  margin-top: 0vmax;
+  height: 15vmax;
+  overflow-y: hidden;
+}
+
+.event-box {
+  padding: 1vmax !important;
+  height:100%;
+}
+
+.event-border {
+  border: .25vmax solid white;
+  height: 100%;
+  padding-top: 1vmax;
+}
+
+.event-border .valign {
+  width: 100%;
+  text-align: center;
+}
+
+.heading {
+  position: relative;
+  background-color: rgba(255, 0, 0, .3);
+  transform: translateY(4vmax);
+  transition-property: transform;
+  transition-duration: .45s;
+  transition-timing-function: cubic-bezier(0, .48, .23, 1.52);
+}
+
+.ex {
+  opacity: 0;
+  transform: translateY(7vmax);
+  transition-property: transform, opacity;
+  transition-duration:  .50s, 1s; 
+  transition-timing-function: cubic-bezier(0, .48, .23, 1.52);
+}
+
+.ex2 {
+  opacity: 0;
+  transform: translateY(7vmax);
+  transition-property: transform, opacity;
+  transition-duration:  .39s, 1s; 
+  transition-timing-function: cubic-bezier(0, .48, .23, 1.52);
+}
+
+.ex3 {
+  opacity: 0;
+  transform: translateY(7vmax);
+  transition-property: transform, opacity;
+  transition-duration:  .39s, 1s; 
+  transition-timing-function: cubic-bezier(0, .48, .23, 1.52);
+}
+.event-1 {
+  position: relative;
+  margin-top: 3vmax; 
+}
+
+.event-2 {
+  position: relative;
+  margin-top: 3vmax; 
+}
+
+.event-3 {
+  position: relative;
+  margin-top: 3vmax; 
+}
+.event-4 {
+  position: relative;
+  margin-top: 3vmax; 
+}
+.event-5 {
+  position: relative;
+  margin-top: 2vmax; 
+}
+.event-6 {
+  position: relative;
+  margin-top: 1.0vmax; 
+}
+
+.event-box:hover .ex {
+  opacity: 1;
+  transform: translateY(0vmax);
+}
+
+.event-box:hover .ex2 {
+  opacity: 1;
+  transform: translateY(0vmax);
+}
+.event-box:hover .ex3 {
+  opacity: 1;
+  transform: translateY(0vmax);
+}
+.events ul li:hover {
+  background-color: rgba(255, 0, 0, .5);
+}
+
+.event-box:hover .heading {
+  transform: translateY(0vmax);
+}
+
