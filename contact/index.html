@@ -10,10 +10,25 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="../css/component.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+  $("#loading").fadeOut();
+    });
+      $(".cl-effect-4 a").on('click',function(){
+           $(this).addClass('active');
+           console.log('gg');
+           $(this).siblings().removeClass('active');
+      });
+    </script>
     <style type="text/css">
+
 	body{
 		background-color: #000000
 	}
@@ -26,6 +41,13 @@
     right: 0px;
     left: 10px !important;
     }
+@media only screen and (min-width: 993px)
+{
+.container {
+    width: 83%;
+}
+}
+
     .contacts .dep .person img {
     width: 210px !important;
     height: 210px !important;
@@ -39,378 +61,565 @@
 	</style>
   </head>
   <body>
-    <div class="container">
-      <div class="row" id="my-nav">
-          <a href="/">
-            <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
+  <div id="loading">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div class="object" id="object_one"></div>
+<div class="object" id="object_two"></div>
+<div class="object" id="object_three"></div>
+<div class="object" id="object_four"></div>
+<div class="object" id="object_big"></div>
+</div>
+</div>
+ 
+</div>
+  <div class="navigate hide-on-med-and-up">
+      <div onclick="navi()">
+      <h4 class="nav-name">Contacts</h4>
+      <i class="material-icons"  id="nav-icon">&#xE5D2;</i>
+      </div>
+      <center>
+        <div id="mob-nav">
+          <div class="mob-hover col s12">
+            <ul id="mob-nav-items">
+              <a class="active" href="/">
               Home
-            </div>
+          </a>
+  <a  href="/about">
+              About
           </a>
           <a href="/competitions">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
               Competitions
-            </div>
           </a>
-          <a href="/technocruise">
-            <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
+          <a target='_blank' href="http://www.techkriti.org/zonals/">
               Technocruise
-            </div>
           </a>
-          <a href="/tosc">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
+          <a target='_blank' href="http://www.techkriti.org/tosc">
               TOSC
-            </div>
           </a>
-          <a href="/about">
-            <div class="col m2 s4 s4 center-align nav-pad nav-hover nav-font">
-              Gallery
-            </div>
+        
+<a target='_blank' href="http://2016.techkriti.org/sponsors">
+              Sponsors
           </a>
-          <a href="/contact">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
+
+          <a  href="/contact">
               Contact Us
-            </div>
           </a>
+            </ul>
+          </div>
         </div>
+      </div>
+    <div class="container">
+      <center>
+    <div class="row hide-on-small-only" id="my-nav">
+         <nav class="cl-effect-4" style="background-color: transparent;">
+          <a href="/">
+              Home
+          </a>
+  <a  href="/about">
+              About
+          </a>
+          <a  href="/competitions">
+              Competitions
+          </a>
+          <a  target='_blank' href="http://www.techkriti.org/zonals/">
+              Technocruise
+          </a>
+          <a  target='_blank' href="http://www.techkriti.org/tosc">
+              TOSC
+          </a>
+        
+<a target='_blank' href="http://2016.techkriti.org/sponsors">
+              Sponsors
+          </a>
+          <a class="active" href="/contact">
+              Contact Us
+          </a>
+          </nav>
+        </div>
+        </center>
+        <div class="social hide-on-small-only">
+        <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
+        <a  class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+        <a  class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+        <a  class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+        <a  class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713">
+            <i class="fa fa-linkedin"></i>
+        </a>
+    </div>
       <div class="contacts">
-
-    <div class="dep">
-    <div class="title">Head TOSC</div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-
-      <div>+91-8960620407</div>
-    </div>
-  </div>
-  
-    <div class="dep">
-    <div class="title">Marketing</div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-  </div>
     
-    <div class="dep">
-    <div class="title">Events</div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-
-  </div>
-  
-    <div class="dep">
-    <div class="title">Public Relations</div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-  </div>
-  <div class="dep">
-    <div class="title">Finance</div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-  </div>
-    
-  <div class="dep">
-    <div class="title">Web and App</div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-  </div>
-        <div class="dep">
-    <div class="title">Design</div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-    
-  </div>
-  <div class="dep">
-    <div class="title">Media and Publicity</div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-    <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
-            <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
-            <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
-            </div></a>
-        </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
-    </div>
-    
-  </div>
-  
-  
-  <div class="dep">
+    <div class="dep oc">
     <div class="title">Festival Coordinator</div>
     <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
             <div class="spinner"></div>
-            <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
+            <div class="img"><img src="new_img/rakesh1.jpg" alt="img"></div>
             <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
+	          <div class="info-back">
+	            <p>
+	               <a target='_blank' href="https://www.facebook.com/profile.php?id=100006241984827&fref=grp_mmbr_list"><i style="font-size:24px" class="fa fa-facebook-square"></i></a>
+	               <a target='_blank' href="mailto:rakesh@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+	               <a target='_blank' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fin.linkedin.com%2Fin%2Frakesh-kumar-b5aa10125&h=iAQGAijgc"><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+	            </p>
+	          </div>
             </div></a>
         </div>
-      <div class="name">Raj Kumar Meena</div>
-      <div>+91-8960620407</div>
+      <div class="name">Rakesh Kumar</div>
+      <div>rakesh@techkriti.org</div>
+      <div>+91-8604286353</div>
     </div>
     <div class="person _l">
-      <div class="ih-item circle effect1"><a href="#">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/mohit.jpg" alt="img"></div>
+            <div class="info">
+	          <div class="info-back">
+	            <p>
+	               <a target='_blank' href="https://www.facebook.com/mohit.pandey.1800?fref=grp_mmbr_list"><i style="font-size:24px" class="fa fa-facebook-square"></i></a>
+	               <a target='_blank' href="mailto:mohit@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+	               <a target='_blank' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmohit-pandey-2002408b%3FauthType%3DNAME_SEARCH%26authToken%3DsHHi%26locale%3Den_US%26trk%3Dtyah%26trkInfo%3DclickedVertical%253Amynetwork%252CclickedEntityId%253A320081184%252CauthType%253ANAME_SEARCH%252Cidx%253A1-2-2%252CtarId%253A1478807501122%252Ctas%253Amohit&h=SAQE3J7YZ"><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+	            </p>
+	          </div>
+            </div></a>
+        </div>
+      <div class="name">Mohit Pandey</div>
+      <div>mohit@techkriti.org</div>
+      <div>+91-8090621345</div>
+    </div>
+  </div>
+
+    
+  <div class="dep event">
+    <div class="title">Events</div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/manna.jpg" alt="img"></div>
+            <div class="info">
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/anirban.manna.902?fref=grp_mmbr_list"><i  style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:rakesh@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fin.linkedin.com%2Fin%2Fanirban1manna2&h=iAQGAijgc"><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
+            </div></a>
+        </div>
+      <div class="name">Anirban Manna</div>
+      <div>amanna@techkriti.org</div>
+      <div>+91-7275797315</div>
+    </div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/akshat.jpg" alt="img"></div>
+            <div class="info">
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/akshat.srivastava7?fref=grp_mmbr_list"><i href="www.google.com" style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:akshat@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank'><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
+            </div></a>
+        </div>
+      <div class="name">Akshat Srivastava</div>
+      <div>akshat@techkriti.org</div>
+      <div>+91-9769387997</div>
+    </div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/mayank1.jpg" alt="img"></div>
+            <div class="info">
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/mayank.agrawal.52459?fref=grp_mmbr_list"><i  style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:amayank@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmayank-agrawal-iitk&h=iAQGAijgc"><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
+            </div></a>
+        </div>
+      <div class="name">Mayank Agarwal</div>
+      <div>amayank@techkriti.org</div>
+      <div>+91-7754915976</div>
+    </div>
+  </div>
+  
+
+   <div class="dep marketing">
+    <div class="title">Marketing</div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/ashwani.jpg" alt="img"></div>
+            <div class="info">
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/ashwani1952?fref=grp_mmbr_list"><i  style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:ashwaniy@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fashwani1952&h=iAQGAijgc"><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
+            </div></a>
+        </div>
+      <div class="name">Ashwani Yadav</div>
+      <div>ashwaniy@techkriti.org</div>
+      <div>+91-7860206546</div>
+    </div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/divyanshu.jpg" alt="img"></div>
+            <div class="info">
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/divyanshuverma1808?fref=grp_mmbr_list"><i style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:divverma@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank' href='https://www.linkedin.com/in/divyanshu-verma-3b6064bb'><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
+            </div></a>
+        </div>
+      <div class="name">Divyanshu Verma</div>
+      <div>divverma@techkriti.org</div>
+      <div>+91-7376256426</div>
+    </div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/aditya.jpg" alt="img"></div>
+            <div class="info">
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/aditya.gangwal.77?fref=grp_mmbr_list"><i  style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:agangwal@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fin.linkedin.com%2Fin%2Faditya-gangwal-42876bab&h=iAQGAijgc"><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
+            </div></a>
+        </div>
+      <div class="name">Aditya Gangwal</div>
+       <div>agangwal@techkriti.org</div>
+     <div>+91-7755047731</div>
+    </div>
+  </div>
+
+    
+
+  <div class="dep pr">
+    <div class="title">Public Relations</div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/piyush.jpg" alt="img"></div>
+            <div class="info">
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/profile.php?id=100005450479199&fref=grp_mmbr_list"><i  style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:piyush@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fpiyushrajgupta&h=iAQGAijgc"><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
+            </div></a>
+        </div>
+      <div class="name">Piyush Raj Gupta</div>
+      <div>piyush@techkriti.org</div>
+      <div>+91-8381872655</div>
+    </div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/bhanu.jpg" alt="img"></div>
+            <div class="info">
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/bhanu.garg.357?fref=grp_mmbr_list"><i  style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:garg@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank' href="https://www.bhanu_garg05@yahoo.co.in"><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
+            </div></a>
+        </div>
+      <div class="name">Bhanu Garg</div>
+      <div>garg@techkriti.org</div>
+      <div>+91-7755057607</div>
+    </div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/riya.jpg" alt="img"></div>
+            <div class="info">
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/riya.talati?fref=grp_mmbr_list"><i style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:riya@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank'><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
+            </div></a>
+        </div>
+      <div class="name">Riya Talati</div>
+      <div>riya@techkriti.org</div>
+      <div>+91-7755048133</div>
+    </div>
+  </div>
+  
+  <div class="dep media">
+    <div class="title">Media and Publicity</div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/aakanksha.jpg" alt="img"></div>
+            <div class="info">
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/aakanksha.singh.3705?fref=grp_mmbr_list"><i style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:aakanksha@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank'><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
+            </div></a>
+        </div>
+      <div class="name">Aakanksha Singh</div>
+      <div>aakanksha@techkriti.org</div>
+      <div>+91-7755047960</div>
+    </div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/sujay.jpg" alt="img"></div>
+            <div class="info">
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/sujay.vishwakarma?fref=grp_mmbr_list"><i style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:sujay@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsujay-vishwakarma&h=iAQGAijgc"><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
+            </div></a>
+        </div>
+      <div class="name">Sujay Vishwakarma</div>
+      <div>sujay@techkriti.org</div>
+      <div>+91-8604918576</div>
+    </div>
+  </div>
+  
+  
+
+
+  <div class="dep finance">
+    <div class="title">Finance</div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/abhi.jpg" alt="img"></div>
+            <div class="info">
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/vevanrai310?fref=grp_mmbr_list"><i  style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:abhi@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank'><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
+            </div></a>
+        </div>
+      <div class="name">Abhishek Rai</div>
+      <div>abhi@techkriti.org</div>
+      <div>+91-7755047816</div>
+    </div>
+  </div>
+  
+
+  
+    <div class="dep design">
+    <div class="title">Design</div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/anvay.jpg" alt="img"></div>
+            <div class="info">
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/anvayanu?fref=grp_mmbr_list"><i style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:anvay@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fanvay-choudhary&h=SAQE3J7YZ"><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
+            </div></a>
+        </div>
+      <div class="name">Anvay Choudhary</div>
+      <div>anvay@techkriti.org</div>
+      <div>+91-7755047904</div>
+    </div>
+  </div>
+
+  
+
+  <div class="dep web">
+    <div class="title">Web and App</div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/ankit.jpg" alt="img"></div>
+            <div class="info">
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/ankitsgh?fref=grp_mmbr_list"><i style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:ankitsgh@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank'><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
+            </div></a>
+        </div>
+      <div class="name">Ankit Singh</div>
+      <div>ankitsgh@techkriti.org</div>
+      <div>+91-7755048107</div>
+    </div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
             <div class="spinner"></div>
             <div class="img"><img src="new_img/raj.jpg" alt="img"></div>
             <div class="info">
-              <div class="info-back">
-                <h3>Heading here</h3>
-                <p>Description goes here</p>
-              </div>
+            <div class="info-back">
+              <p>
+                 <a target='_blank' href="https://www.facebook.com/rajkumar.iitk?fref=grp_mmbr_list"><i  style="font-size:24px" class="fa fa-facebook-square"></i></a>
+                 <a target='_blank' href="mailto:raj@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+                 <a target='_blank' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fraj-kumar-720400ba&h=iAQGAijgc"><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+              </p>
+            </div>
             </div></a>
         </div>
       <div class="name">Raj Kumar Meena</div>
+      <div>raj@techkriti.org</div>
       <div>+91-8960620407</div>
     </div>
   </div>
+  
+
+  
+
+  <div class="dep showm">
+    <div class="title">Show Management</div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/adi.jpg" alt="img"></div>
+            <div class="info">
+	          <div class="info-back">
+	            <p>
+	               <a target='_blank' href="https://www.facebook.com/profile.php?id=100004535478160&fref=grp_mmbr_list"><i style="font-size:24px" class="fa fa-facebook-square"></i></a>
+	               <a target='_blank' href="mailto:aditya@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+	               <a target='_blank' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fin.linkedin.com%2Fin%2Faditya-srivastava-30b9b3117&h=SAQE3J7YZ"><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+	            </p>
+	          </div>
+            </div></a>
+        </div>
+      <div class="name">Aditya Srivastava</div>
+      <div>aditya@techkriti.org</div>
+      <div>+91-945069151</div>
+    </div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/utkarsh.jpg" alt="img"></div>
+            <div class="info">
+	          <div class="info-back">
+	            <p>
+	               <a target='_blank' href="https://www.facebook.com/utkarsh.shukla.1232?fref=grp_mmbr_list"><i  style="font-size:24px" class="fa fa-facebook-square"></i></a>
+	               <a target='_blank' href="mailto:utshukla@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+	               <a target='_blank' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fin.linkedin.com%2Fin%2Futkarsh-shukla-b63042111&h=SAQE3J7YZ"><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+	            </p>
+	          </div>
+            </div></a>
+        </div>
+      <div class="name">Utkarsh Shukla</div>
+      <div>utshukla@techkriti.org</div>
+      <div>+91-7839099087</div>
+    </div>
+  </div>
+
+  <div class="dep security">
+    <div class="title">Security</div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/akshay.jpg" alt="img"></div>
+            <div class="info">
+	          <div class="info-back">
+	            <p>
+	               <a target='_blank' href="https://www.facebook.com/akshay.vaidya.543?fref=grp_mmbr_list"><i  style="font-size:24px" class="fa fa-facebook-square"></i></a>
+	               <a target='_blank' href="mailto:vaidya@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+	               <a target='_blank'><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+	            </p>
+	          </div>
+            </div></a>
+        </div>
+      <div class="name">Akshay Vaidya</div>
+      <div>vaidya@techkriti.org</div>
+      <div>+91-7275799065</div>
+    </div>
+    <div class="person _l">
+      <div class="ih-item circle effect1"><a target='_blank' href="#">
+            <div class="spinner"></div>
+            <div class="img"><img src="new_img/pujari.jpg" alt="img"></div>
+            <div class="info">
+	          <div class="info-back">
+	            <p>
+	               <a target='_blank' href="https://www.facebook.com/sudheer.naik.144?fref=grp_mmbr_list"><i  style="font-size:24px" class="fa fa-facebook-square"></i></a>
+	               <a target='_blank' href="mailto:dheeru@techkriti.org"><i style="font-size:24px" class="fa fa-envelope-square" aria-hidden="true"></i></a>
+	               <a target='_blank'><i style="font-size:24px" class="fa fa-linkedin-square"></i></a>
+	            </p>
+	          </div>
+            </div></a>
+        </div>
+      <div class="name">Pujari Sudheer</div>
+      <div>dheeru@techkriti.org</div>
+      <div>+91-7753058433</div>
+    </div>
+  </div>
+
+
 </div>
+
+<div class="row social-mobile hide-on-med-and-up">
+    <div class="col s2 offset-s1">
+      <a target='_blank' class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
+    </div>
+    <div class="col s2">
+      <a target='_blank' class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+    </div>
+    <div class="col s2">
+      <a target='_blank' class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+    </div>
+    <div class="col s2">
+      <a target='_blank' class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+    </div>
+    <div class="col s2">
+      <a target='_blank' class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </div>
       
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
   <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-  <script src="./script/script.js"></script>
-</body>
+  <script>
+    var nav = document.getElementById('mob-nav');
+    nav.style.display = "none";
+    var flag = 0;
+    function navi() {
+      if(flag == 0) {
+     document.getElementById('mob-nav').style.display = "block";
+    flag = 1;
+  }
+  else {
+     document.getElementById('mob-nav').style.display = "none";
+    flag = 0;
+  }
+}
+  </script>
+<!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+ --></body>
 </html>

@@ -1,0 +1,626 @@
+<!doctype html>
+<html >
+    
+    <head >
+        <title>Techkriti | TOSC</title>
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 959px)" href="css/animate.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <script src="jquery-1.12.2.min.js"></script>
+                                                     <script src="jquery-cookie-master/src/jquery.cookie.js"></script>
+    </head>
+    <body >
+        <header id="header">
+        	<nav id="nav">
+		        	<button id="nav__btn" class="hide-xlarge hide-large hide-medium">
+	                    <span class="sr-only">Menu</span><span></span><span></span><span></span>
+	                </button>
+	        		<ul id="navlist">
+	        			<li><a href="#about">About</a></li>
+	        			<li><a href="#prizes">Prizes</a></li>
+	        			<li><a href=".detail">Details</a></li>
+	        			<li><a href="#selection">Procedure</a></li>
+	        			<li><a href="#testimonials">Testimonials</a></li>
+	        			<li><a href=".faq">FAQ</a></li>
+	        			<li><a href="#cities">Cities</a></li>
+	        			<li><a href="#gallary">Gallery</a></li>
+	        			<li><a href=".contact">Contact</a></li>
+	        		</ul>
+        	</nav>
+        </header>
+        
+        <div  class="container">
+            <div><img src="img/tosc.jpg"/></div>
+            <div><img src="img/Page.jpg"/></div>
+            <div><img src="img/Page1.jpg"/></div>
+    	</div>
+            
+        <div id="slide-button" class="buttons">
+            <a><img class="prev" src="img/left-arrow.png"></a>
+            <a><img class="next" src="img/right-arrow.png"></a>
+        </div>
+        
+        <div class="register" id="start" >
+            <div>
+                <a style="margin: 0;font-size: 2em;text-align: center;">Registration</a>
+            </div>
+        </div>
+        
+        <main id="skrollr-body">
+        
+        	<section id="about">
+                <div class="register">
+                 <div>
+                   <a style="margin: 0% 40%;font-size: 1em;text-align: center;">Registraion</a>
+                 </div>
+               </div>
+	        	<div class="wrap">
+	        		<h1 >About</h1>
+	        		<div class="about__content">
+		        		<div class="grid">
+		        			<div class="box col span-3  small-12 xsmall-6">
+			        			<div class="about__logo">
+			        				<img  alt="" src="img/tosc.PNG"/>
+		        				</div>
+		        			</div>
+		        			<div  class="box col span-9  small-12 xsmall-6">
+								<p>Techkriti is an annual international technological and entrepreneurial  festival organized by the students of Indian Institute of Technology, Kanpur. Etymologically, the word 'Techkriti' is composed of two words, 'Tech' in English which stands for technology and 'Kriti' in Sanskrit stands for creation. Hence, the word 'Techkriti' signifies creation or innovation in technology.</p>
+                                <p>Techkriti was first held in 1995, and has since grown into one of the largest technical festivals in Asia. The festival is held over four days every March, attracting participants from every corner of the country as well as from abroad, comprising a total footfall of over 25,000 from all over India and abroad.</p>
+                                <p>Techkriti Open School Championship is an annual school aptitude examination for classes 9th to 12th, conducted and organized by Techkriti. It consists of 3 Rounds. Round 1 is a written exam, based on which 1000 students will be asked to submit (online) the abstract of the project in Round 2 and for the final Round we will invite 100 selected students at IIT Kanpur to give a presentation about their abstract and win lots of prizes and goodies. </p>
+                                <p>Our mission is to strengthen and cultivate the talent of our nation at the grassroots level, which serves our sole motive. Through a series of events involving mental aptitude, logic, and scrutiny, it seeks to provide school students a platform to build fundamental experience and knowledge, to exercise co-ordination skills, and to think out of the box while providing solutions to practical problems</p>
+		        			</div>
+		        		</div>
+					</div>
+        		</div>
+        		<div class="hat">
+					<div class="triangle triangle--lg"><div></div></div>
+					<div class="triangle triangle--sm"><div></div></div>
+				</div>
+        		<div data-bottom-top="transform:translateY(30%)" data-top-bottom="transform:translateY(-10%)" class="bit bit--left">
+        			<svg viewBox="0 0 1373 680"><polygon class="a" points="0 0 1373 391 276 680 0 632 0 0"/></svg>
+        		</div>
+        	</section>
+
+        	<section id="prizes">
+	        	<div class="wrap">
+	        		<h1>prizes</h1>
+	        		
+	        		<ul style="list-style:none;overflow:hidden" class="prizes__content"> 		
+        			<li>
+        				<img src="img/prizes/p3.png" alt="">                
+        			</li>
+                    <li>
+        				<img src="img/prizes/p1.png" alt="">
+        			</li>
+	        		<li>
+        				<img src="img/prizes/p2.png" alt="">
+        			</li>
+                    <li>
+        				<img src="img/prizes/p4.png" alt="">                
+        			</li>
+                    <li>
+        				<img src="img/prizes/p5.png" alt="">
+        			</li>
+	        		<li>
+        				<img src="img/prizes/p6.png" alt="">
+        			</li>
+                    <li >
+        				<img src="img/prizes/p7.png" alt="">                
+        			</li>
+                    <li>
+        				<img src="img/prizes/p8.png" alt="">
+        			</li>
+	        		<li style="margin-left: 22%;">
+        				<img src="img/prizes/p9.png" alt="">
+        			</li>
+                    <li>
+        				<img src="img/prizes/p10.png" alt="">
+        			</li>
+					</ul>
+                    
+        		</div>
+                
+        		<div class="hat">
+					<div class="triangle triangle--lg"><div></div></div>
+					<div class="triangle triangle--sm"><div></div></div>
+				</div>
+        		<div id="hats" data-bottom-top="transform:translateY(30%)" data-top-bottom="transform:translateY(-10%)" class="bit bit--right">
+        			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1373 680"><polygon class="a" points="1373 680 0 289 1097 0 1373 48 1373 680"/></svg>
+        		</div>
+        	</section>
+            
+            
+            <div id="social" class="social">
+	        	       <a target="_blank" href="//facebook.com/techkriti.iitk"><i class="fa fa-facebook" ></i></a>
+		<a target="_blank" class="t" href="//twitter.com/techkriti_iitk" style="background-color:#4099FF"><i class="fa fa-twitter" ></i></a>
+		<a target="_blank" class="y" href="//youtube.com/TechkritiIITK" style="background-color:#b31217"><i class="fa fa-youtube-play"></i></a>
+		<a target="_blank" class="in" href="https://www.instagram.com/techkriti.iitk/" style="background-color:#9b6954"><i class="fa fa-instagram"></i></a>
+	        </div>
+        	<section class="detail" id="about" >
+	        	<div  class="wrap">
+	        		<h1 >DETAILS OF CONDUCTION</h1>
+	        		<div class="about__content">
+		        		<div class="grid">
+
+                            <div class="details box col span-4  small-12 xsmall-6"  >
+                                <button id="round1">ROUND 1</button>
+                                <p>
+                                  Written exam of 90 minutes duration, consisting of 60 questions broadly divided into 2 sections (Aptitude and General Awareness) to be held in various cities.
+                               </p>
+                            </div>
+                            <div class="details box col span-4  small-12 xsmall-6">
+                                <button id="round1">ROUND 2</button>
+                                <p>
+                                 Online abstract submission- an abstract of your idea has to be submitted online in prescribed format for judging.
+                                Few ideas will be provided by us but student are free to choose one of their own.
+                                </p>
+                            </div>
+                            <div class="details box col span-4  small-12 xsmall-6">
+                                <button id="round1">ROUND  3</button>
+                                <p>Final Round: Participants, on the basis of their abstract will be selected for presenting their ideas in the final round to be held at IIT Kanpur. In this round, students will present their abstracts in front of the panel of judges.
+                                </p>
+                            </div>
+		        		</div>
+					</div>
+                 
+        		</div>
+        		<div class="hat">
+					<div class="triangle triangle--lg"><div></div></div>
+					<div class="triangle triangle--sm"><div></div></div>
+				</div>
+        		<div data-bottom-top="transform:translateY(30%)" data-top-bottom="transform:translateY(-10%)" class="bit bit--left">
+        			<svg viewBox="0 0 1373 680"><polygon class="a" points="0 0 1373 391 276 680 0 632 0 0"/></svg>
+        		</div>
+        	</section>
+
+           
+            <section  id="selection">
+	        	<div class="wrap">
+	        		<h1 >Selection Procedure and timeline</h1>
+                               <div class="grid">
+		        			<div class="details box col span-5 medium-push-1 small-12 xsmall-6">
+	        		<section id="cd-timeline" class="cd-container">
+	                        <div class="cd-timeline-block">
+	                        	<div class="cd-timeline-img cd-picture">
+
+	                        	</div> 
+
+	                        	<div class="cd-timeline-content span-6">
+
+	                        		<p>ROUND 1<br>Registration Starts <span class="cd-date-m">1 July</span></p>
+
+	                        		<span class="cd-date">1st Week<br> July</span>
+	                        	</div> 
+	                        </div> 
+
+	                        <div class="cd-timeline-block">
+	                        	<div class="cd-timeline-img cd-movie">
+
+	                        	</div> 
+
+	                        	<div class="cd-timeline-content span-6">
+
+	                        		<p>ROUND 1 <span class="cd-date-m">9 Oct</span></p>
+
+	                        		<span class="cd-date">9 Oct</span>
+	                        	</div> 
+	                        </div> 
+
+	                        <div class="cd-timeline-block">
+	                        	<div class="cd-timeline-img cd-picture">
+
+	                        	</div> 
+
+	                        	<div class="cd-timeline-content span-6">
+
+	                        		<p>ROUND 1<br>Results <span class="cd-date-m">6 Nov</span></p>
+
+	                        		<span class="cd-date">1st Week<br> Nov</span>
+	                        	</div> 
+	                        </div> 
+
+	                        <div class="cd-timeline-block">
+	                        	<div class="cd-timeline-img cd-location">
+
+	                        	</div> 
+
+	                        	<div class="cd-timeline-content span-6">
+
+	                        		<p>ROUND 2<br>Abstract submission <span class="cd-date-m">27 Nov</span></p>
+
+	                        		<span class="cd-date">2nd Week <br> Nov</span>
+	                        	</div> 
+	                        </div> 
+
+	                        <div class="cd-timeline-block">
+	                        	<div class="cd-timeline-img cd-location">
+
+	                        	</div> 
+
+	                        	<div class="cd-timeline-content span-6">
+
+	                        		<p>ROUND 2<br>Results <span class="cd-date-m">8 Jan</span></p>
+
+	                        		<span class="cd-date">8 Jan</span>
+	                        	</div> 
+	                        </div> 
+
+	                        <div class="cd-timeline-block">
+	                        	<div class="cd-timeline-img cd-movie">
+
+	                        	</div> 
+
+	                        	<div class="cd-timeline-content span-6">
+
+	                        		<p>ROUND 3 <span class="cd-date-m">8 Jan</span></p>
+	                        		<span class="cd-date">8 Jan</span>
+	                        	</div> 
+	                        </div> 
+                                </section>
+                         </div>
+                          <div  class="details box col span-6  medium-push-1 small-12 xsmall-6">
+                                <button id="imp" class="green-color">IMPORTANT</button>
+								<ul>
+                                    <li>500 students from each pools will be selected for Round 2 on the basis of their score in Round 1. </li>
+                                    <li>Participants who have qualified Round 1 will be asked to submit an abstract of their solution of any problem pertaining to the physical and social environment of the neighbourhood.</li>
+                                    <li>Few examples problems will be provided by us on the TOSC website, but students are encouraged to come up with their own problem statement and its solution.</li>
+                                    <li>On the basis of abstract, 50 students from each pool will qualify for the final round to be held at IIT Kanpur. </li>
+                                    <li>Students will have to prepare a presentation based on the abstract submitted in Round 2.</li>
+                                    <li>Students will come to IIT Kanpur with their presentations prepared.</li>
+                                    <li>Presentations would be judged by a panel consisting of Professors.</li>
+                                    <li>Decision of judges will be final.</li>
+                                    <li>Questions in the Aptitude section are of different Weightage according to their level of difficulty, to avoid rank clashes.</li>
+                                    <li>All Questions are multiple choice types with negative marks for wrong answers as specified in question paper.</li>
+                                    <li>Students must carry their institute ID card or any other Identification proof and print out of TOSC ID card on the day of all the exams.</li>
+                                    <li>Plagiarism will not be entertained and will result in deregistration of student from TOSC.</li>
+
+                                </ul>
+                               
+		        			</div>
+		        		</div>
+					</div>
+        	
+        		<div class="hat">
+					<div class="triangle triangle--lg"><div></div></div>
+					<div class="triangle triangle--sm"><div></div></div>
+				</div>
+        		
+        	</section>
+
+            <section id="testimonials">
+	        	<div class="wrap">
+	        		<h1>Testimonials</h1>
+	        		
+	        		<div class="testimonials__content">
+		        		<div class="testimonials__odd grid">
+			        		<div class="col large-push-9 medium-push-9 span-3 small-push-8 small-4 xsmall-3">
+		        				<img class="fluid" src="img/arthav.png" alt="">
+                                <p style="position: absolute;top: 100%;left:10%">Rank-1 [POOL-A]</p>
+		        			</div>
+							<div class="col large-push-2 medium-push-2 span-4 small-pull-3 small-7 xsmall-3">
+								<div class="profile">
+									<h2 class="profile__title">ATHRAV CHOUKSE</h2>
+									<div class="profile__content">
+				        				<p>TOSC really cultivated creativity in  me and fertilised my mind to be more sharp and innovative .It helped me to take a scientific attitude towards everyday problems.Team techkriti also organized a campus trip for the students after the final round.I visited Dlight Laboratory,Library and other prominent places in the campus.I had a awesome experience and i enjoyed every bit of moment in IIT Kanpur</p>
+				        				
+			        				</div>
+			        				<div class="triangle"><div></div></div>
+		        				</div>
+		        			</div>
+		        		</div>
+		        		<div class="testimonials__even grid">
+			        		<div class="col span-3 small-4 xsmall-3">
+		        				<img class="fluid" src="img/kkv.png" alt="">
+                                <p style="position: absolute;top: 100%;">Rank-1 [POOL-B]</p>
+		        			</div>
+                            <div class="col span-4 small-7 xsmall-3">
+								<div class="profile">
+									<h2 class="profile__title">K K V Pranay</h2>
+									<div class="profile__content">
+				        				<p>TOSC gave me a an opportunity to think outside the box to solve one of the most common problem .'Dust' ,my project had the objective to reduce the road dust which is pretty common in India.TOSC is a great plateform for young students where we get a brea from the routine and think innovative .It also gives a student like me the confidence to speak and present our ides to solve</p>
+				        				
+			        				</div>
+			        				<div class="triangle"><div></div></div>
+		        				</div>
+		        			</div>
+		        		</div>
+		        		<div class="testimonials__odd grid">
+			        		<div class="col large-push-9 medium-push-9 span-3 small-push-8 small-4 xsmall-3">
+		        				<img class="fluid" src="img/subhankar.png" alt="">
+                                <p style="position: absolute;top: 110%;left:10%">Rank-2 [POOL-B]</p>
+		        			</div>
+							<div class="col large-push-2 medium-push-2 span-4 small-pull-3 small-7 xsmall-3">
+								<div class="profile">
+									<h2 class="profile__title">SHUBHANKAR LONDHE</h2>
+									<div class="profile__content">
+				        				<p>Techkriti, a place for novel ideas. Coming second in this competition was a different experience.Techkriti gives us youngsters an opportunity to explore parts of our mind which are generally not exercised.I think their focus is focus more on out of three box our ideas. This is a great idea to nurture young minds, for a better future.This is an amazing platform for those for crazy young minds who think differently. It gives then immense confidence, to keep working and contribute to the society in a constructive way
+                                        </p>
+				        				
+				        			</div>
+				        			<div class="triangle"><div></div></div>
+		        				</div>
+                                
+		        			</div>
+		        		</div>
+		        		<div class="testimonials__even grid">
+							
+                            <div class="col span-3 small-4 xsmall-3">
+		        				<img class="fluid" src="img/mansi.png" alt="">
+                                <p style="position: absolute;top: 86%;">Rank-3 [POOL-A]</p>
+		        			</div>
+                            <div class="col span-4 small-7 xsmall-3">
+								<div class="profile">
+									<h2 class="profile__title">MANSI VAZARKAR</h2>
+									<div class="profile__content">
+				        				<p>It was a great pleasure to become a part of Techkriti, at IIT-K 2016.I am thankful to the organization of TOSC for setting up an amazing platform,where i got an opportunity to present myself at a big level.TOSC was a good set up of competitions where my IQ,thinking and ideas got a good plateform and overwhelming response.I am greatful by the hospitality of students of IIT-K and the inspiration given by Director and IITians.</p>
+
+			        				</div>
+			        				<div class="triangle"><div></div></div>
+		        				</div>
+		        			</div>
+		        		</div>
+	        		</div>
+        		</div>
+        		<div class="hat">
+					<div class="triangle triangle--lg"><div></div></div>
+					<div class="triangle triangle--sm"><div></div></div>
+				</div>
+        		<div data-bottom-top="transform:translateY(30%)" data-top-bottom="transform:translateY(-10%)" class="bit bit--left">
+        			<svg viewBox="0 0 1373 680"><polygon class="a" points="0 0 1373 391 276 680 0 632 0 0"/></svg>
+        		</div>
+        	</section>
+            
+
+        
+            
+            <section class="faq" id="about">
+	        	<div class="wrap">
+	        		<h1>FREQUENTLY ASKED QUESTIONS</h1>
+	        		<div class="about__content">
+		        		<div class="grid">
+
+                          <ul class="faqs" style="margin-left:3%;margin-right:1%">
+                   <li class="ques">What is TOSC?</li>
+                    <li class="ans">Techkriti Open School Championship is an annual school aptitude examination for classes 9th to 12th, conducted and organized by Techkriti. It consists of 3 Rounds. Round 1 is a written exam, based on which 1000 students will be asked to submit (online) the abstract of the project in Round 2 and for the final Round we will invite 100 selected students at IIT Kanpur to give a presentation about their abstract and win lots of  amazing prizes</li>
+                   <li class="ques">What is Techkriti?</li>
+                   <li class="ans">Techkriti is the annual Technical and Entrepreneurial festival of IIT Kanpur to be held from 2nd - 5th March 2017. Techkriti is an annual international technological and entrepreneurial festival organized by the students of Indian Institute of Technology, Kanpur. Etymologically, the word 'Techkriti' is composed of two words, 'Tech' in English which stands for technology and 'Kriti' in Sanskrit stands for creation. Hence, the word 'Techkriti' signifies creation or innovation in technology.<br>
+                 Techkriti was first held in 1995, and has since grown into one of the largest technical festivals in Asia. The festival is held over four days every March, attracting participants from every corner of the country as well as from abroad, comprising a total footfall of over 25,000 from all over India and abroad.
+                 </li>
+                    <li class="ques">Where will the examination be held?</li>
+                       <li class="ans">Round 1 is to be held in all the cities mentioned on the Website under "Cities" tab. The students will be pre informed about the centre allotted to them. Round 2 is online submissions of abstract which the students can do anywhere. Round 3 is to be held at IIT Kanpur.</li>
+                    <li class="ques">What is the Syllabus of TOSC? </li>
+                       <li class="ans">TOSC is an exam filled with fascinating and intriguing questions that test your logical reasoning and genral awareness. If you think your analytical abilities are sharp and clear, then just sit for the exam with a pen and Fresh Mind!! 
+                      </li>
+                    <li class="ques">	What is the eligibility criteria? </li>
+                     
+                       <li class="ans">You must be studying in standard 9th-12th in the year 2015-16. Classes 9th and 10th comprise the pool A while classes 11th and 12th comprise the pool B. No pre-requisite knowledge is required for solving questions.</li>
+                    <li class="ques">What if two participants equal marks? </li>
+                     
+                       <li class="ans">There will be few starred marked question in the paper which will serve the basis for deciding ranks in case of tie. For e.g. candidate with more number of correct starred questions will be allotted higher rank. </li>
+                    <li class="ques">Even though my school is not tied up with TOSC, can I participate? </li>
+                     
+                       <li class="ans">Yes. Every student pursuing school (class 9th-12th) can enroll for TOSC. Exam centre allotted is also irrespective of School you are from. </li>
+                      <li class="ques">	How to pay the fee?   
+                     
+                       <li class="ans">A nominal participation fee is charged from each student. Details about the fee / mode of payment etc. are given in the Online Registration Form on the TOSC website.  </li>
+                      <li class="ques">What is abstract submission?</li>   
+                     
+                       <li class="ans">Students qualified for Round 2 will have to provide a solution, in the format described on the website, of any problem pertaining to the physical and social environment of the neighbourhood.
+                 Few examples problems will be provided by us on the TOSC website, but students are encouraged to come up with their own problem statement and its solution.
+                 </li>
+                 </ul>
+		        		</div>
+		             </div>
+				</div>
+        		<div class="hat">
+					<div class="triangle triangle--lg"><div></div></div>
+					<div class="triangle triangle--sm"><div></div></div>
+				</div>
+        		<div data-bottom-top="transform:translateY(30%)" data-top-bottom="transform:translateY(-10%)" class="bit bit--left">
+        			<svg viewBox="0 0 1373 680"><polygon class="a" points="0 0 1373 391 276 680 0 632 0 0"/></svg>
+        		</div>
+        	</section>
+
+        	<section id="gap">
+        		<div class="hat">
+					<div class="triangle triangle--lg"><div></div></div>
+					<div class="triangle triangle--sm"><div></div></div>
+				</div>
+        		<div data-bottom-top="transform:translateY(30%)" data-top-bottom="transform:translateY(-10%)" class="bit bit--right">
+        			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1373 680"><polygon class="a" points="1373 680 0 289 1097 0 1373 48 1373 680"/></svg>
+        		</div>
+        	</section>
+           
+
+        	<section id="cities" >
+	        	<div class="wrap">
+	        		<h1 class="box divider">Cities</h1>
+<!--
+	        		<ul>
+	        			<li>
+	        				<ul class="region region--wrap flow-center">
+		        				<li class="box block no-grow span-3 small-5 xsmall-2">
+        				        <h3>KANPUR</h3>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-2">
+	        					<h3>MUMBAI</h3>
+
+	        					</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-2">
+        						<h3>INDORE</h3>
+
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-2">
+        						<h3>UJJAIN</h3>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-2">
+        						<h3>KOTA</h3>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-2">
+        						<h3>LUCKNOW</h3>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-2">
+        						<h3>BENGALURU</h3>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-2">
+        						<h3>VARANASI</h3>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-2">
+        						<h3>JAIPUR</h3>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-2">
+        						<h3>PATNA</h3>
+		        				</li>
+                                <li class="box block no-grow span-3 small-5 xsmall-2">
+        						<h3>GWALIOR</h3>
+		        				</li>
+                                <li class="box block no-grow span-3 small-5 xsmall-2">
+        						<h3>DELHI</h3>
+		        				</li>
+	        				</ul>
+	        			</li>
+	        		</ul>
+-->
+                    <div class="grid" id="city-hover">
+                        <div class=" col span-3" >
+                        <li class="box block no-grow span-3 small-5 xsmall-6">
+        				        <h3>KANPUR</h3>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-6">
+	        					<h3>MUMBAI</h3>
+
+	        					</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-6">
+        						<h3>INDORE</h3>
+
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-6">
+        						<h3>UJJAIN</h3>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-6">
+        						<h3>KOTA</h3>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-6">
+        						<h3>LUCKNOW</h3>
+		        				</li>
+                                <li class="box block no-grow span-3 small-5 xsmall-6">
+        						<h3>SIKAR</h3>
+		        				</li>
+                        </div>
+                        <div id="city-imgs" class=" col span-6" style="top: 13px">
+                        <img  class="abcd" style="width: 100%;" src="img/KANPUR.jpg"/>
+                        </div>
+                        <div span="col span-3" style="float: right;">
+                                <li class="box block no-grow span-3 small-5 xsmall-6">
+        						<h3>BENGALURU</h3>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-6">
+        						<h3>VARANASI</h3>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-6">
+        						<h3>JAIPUR</h3>
+		        				</li>
+		        				<li class="box block no-grow span-3 small-5 xsmall-6">
+        						<h3>PATNA</h3>
+		        				</li>
+                                <li class="box block no-grow span-3 small-5 xsmall-6">
+        						<h3>GWALIOR</h3>
+		        				</li>
+                                <li class="box block no-grow span-3 small-5 xsmall-6">
+                                    <h3>DELHI</h3>
+                                </li>
+                               <li class="box block no-grow span-3 small-5 xsmall-6">
+                                    <h3>KOLKATA</h3>
+                                </li>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+        		<div class="hat">
+					<div class="triangle triangle--lg"><div></div></div>
+					<div class="triangle triangle--sm"><div></div></div>
+				</div>
+        		<div data-bottom-top="transform:translateY(30%)" data-top-bottom="transform:translateY(-10%)" class="bit bit--left">
+        			<svg viewBox="0 0 1373 680"><polygon class="a" points="0 0 1373 391 276 680 0 632 0 0"/></svg>
+        		</div>
+                    
+        	</section>
+
+        	<section id="gallary">
+	        	<div class="wrap">
+	        		<div class="grid">
+	        			<div class="col span-6 large-push-3 medium-push-3 small-push-2 small-8 xsmall-6">
+	        				<h2>GALLERY</h2>
+	        				<p>
+		        				<a id="insta-btn" href="https://www.instagram.com/techkriti.iitk/" target="_blank" class="button">
+		        					<span>Visit Instagram Page</span>
+	        					</a>
+	        				</p>
+	        			</div>
+	        		</div>
+        		</div>
+        		<div class="hat">
+					<div class="triangle triangle--lg"><div></div></div>
+					<div class="triangle triangle--sm"><div></div></div>
+				</div>
+        		<div data-bottom-top="transform:translateY(30%)" data-top-bottom="transform:translateY(-10%)" class="bit bit--right">
+        			<svg viewBox="0 0 1373 680"><polygon class="a" points="1373 680 0 289 1097 0 1373 48 1373 680"/></svg>
+        		</div>
+        	</section>
+        
+        <section class="contact" id="cities">
+	        	<div class="wrap">
+	        				<h2 class="box divider">CONTACT US</h2>
+	        				<ul class="region region--wrap flow-center">
+	        					<li class="box block no-grow span-4 small-4 xsmall-6">
+                                     <img src="img/adi.jpg">
+        							<h3>Aditya Srivastava</h3>
+        							<p class='real'>
+										aditya@techkriti.org<br>
+										+91-9450691510<br>
+									</p>
+		        				</li>
+		        				<li class="box block no-grow span-4 small-4 xsmall-6">
+                                     <img src="img/utkarsh.jpg">
+        							<h3>Utkarsh Shukla</h3>
+        							<p class='real'>
+										utshukla@techkriti.org<br>
+										+91-7839099087<br>
+									</p>
+		        				</li>
+		        				<li class="box block no-grow span-4 small-4 xsmall-6">
+                                     <img src="img/pujari.jpg">
+        							<h3>Pujari Sudheer</h3>
+        							<p class='real'>
+										dheeru@techkriti.org<br>
+										+91-7753058433<br>
+									</p>
+		        				</li>
+		        		
+	        				</ul>
+        		</div>
+        		<div class="hat">
+					<div class="triangle triangle--lg"><div></div></div>
+					<div class="triangle triangle--sm"><div></div></div>
+				</div>
+        		<div data-bottom-top="transform:translateY(30%)" data-top-bottom="transform:translateY(-10%)" class="bit bit--left">
+        			<svg viewBox="0 0 1373 680"><polygon class="a" points="0 0 1373 391 276 680 0 632 0 0"/></svg>
+        		</div>
+        	</section>
+
+        </main>
+
+
+    	<footer id="footer" class="social bottom">
+	    	
+    	</footer>
+
+        <script src="js/scriptt.js"></script>
+
+    </body>
+
+</html>

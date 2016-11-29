@@ -12,45 +12,56 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--Custom Stylesheet-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
   </head>
   <body>
     <div class="container">
       <center>
-        <div class="row" id="my-nav">
-          <a href="../index.html">
-            <div class="col m2 s4 center-align nav-pad nav-hover nav-font waves-effect waves-light">
+        <div class="navigate hide-on-med-and-up">
+      <div onclick="navi()">
+      <i class="material-icons"  id="nav-icon">&#xE5D2;</i>
+      </div>
+      <center>
+        <div id="mob-nav">
+          <div class="mob-hover col s12">
+            <ul id="mob-nav-items">
+              <a class="active" href="/">
               Home
-            </div>
           </a>
-          <a href="../competitions/index.html">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font waves-effect waves-light">
+          <a href="/competitions">
               Competitions
-            </div>
           </a>
-          <a href="https://techkriti.org/zonals">
-            <div class="col m2 s4 center-align nav-pad nav-hover nav-font waves-effect waves-light">
+          <a href="http://www.techkriti.org/zonals/">
               Technocruise
-            </div>
           </a>
-          <a href="https://techkriti.org/tosc">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font waves-effect waves-light">
+          <a href="http://www.techkriti.org/tosc">
               TOSC
-            </div>
           </a>
-          <a href="../About.html">
-            <div class="col m2 s4 s4 center-align nav-pad nav-hover nav-font waves-effect waves-light">
-              Gallery
-            </div>
+          <a href="/about">
+              About
           </a>
-          <a href="#">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font waves-effect waves-light">
+          <a href="/contact">
               Contact Us
-            </div>
           </a>
+            </ul>
+          </div>
         </div>
+      </div>
+        <div class="social">
+        <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
+        <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+        <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+        <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+        <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713">
+            <i class="fa fa-linkedin"></i>
+        </a>
+    </div>
         <div class="row">
           <div class="col m10 s12">
             <div class="event-desc-holder">

@@ -12,170 +12,492 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--Custom Stylesheet-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="jquery-1.12.2.min.js"></script>
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://bootswatch.com/cosmo/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
     <script src="loader.js"></script>
+          <script src="js/index.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+	$("#loading").delay(500).fadeOut(000);
+    }); 
+    </script>
+<style>
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
   </head>
   <body>
-    <div class="container">
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">x</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+  <div id="loading">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div class="object" id="object_one"></div>
+<div class="object" id="object_two"></div>
+<div class="object" id="object_three"></div>
+<div class="object" id="object_four"></div>
+<div class="object" id="object_big"></div>
+</div>
+</div>
+ 
+</div>
+    <div class="navigate hide-on-med-and-up">
+      
+      <!--Back button-->
+      <div>
+        <a href="/"><i class="material-icons" id="back-icon">arrow_back</i></a>
+      </div>
+
+
+      <div onclick="navi()">
+      <i class="material-icons"  id="nav-icon">&#xE5D2;</i>
+      </div>
       <center>
-        <div class="row" id="my-nav">
-          <a href="/">
-            <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
+        <div id="mob-nav">
+          <div class="mob-hover col s12">
+            <ul id="mob-nav-items">
+              <a class="active" href="/">
               Home
-            </div>
+          </a>
+<a href="/about">
+              About
           </a>
           <a href="/competitions">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
               Competitions
-            </div>
           </a>
-          <a href="/technocruise">
-            <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
+          <a target='_blank' href="http://www.techkriti.org/zonals/">
               Technocruise
-            </div>
           </a>
-          <a href="/tosc">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
+          <a target='_blank' href="http://www.techkriti.org/tosc">
               TOSC
-            </div>
           </a>
-          <a href="/about">
-            <div class="col m2 s4 s4 center-align nav-pad nav-hover nav-font">
-              Gallery
-            </div>
+          
+<a target='_blank' href="http://2016.techkriti.org/sponsors">
+              Sponsors
           </a>
           <a href="/contact">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
               Contact Us
-            </div>
           </a>
+            </ul>
+          </div>
         </div>
       </div>
-      <div>
-        <div class="row">
-          <div class="col offset-m2 m6 s12 event-desc-box">
-            <div class="event-desc-holder">
-              <div id="event-name">
-                Event Name
-              </div>
-              <div id="event-desc">
-                <div class="body-wrapper">
-                  <p style='text-align:center;'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante neque, placerat ac eleifend eget, feugiat hendrerit augue. Quisque congue velit consectetur risus porttitor, pharetra mollis diam iaculis. Aenean interdum congue lacus a dignissim. Donec sit amet porttitor eros. 
-                    Ut massa sapien, rhoncus sit amet orci in, tincidunt venenatis leo. 
-                    Nullam dolor lacus, consectetur sit amet 
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-                    V LLLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante neque, placerat ac eleifend eget, feugiat hendrerit augue. Quisque congue velit consectetur risus porttitor, pharetra mollis diam iaculis. Aenean interdum congue lacus a dignissim. Donec sit amet porttitor eros. 
-                    Ut massa sapien, rhoncus sit amet orci in, tincidunt venenatis leo. 
-                    Nullam dolor lacus, consectetur sit amet 
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-                    Various versions have evolved over the years, soLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante neque, placerat ac eleifend eget, feugiat hendrerit augue. Quisque congue velit consectetur risus porttitor, pharetra mollis diam iaculis. Aenean interdum congue lacus a dignissim. Donec sit amet porttitor eros. 
-                    Ut massa sapien, rhoncus sit amet orci in, tincidunt venenatis leo. 
-                    Nullam dolor lacus, consectetur sit amet 
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-                    Various versions have evolved over the years, soLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante neque, placerat ac eleifend eget, feugiat hendrerit augue. Quisque congue velit consectetur risus porttitor, pharetra mollis diam iaculis. Aenean interdum congue lacus a dignissim. Donec sit amet porttitor eros. 
-                    Ut massa sapien, rhoncus sit amet orci in, tincidunt venenatis leo. 
-                    Nullam dolor lacus, consectetur sit amet 
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-                    Various versions have evolved over the years, soLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante neque, placerat ac eleifend eget, feugiat hendrerit augue. Quisque congue velit consectetur risus porttitor, pharetra mollis diam iaculis. Aenean interdum congue lacus a dignissim. Donec sit amet porttitor eros. 
-                    Ut massa sapien, rhoncus sit amet orci in, tincidunt venenatis leo. 
-                    Nullam dolor lacus, consectetur sit amet 
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-                    Varorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante neque, placerat ac eleifend eget, feugiat hendrerit augue. Quisque congue velit consectetur risus porttitor, pharetra mollis diam iaculis. Aenean interdum congue lacus a dignissim. Donec sit amet porttitor eros. 
-                    Ut massa sapien, rhoncus sit amet orci in, tincidunt venenatis leo. 
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-                    Varorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante neque, placerat ac eleifend eget, feugiat hendrerit augue. Quisque congue velit consectetur risus porttitor, pharetra mollis diam iaculis. Aenean interdum congue lacus a dignissim. Donec sit amet porttitor eros. 
-                    Ut massa sapien, rhoncus sit amet orci in, tincidunt venenatis leo. 
-                    Nullam dolor lacus, consectetur sit amet 
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-                    Various versions have evolved over the years, soLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante neque, placerat ac eleifend eget, feugiat hendrerit augue. Quisque congue velit consectetur risus porttitor, pharetra mollis diam iaculis. Aenean interdum congue lacus a dignissim. Donec sit amet porttitor eros. 
-                    Ut massa sapien, rhoncus sit amet orci in, tincidunt venenatis leo. 
-                    Nullam dolor lacus, consectetur sit amet 
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-                    Various versions have evolved over the years, soLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante neque, placerat ac eleifend eget, feugiat hendrerit augue. Quisque congue velit consectetur risus porttitor, pharetra mollis diam iaculis. Aenean interdum congue lacus a dignissim. Donec sit amet porttitor eros. 
-                    Ut massa sapien, rhoncus sit amet orci in, tincidunt venenatis leo. 
-                    Nullam dolor lacus, consectetur sit amet 
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-                    Various versions have evolved over the years, soLorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ante neque, placerat ac eleifend eget, feugiat hendrerit augue. Quisque congue velit consectetur risus porttitor, pharetra mollis diam iaculis. Aenean interdum congue lacus a dignissim. Donec sit amet porttitor eros. 
-                    Ut massa sapien, rhoncus sit amet orci in, tincidunt venenatis leo. 
-                    Nullam dolor lacus, consectetur sit amet 
-                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                    The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-                    Various versions have evolved over the years, soarious versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col m2 event-attr-box">
-            <div class="event-attr-holder">
-              <ul id='list' class="center-align event-nav event-nav-font">
-                <li>Prop 1</li>
-                <li>Prop 1</li>
-                <li>Prop 1</li>
-                <li>Prop 1</li>
-                <li>Prop 1</li>
-                <li>Prop 1</li>
-                <li>Prop 1</li>
-              </ul>
-            </div>
-          </div>
+
+     <div class="container">
+      <center>
+        <center>
+    <div class="row hide-on-small-only" id="my-nav">
+         <nav class="cl-effect-4" style=" background-color: rgba(29, 28, 28,0.5);">
+          <a href="/">
+              Home
+          </a>
+<a href="/about">
+              About
+          </a>
+          <a class="active" href="/competitions">
+              Competitions
+          </a>
+          <a target='_blank' href="http://www.techkriti.org/zonals/">
+              Technocruise
+          </a>
+          <a target='_blank' href="http://www.techkriti.org/tosc">
+              TOSC
+          </a>
+        
+<a target='_blank' href="http://2016.techkriti.org/sponsors">
+              Sponsors
+          </a>
+          <a href="/contact">
+              Contact Us
+          </a>
+          </nav>
         </div>
+        </center>
+
+        <div class="social hide-on-small-only">
+        <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
+        <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+        <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+        <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+        <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713">
+            <i class="fa fa-linkedin"></i>
+        </a>
+    </div>
+      </div>
+      <div>
+         <div class="container">
+  <div class="row">
+<div class="col-md-5 col-xs-10 col-xs-offset-2 col-md-offset-5 col-sm-5">
+<span  id ='name'>
+Name
+</span>
+</div>
+    <div class="col-md-12 col-sm-5">
+      <div class="tabs-left">
+        <ul id="list" class="nav nav-tabs">
+        </ul>
+        <div id="event-desc" class="tab-content">
+          <div class="tab-pane active" id="f"></div>
+        </div><!-- /tab-content -->
+      </div><!-- /tabbable -->
+    </div><!-- /col -->
+  </div><!-- /row -->
+</div><!-- /container -->
       </div>
     </center>
   </div>
   <div id="event-links">
-    <ul>
-      <li>Event 1</li>
-      <li>Event 1</li>
-      <li>Event 1</li>
-      <li>Event 1</li>
-      <li>Event 1</li>
+    <ul id='list1'>
+      
     </ul>
   </div>
 </div>
-<div class="more-events">
-  More Events &darr;
-</div>
+
+   
+      <ul id="slide-out" class="side-nav" >
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Technical</a>
+            <div class="collapsible-body">
+              <ul>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">Techkriti Grand Prix </a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                              <li><a href="/event_in/#Techkriti Grand Prix">Techkriti Grand Prix</a></li>                     
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">Design Events</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                             <li><a href="/event_in/#Bridge Design Challenge">Bridge Design Challenge</a></li>
+                            <li><a href="/event_in/#Scientoon">Scientoon</a></li>
+                            <li><a href="/event_in/#Concatenate">Concatenate</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">ECDC</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                            <li><a href="/event_in/#Electromania">Electromania</a></li>
+                            <li><a href="/event_in/#Embedded">Embedded</a></li>
+                          <li><a href="/event_in/#Electrade">Electrade</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">Robogames</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                            <li><a href="/event_in/#IARC">IARC</a></li>
+                            <li><a href="/event_in/#Manoeuvre">Manoeuvre</a></li>
+                            <li><a href="/event_in/#IRGT">IRGT</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">Software Corner</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                            <li><a href="/event_in/#Chaos">Chaos</a></li>
+                            <li><a href="/event_in/#IOPC">IOPC</a></li>
+                            <li><a href="/event_in/#Crypto">Crypto</a></li>
+                            <li><a href="/event_in/#"></a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">Take Off</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                            <li><a href="/event_in/#Hoverush">Hover Rugby</a></li>
+                            <li><a href="/event_in/#Multirotor">Multirotor</a></li>
+                            <li><a href="/event_in/#Rule The Sky">Rule The Sky</a></li>
+                            <li><a href="/event_in/#Sky Sparks">Sky Sparks</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header"> Mixed Bowl</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                            <li><a href="/event_in/#IORC">IORC</a></li>
+                            <li><a href="/event_in/#WhatsUp">WhatsUp</a></li>
+                            <li><a href="/event_in/#AstroQuiz">AstroQuiz</a></li>
+                            <li><a href="/event_in/#Astro Treasure">Astro Treasure</a></li>
+                            <li><a href="/event_in/#Nutcracker">Nutcracker</a></li>
+                            <li><a href="/event_in/#CrimeRun">CrimeRun</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">IMP</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                              <li><a href="/event_in/#IMP">IMP</a></li>
+
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Social</a>
+            <div class="collapsible-body">
+              <ul>
+                  <li class="no-padding">
+                    <ul class="collapsible link_nav collapsible-accordion">
+                      <li><a href="https://2017.techkriti.org/event_in/#Soccon">Soccon</a></li>                 
+                  <li><a href="/event_in/#29 States">29 States</a></li>                 
+                  <li><a href="/event_in/#Techkriti Innovation Challenge">Techkriti Innovation Challenge</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Entrepreneurial</a>
+            <div class="collapsible-body">
+              <ul>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">Business</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                              <li><a href="/event_in/#Battlefield">Battlefield</a></li>
+                  <li><a href="/event_in/#Marketing Villa">Marketing Villa</a></li>
+                  <li><a href="/event_in/#auction war">Auction War</a></li>
+                  <li><a href="/event_in/#Countdown (Online)">Countdown(Online)</a></li>
+                  <li><a href="/event_in/#Best Manager">Best Manager</a></li>                     
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">Entrepreneurial Events </a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                             <li><a href="/event_in/#Business Venture">Business Venture</a></li>
+                  <li><a href="/event_in/#Social Track">Social Track</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">International</a>
+            <div class="collapsible-body">
+              <ul>
+                  <li class="no-padding">
+                    <ul class="collapsible link_nav collapsible-accordion">
+                      <li><a href="/event_in/#IARC">IARC</a></li>
+                  <li><a href="/event_in/#Multirotor">Multirotor</a></li>
+                  <li><a href="/event_in/#IORC">IORC</a></li>
+                  <li><a href="/event_in/#IOPC">IOPC</a></li>
+                  <li><a href="/event_in/#Techkriti Grand Prix">Techkriti Grand Prix</a></li>
+                  <li><a href="/event_in/#Techkriti Innovation Challenge">Techkriti Innovation Challenge</a></li>
+                  <li><a href="/event_in/#IRGT">IRGT</a></li>
+                  <li><a href="/event_in/#Sky Sparks">Sky Sparks</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+<!--   <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+ -->      
+  <a href="#" data-activates="slide-out" class=" more-events button-collapse"><p>More Events &darr;</p></a>
+
+
+
+
+
+<!-- <div class=" more-events">
+  <p>More Events &darr;</p>
+</div> -->
+<div class="row social-mobile hide-on-med-and-up">
+    <div class="col s2 offset-s1">
+      <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </div>
+
+<script>
+    var nav = document.getElementById('mob-nav');
+    nav.style.display = "none";
+    var flag = 0;
+    function navi() {
+      if(flag == 0) {
+     document.getElementById('mob-nav').style.display = "block";
+    flag = 1;
+  }
+  else {
+     document.getElementById('mob-nav').style.display = "none";
+    flag = 0;
+  }
+}
+  </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 <script src="jquery.mousewheel.min.js"></script>
-<script>
-  $(document).mousewheel(function(event) {
-    var subtraction = $(document).height() - $(window).height() - $(document).scrollTop();
-    subtraction = subtraction>0 ? subtraction : -subtraction;
-    if (event.deltaY < 0 && subtraction<=5) {
-      $("#event-links").slideDown("slow", function() {});
-      $(".more-events").css("opacity", "0");
-    } else if (event.deltaY > 0) {
-      $("#event-links").slideUp("slow", function() {});
-      $(".more-events").css("opacity", "1");
+
+<script type="text/javascript">
+
+  // Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //$('.collapsible').collapsible();
+        
+  $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 240
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true // Choose whether you can drag to open on touch screens
     }
-  });
+  );
+       
+       
+  // Show sideNav
+  $('.button-collapse').sideNav('show');
+  // Hide sideNav
+  $('.button-collapse').sideNav('hide');
+  // Destroy sideNav
+  $('.button-collapse').sideNav('destroy');
 
-$(document).ready(function() {
-  $(".more-events").click(function() {
-    console.log("Hi");
-    $("#event-links").slideDown("slow", function() {})
-    $(".more-events").css("opacity", "0");
-  });
+    </script>
+      <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+      <script>
+  $(document).ready(function() {
+   $('#slide-out').css('opacity','0');
+   $('#sidenav-overlay').css('opacity','0');
+   $('.more-events').on('click',function(){
+   $('#slide-out').css('opacity','1');
+      $('#sidenav-overlay').css('opacity','1');
+   });
 });
-</script>
 
+</script>
 </body>
 </html>
-
-

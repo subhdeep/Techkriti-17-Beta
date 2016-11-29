@@ -1,3 +1,11 @@
+.dep i{
+  padding: 0px 3px!important;
+}
+
+.info-back a{
+  color: white!important;
+}
+
 .ih-item {
   position: relative;
   -webkit-transition: all 0.35s ease-in-out;
@@ -130,20 +138,19 @@
 }
 .ih-item.circle.effect1 .info p {
   color: #bbb;
-  padding: 10px 5px;
+  padding: 140px 0px;
   font-style: italic;
   margin: 0 30px;
   font-size: 12px;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
-.ih-item.circle.effect1 a:hover .spinner {
+.ih-item.circle.effect1:hover .spinner {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-.ih-item.circle.effect1 a:hover .info {
+.ih-item.circle.effect1:hover .info {
   opacity: 1;
 }
 

@@ -1,3 +1,5 @@
+
+
 html {
   height: 100vh;
 }
@@ -10,13 +12,35 @@ body {
   background-position: center center;
   background-color: #000000;
   color: white;
+      font-family: roboto !important;
   width: 100%;
   height: 100%;
 }
 
+
+.social-mobile {
+    position: fixed;
+    bottom: 15px;
+    width: 100%;
+    }
+    .social-mobile a {
+        position: relative;
+        float: right;
+        height: 50px;
+        line-height: 50px;
+        width: 50px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(196, 26, 30);
+        font-size: 16px;
+        text-align: center;
+        border-radius: 50%;
+        transition: all 300ms ease;
+    }
+
+
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 #my-nav {
@@ -24,8 +48,8 @@ a {
 }
 
 .nav-font {
-  font-family: 'Raleway', sans-serif;
-  /*TODO Add Media Query for container 100% for small width*/
+/*  font-family: 'Raleway', sans-serif;
+*/  /*TODO Add Media Query for container 100% for small width*/
   font-size: 1.5vmax;
 }
 
@@ -38,38 +62,90 @@ a {
 }
 
 .event-font {
-  font-family: 'Raleway', sans-serif;
-  /*TODO Add Media Query for container 100% for small width*/
-  font-size: 1.5vmax;
+/*  font-family: 'Raleway', sans-serif;
+*/  /*TODO Add Media Query for container 100% for small width*/
+  font-size: 1.2vmax;
+overflow:hidden;
 }
 
 .event-list-font {
-  font-family: 'Raleway', sans-serif;
-  /*TODO Add Media Query for container 100% for small width*/
-  font-size: 1.2vmax;
-}
+/font-size: 1.2vmax;
+    min-height: 360px;
+    background-color: rgba(255, 255, 255, 0.7);}
 
 #event-container {
-  margin-top: 3vmax;
-  height: 18vmax;
+  margin-top: 2vmax;
+  height: 17vmax;
   overflow-y: hidden;
 }
 
 #event-container2 {
-  margin-top: 4vmax;
-  height: 18vmax;
+  margin-top: 1vmax;
+  height: 17vmax;
   overflow-y: hidden;
 }
 
 .event-box {
-  padding: 1vmax !important;
+  padding: 0vmax 1vmax !important;
   height:100%;
 }
 
 .event-border {
-  border: .25vmax solid white;
-  height: 100%;
-  padding-top: 1vmax;
+  border: .15vmax solid white;
+  height: 94%;
+}
+
+.tgp{
+   background-image: url(c/tgp.png);       background-size: contain;background-repeat:no-repeat;background-color: white;
+
+}
+
+
+.bg-wrapper {
+height:100%;
+width: 100%;
+background-color: rgba(0,0,0,0.4);
+}
+
+.design{
+      background-position-y: 73%;background-image: url(c/design.png);    background-size: contain;background-repeat:no-repeat;    background-color: white;
+
+}
+.ecdc{
+      background-position-y: 73%;background-image: url(c/ecdc.png);    background-size: contain;background-repeat:no-repeat;    background-color: white;
+
+}
+.robogames{
+      background-position-y: 73%;background-image: url(c/robogames.png);    background-size:100% 86%;background-repeat:no-repeat;background-position-y:23%;    background-color: white;
+
+}
+.app{
+      background-position-y: 73%;background-image: url(c/app.png);    background-size: contain;background-repeat:no-repeat;    background-color: white;
+
+}
+.takeoff{
+      background-position-y: 73%;background-image: url(c/takeoff.jpg);    background-size: contain;background-repeat:no-repeat;   background-color: white;
+
+}
+.mixed{
+      background-position-y: 73%;background-image: url(c/mixed.png);    background-size: contain;background-repeat:no-repeat;    background-color: white;
+
+}
+.imp{
+     background-position-y: 73%; background-image: url(c/imp.png);    background-size: contain;background-repeat:no-repeat;    background-color: white;
+
+}
+.business{
+      background-image: url(c/business.png);    background-size: contain;background-repeat:no-repeat;    background-color: white;
+
+}
+.ltoo{
+      background-image: url(c/ltoo.png);    background-size:contain;background-repeat:no-repeat;    background-color: white;
+
+}
+.pres{
+      background-image: url(c/pres.png);    background-size: contain;background-repeat:no-repeat;    background-color: white;
+
 }
 
 .event-border .valign {
@@ -79,8 +155,7 @@ a {
 
 .heading {
   position: relative;
-  background-color: rgba(255, 0, 0, .3);
-  transform: translateY(4vmax);
+       background-color: rgba(255, 0, 0, 0.65);  transform: translateY(4vmax);
   transition-property: transform;
   transition-duration: .45s;
   transition-timing-function: cubic-bezier(0, .48, .23, 1.52);
@@ -125,7 +200,7 @@ a {
 }
 .event-4 {
   position: relative;
-  margin-top: 3vmax; 
+  margin-top: 1vmax; 
 }
 .event-5 {
   position: relative;
@@ -157,3 +232,38 @@ a {
   transform: translateY(0vmax);
 }
 
+
+
+@media only screen and (max-width: 768px) {
+  #event-container {
+    overflow-y: inherit !important; 
+  }
+  #event-container {
+    margin-top: 8vmax !important;
+   }
+   .ex {
+    opacity: 1 !important;
+    transform: translateY(0vmax) !important;  
+   }
+   .heading {
+    transform: translateY(0vmax) !important;
+   }
+   #event-container2 {
+    overflow-y: inherit !important;
+        margin-top: 0vmax !important;
+   }
+   .row{
+    margin-bottom: 0px
+   }
+   body{
+    overflow: hidden;
+   }
+   .ex3 {
+    opacity: 1 !important;
+    transform: translateY(0vmax) !important;
+   }
+   .ex2 {
+    opacity: 1 !important;
+    transform: translateY(0vmax) !important;
+    }
+} 

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apply for Ambassadors | Techkriti 17</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/d/dd/Techkriti_blue.png ">
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  <script src="jquery-1.12.2.min.js"></script>
+        <script src="a.js"></script>
+    
+</head>
+<body>
+	<div class="ambnav">
+		<div><a href="#"><img style="height:200px;" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Techkriti_blue.png"></a></div>
+		<a href="#">CAMPUS AMBASSADOR</a>
+	</div>
+<div class="tile-y">
+		<form class="tile-w">
+			<label>
+				<legend>Full Name <span>*</span></legend>
+				<input  required type="text" name="name" id="name" placeholder="eg. Rahul Bhardwaj">
+			</label>
+			<label>
+				<legend>College City <span>*</span></legend>
+				<input required name="CCity" id="CCity" placeholder="eg. Kanpur"/>
+			</label>
+            <label>
+				<legend>College Name <span>*</span></legend>
+				<input  required name="CName" id="CName" placeholder="eg. IITK"></input>
+			</label>
+			<label>
+				<legend>College Strength <span>*</span></legend>
+                                				<small>Total No. of Students</small>
+				<input required name="CLocation" id="CLocation" placeholder="eg. 6000" />
+			</label>
+            <label>
+				<legend>College Address <span>*</span></legend>
+				<textarea required name="CAddress" id="CAddress"></textarea>
+			</label>
+            <label>
+				<legend>Pincode<span>*</span></legend>
+				<input type="text" required name="Pincode" id="Pincode" placeholder="eg. 208016"/>
+			</label>
+            <label>
+				<legend>Current Address <span>*</span></legend>
+				<textarea required name="CuAddress" id="CuAddress"></textarea>
+			</label>
+            <label>
+				<legend>Pincode<span>*</span></legend>
+				<input type="text" required name="CuPincode" id="CuPincode" placeholder="eg. 208016" />
+			</label>
+<!--
+			<label>
+				<legend>Address of location where you want to receive your certificate of appreciation <span>*</span></legend>
+				<textarea required name="amba"></textarea>
+			</label>
+-->
+			<label>
+				<legend>Mobile Number <span>*</span></legend>
+				<input required type="text" name="mobile" id="mobile" pattern="[0-9]{10}" placeholder="eg. 7755048107">
+			</label>
+            <label>
+				<legend>Whatsapp Number <span></span></legend>
+				<input required type="text" name="whatsapp" id="whatsapp" pattern="[0-9]{10}" placeholder="eg. 7755048107">
+			</label>
+			<label>
+				<legend>Email Address <span>*</span></legend>
+				<input required type="email" name="email" id="email" placeholder="eg. ankitsgh@iitk.ac.in">
+			</label>
+	
+            <label>
+				<legend>Contact details-Institute Director <span></span></legend>
+                                				<small>Name and Contact details</small>
+				<input required type="text" name="director" id="director" >
+			</label>
+            <label>
+				<legend>Contact details-President/Highest Student Authority,Student Body <span>*</span></legend>
+                                				<small>Name and Contact details</small>
+				<input required type="text" name="president" id="president" >
+			</label>
+			<label>
+                <legend>Primary motive to apply for this post<span>*</span></legend>
+				<textarea name="motive" id="motive"></textarea>
+			</label>
+            <label>
+				<legend>Relevant past experience<span>*</span></legend>
+				<textarea name="relevent" id="relevent"></textarea>
+			</label>
+            <label>
+				<legend>Skills <span>*</span></legend>
+				<label class=" control radio">Video editing<input type="checkbox" name="video" value="Yes" id="video">
+                <div class="control__indicator"></div></label>
+				<label class=" control radio">Content Writing<input type="checkbox" name="content" value="Yes" id="content">
+                <div class="control__indicator"></div></label><label class=" control radio">Poster Design<input type="checkbox" name="poster" value="Yes" id="poster">
+                <div class="control__indicator"></div></label><label class=" control radio">Marketing<input type="checkbox" name="marketing" value="Yes" id="marketing">
+                <div class="control__indicator"></div></label><label class=" control radio">Publicity<input type="checkbox" name="publicity" value="Yes" id="publicity">
+                <div class="control__indicator"></div></label><label >Other<input style="width:25%;height:100%;margin-left:8px;" type="text" name="other" id="other">
+                </label>
+			</label>
+<!--
+			<label>
+				<legend>Snt(Science and Technology Council)/College President/Senator contact details</legend>
+				<small>Name and Contact details</small>
+				<textarea name="sntcontact"></textarea>
+			</label>
+-->
+<!--
+			<label>
+				<legend>Three Innovative Ideas for Publicizing "Techkriti 17" in your campus.</legend>
+				<small>Please be practical and assume marketing through social networks as obvious</small>
+				<textarea name="publicize"></textarea>
+			</label>
+-->
+			
+			<label>
+				<legend>State ( in not more than 4 steps )your approach in Organizing an event (choose any robotics event as an example) <span>*</span></legend>
+				<textarea name="appro" id="appro" required></textarea>
+			</label>
+            <label>
+				<legend>Will you be able to organize workshop (getting permission, a lecture hall, projector etc.) in your institute  if Techkriti 17 team takes care of the trainer and other requirements? <span>*</span></legend>
+				<label class=" control radio">Yes<input type="radio" name="ans" id="ans" value="Yes">
+                <div class="control__indicator"></div></label>
+				<label class=" control radio">No<input type="radio" name="ans" id="ans1" value="Yes">
+                <div class="control__indicator"></div></label>
+               
+			</label>
+                <br><br>
+                <label>
+                    <input style="width:4%;float:left;margin-top:9px" type="checkbox" id="check" ></label><p style="display:inline-block;">I agree all the</p> <a id="cond">terms and conditions</a>
+               
+                <br>
+<!--                 <button id="cond">Open Modal</button>-->
+
+                <div id="myModal0" class="modal">
+                
+                  <!-- Modal content -->
+                  <div class="modal-content">
+
+                      <h1 style="text-align:center;width:100%">TERMS AND CONDITIONS</h1>
+                    <p>&#11031;   Incentives will be awarded only after successful completion of the responsibilities of Campus Ambassador Programme.</p>
+          <p >&#11031;   Techkriti'17 will send all the publicity materials to the Campus Ambassadors, but is not responsible for any extra cost incurred by the Campus Ambassador.</p>
+	       <p >&#11031;   Campus ambassadors of a particular college can be more than one depending on the strength of the students.</p>
+          <p >&#11031;   All issues are to be taken up with the organizing team of Teckkriti'17 and not with the management of IIT Kanpur.</p>
+          <p >&#11031;   Any violation of rules shall lead to impeachment from the post.</p>
+                    <div class="close" id="close">X</div>
+                  </div>
+                
+                </div>
+
+
+			<div id="register">Submit</div>
+                     <span id="error" style="margin-top: 3%;"></span>
+		</form>
+	</div>
+	<style type="text/css">
+	*,*:after,*:before{
+		box-sizing:border-box;
+		/*font-family:roboto,sans-serif;*/
+		/*color: #777;*/
+	}
+	body{
+font-family:'Raleway';
+     color:rgb(28, 122, 155);
+        background-color:#fff;
+    background-size: 100% auto;
+	}
+        .ambnav{
+            color: rgb(101,101,101);font-size: 18px;padding: 10px;text-align:center
+        }    
+	form{
+		padding: 30px 50px;
+		border:solid 1px rgb(216,216,216);
+		box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+		border-radius: 3px;
+		margin: 0 10px 20px 10px;
+		background: #fff;
+	}
+	small{
+		color: #777;
+		font-size: 12px;
+	}
+.ambnav a{
+    font-size: 2em;
+    font-weight: bold;
+    color: darkcyan;
+        }    
+	a{
+		text-decoration:none;
+	}
+	.tile-y{
+		position: relative;
+		text-align: center;
+	}
+	.tile-w{
+		display: inline-block;
+		max-width:700px;
+		min-width:600px;
+		text-align: left;
+	}
+	label{
+		display: block;
+		margin-bottom: 10px;
+		/*font-weight: bold;*/
+		margin-top: 5px;
+	}
+	label.radio{
+		color: #777;
+		font-size: 14px;
+	}
+	label textarea{
+		min-width: 80%;
+		resize: vertical;
+	}
+    .control__indicator {
+    position: absolute;
+    top: -1px;
+border-radius:13px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+        }
+    .control input:checked ~ .control__indicator {
+    background: #2aa1c0;
+}    
+#register {
+    background: rgb(75, 141, 249);
+    color: #fff;
+    width: 90px;
+cursor: pointer;
+    border: solid 1px;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.close {
+    background: rgb(75, 141, 249);
+    border: solid 1px;
+cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+    .control{
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    }
+        .control input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+        }
+	input,textarea{
+    width: 100%;
+    border-radius: 4px;
+    height: 40px;
+    padding: 5px;
+    border: solid 2px rgb(187, 187, 187);
+	}
+	textarea{
+		min-height: 70px;
+	}
+	[type=submit]{
+		background: rgb(75, 141, 249);
+		color: #fff;
+		border:solid 1px;
+		padding: 8px 15px;
+		border-radius: 3px;
+		font-weight: bold;
+	}
+	[type=reset]{
+		padding: 8px 15px;
+		border:solid 1px #aaa;
+		border-radius: 3px;
+		font-weight: bold;
+	}
+	legend span{
+		font-weight: normal;
+		color: rgb(196,59,29);
+	}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 18px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -224px;
+
+}
+        #cond{
+            color:blue;
+            cursor: pointer;
+        }
+
+        .modal-content p,h1{
+            margin: 0px;
+        }
+        
+	</style>
+       <script>
+           
+var modal = document.getElementById('myModal');
+
+var btn = document.getElementById("cond");
+
+var span = document.getElementById("close");
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+    </script>
+</body>
+</html>

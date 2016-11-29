@@ -1,0 +1,201 @@
+<!DOCTYPE>
+<html lang = "en">
+  <head>
+    <meta charset= "utf-8">
+    <title>
+      Workshop
+    </title>
+		<script src="jquery-1.12.2.min.js"></script>
+    <script src="a9.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="https://use.fontawesome.com/45ce79a002.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <style>
+main {
+  padding-left: 400px;
+  padding-top: 5%;
+}
+
+     #slide-out {
+       width:400px !important;
+     }
+
+     @media only screen and (max-width : 992px) {
+       main, footer {
+         padding-left: 0;
+       }
+     }
+
+     #my-nav {
+       z-index: 10000;
+     }
+
+     #my-side-nav #slide-out  {
+       padding-top: 5%;
+     }
+
+     .my-size {
+       font-size: 2em;
+       color: #000000;
+     }
+
+     .my-left-margin {
+       margin-left: 12.5%;
+     }
+
+     #per-name {
+       font-size: 2em;
+       color: #000000;
+       margin-top: 6%;
+     }
+
+     .hor-line {
+       margin-top: 6%;
+       margin-left: 12.5%;
+       width: 75%;
+     }
+
+     #fb-button {
+       background:  #3B5998;
+       width: 75%;
+     }
+  </style>
+  <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7&appId=142378392886345";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <header>
+      <div id="my-nav" class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center">Logo</a>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">dashboard</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#">Link1</a></li>
+              <li><a href="#">Link2</a></li>
+            </ul>
+            <ul id="slide-out" class="side-nav center">
+              <li><a href="#">Link1</a></li>
+              <li><a href="#">Link1</a></li>
+            </ul>
+            <ul id="mobile-demo" class="side-nav">
+              <div id="pro-pic">
+                <center> <img class="responsive-img circle" src="http://placehold.it/350x350"> </center>
+              </div>
+                <center> <li id="per-name">Name of the above person</li> </center>
+                <hr class="hor-line">
+                <li class="my-size my-left-margin">Likes:</li>
+                <li class="my-size my-left-margin">Post Shared:</li>
+                <li class="my-size my-left-margin">Points For Idea:</li>
+                <li class="my-size my-left-margin">Score:</li>
+                <hr class="hor-line">
+              <div class="my-size my-left-margin">
+                Find Out More About Our Campus Ambassador
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+    <div id="my-side-nav" class="container">
+      <ul id="slide-out" class="side-nav fixed">
+        <div id="pro-pic">
+          <center> <img class="responsive-img circle" src="http://placehold.it/350x350"> </center>
+        </div>
+        <center> <li id="per-name">Name of the above person</li> </center>
+        <hr class="hor-line">
+        <li class="my-size my-left-margin">Likes:</li>
+        <li class="my-size my-left-margin">Post Shared:</li>
+        <li class="my-size my-left-margin">Points For Idea:</li>
+        <li class="my-size my-left-margin">Score:</li>
+        <hr class="hor-line">
+        <div class="my-size my-left-margin">
+          Find Out More About Our Campus Ambassador
+        </div>
+      </ul>
+    </div>
+    <div class="container">
+      <center> <div class="row">
+          <div class="col m12 s12">
+            <div class="row" id="poster">
+              <div class="col m12">
+<div class="fb-post" data-href="https://www.facebook.com/techkriti.iitk/posts/1283057848372635" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/techkriti.iitk/posts/1283057848372635" class="fb-xfbml-parse-ignore"><p>Techkriti pays tribute to the father of the nation, M.K. Gandhi, on the day of his birth, October 2nd. 
+On this...</p>Posted by <a href="https://www.facebook.com/techkriti.iitk/">Techkriti, IIT Kanpur</a> on&nbsp;<a href="https://www.facebook.com/techkriti.iitk/posts/1283057848372635">Sunday, October 2, 2016</a></blockquote></div>
+              </div>
+            </div>
+           
+            <div class="row">
+              <div class="col m12 s12">
+            <a  id="shareBtn" data-link='https://www.facebook.com/techkriti.iitk/posts/1283057848372635'><button style="width:100%; margin-top:10px;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i> Share on Facebook</button></a>
+              </div>
+            </div>
+          </div>
+        </div> </center>
+
+        <center> <div class="row">
+            <div class="col m12 s12">
+              <div class="row" id="poster">
+                <div class="col m12 s12">
+                  <img class="responsive-img square hoverable" src="http://placehold.it/650x550">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m12 s12">
+                  <p class="flow-text">Details Regarding the Poster</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col m12 s12">
+                  <button class="btn waves-effect waves-light" id="fb-button" type="submit" name="action">Share
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div> </center>
+    </div>
+    </main>
+  </body>
+  <script>
+$(document).ready( function() {
+  $(".button-collapse").sideNav({
+    menuWidth: '300',
+    edge: 'right',
+    closeOnClick: true
+  }
+  );
+});
+document.getElementById('shareBtn').onclick = function() {
+var link=$(this).attr('data-link');
+var dataString="link=https://www.facebook.com/techkriti.iitk/posts/1283057848372635";
+$.ajax({                                      
+      url: 'share_post.php',   
+      type: 'POST',              
+      data:  dataString,                
+      dataType: 'json',    
+      success: function(data)
+      {
+
+
+}
+});
+
+}
+
+
+
+
+  </script>
+</html>

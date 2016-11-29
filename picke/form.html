@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration form</title>
+        <script src="jquery-1.12.2.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+                                             <script src="jquery-cookie-master/src/jquery.cookie.js"></script>
+        <script src="a1.js"></script>
+
+        <style>
+            #btn-login{
+                text-decoration: none;
+                color: white;
+            }
+            
+            body {
+               width: 100%;
+    height: 100%;
+    background: url('bg.png');
+    background-size: cover;
+          }
+          
+          *[role="form"] {
+              max-width: 844px;
+              padding: 15px;
+              margin: 0 auto;
+              background-color: #fff;
+              border-radius: 0.3em;
+          }
+          
+          *[role="form"] h2 {
+              text-align: center;
+          }
+          
+          
+        </style>
+        
+	<script>
+        $(function() {
+     $('#registration-form').hide();
+    $('#register').click(function(e) {
+		$("#registration-form").delay(100).fadeIn(100);
+ 		$("#loginbox").fadeOut(100);
+		e.preventDefault();
+	});
+	
+
+});
+
+    </script>
+   
+	</head>
+	<body>
+        
+      <div class="container">
+    	   <div class="row">
+			 <div id="loginbox" style=" position:absolute;margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-1">                    
+               <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#">Forgot password?</a></div>
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >                            
+                        <form id="loginform" class="form-horizontal" role="form">
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="name" type="text" class="form-control" name="name" value="" placeholder="Name" required>                                        
+                                    </div>
+                                
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="rollno" type="text" class="form-control" name="rollno" placeholder="Roll No." required>
+                                    </div>
+
+
+                                <div style="margin-top:10px" class="form-group">
+                                    <div class="col-sm-12 controls">
+                                      <button  class="btn btn-success col-md-6" onclick="goon()";">Login </button>
+                                      <div id="register" class="col-md-6 btn btn-primary"><a id="btn-login" href="#"> Register</a></div>
+                                    </div>
+                                </div>
+                            </form>  
+                             <script type="text/javascript">
+    function goon()
+    {
+        form=document.getElementById('loginform');
+        form.action='login.php';
+        form.method='POST';
+    }   
+</script>
+                        </div>                     
+                    </div>  
+                </div>
+             <div id="registration-form" style="position:absolute;z-index:-1"  class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-1"> 
+
+               <form id ="regisform" class="form-horizontal" role="form">
+                <h2>Registration Form</h2>
+                <div class="form-group">
+                    <label for="firstName" class="col-sm-3 control-label">Full Name</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="firstName" placeholder="Full Name" class="form-control" name="fname" autofocus required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="school" class="col-sm-3 control-label">School Name</label>
+                    <div class="col-sm-9">
+                        <input type="school" id="school" placeholder="School Name" class="form-control" name="school" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="class" class="col-sm-3 control-label">Class</label>
+                    <div class="col-sm-9">
+                        <input type="class" id="class" placeholder="Class of Studying" class="form-control" name="class" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="city" class="col-sm-3 control-label">City</label>
+                    <div class="col-sm-9">
+                        <select id="City" class="form-control" name="city" >
+                            <option>BENGALURU</option>
+                            <option>BHOPAL</option>
+                            <option>DELHI</option>
+                            <option>JAIPUR</option>
+                            <option>GWALIOR</option>
+                            <option>INDORE</option>
+                            <option value="KANPUR" selected>KANPUR</option>
+                            <option value="KOTA">KOTA</option>
+                            <option>KOLKATA</option>
+                            <option>LUCKNOW</option>
+                            <option>MUMBAI</option>
+                            <option>PATNA</option>
+                            <option>SIKAR</option>
+                            <option>UJJAIN</option>
+                            <option>VARANASI</option>
+                        </select>
+                    </div>
+                </div> 
+               <div class="form-group">
+                    <label for="class" class="col-sm-3 control-label">Contact No.</label>
+                    <div class="col-sm-9">
+                        <input type="contact" id="contact" name="contact" pattern="[0-9]{10}" placeholder="Contact No." class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="class" class="col-sm-3 control-label">Email</label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" placeholder="Email" class="form-control" name="email required>
+                    </div>
+                </div>
+              
+                <div class="form-group">
+                    <div class="col-sm-5 col-sm-offset-3">
+                        <button type="submit" class="btn btn-success btn-block" onclick="goon1()">Register</button>
+                    </div>
+                    <div class="col-sm-4 ">
+                        <button type="submit" class="btn btn-primary btn-block"onclick="goon2()">Next</button>
+                    </div>
+                </div>
+            </form> 
+          <script type="text/javascript">
+    function goon1()
+    {
+        form=document.getElementById('regisform');
+        form.action='submit.php';
+        form.method='POST';
+    }   
+    function goon2()
+    {
+        form=document.getElementById('regisform');
+        form.action='submit1.php';
+        form.method='POST';
+    }   
+</script>
+            </div>
+         </div>
+		</div>
+	</body>
+</html>

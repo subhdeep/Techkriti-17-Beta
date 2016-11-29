@@ -1,0 +1,43 @@
+$(document).ready(function(){
+
+   if($.cookie("school")!=null)
+{$('#school').attr("value",$.cookie("school"));
+ alert($.cookie("school"));
+
+}
+else
+{
+
+}
+   if($.cookie("city")!=null)
+{$('#city').attr("value",$.cookie("city"));
+
+}
+else
+{
+
+}
+$('#city').trigger('change');
+
+$('#city').change(function(e)
+{
+var cities=$('#city').val();
+ $.ajax({                                      
+      url: 'getit.php',   
+                                
+      data: {city: cities},                    
+      dataType: 'json',    
+      success: function(data)
+      {
+        for(i=0;i<data.length();i++)
+{$('#school').append("<option value='" + data[i] + "'>");
+
+       }
+        
+      } 
+    });
+});
+
+
+
+});

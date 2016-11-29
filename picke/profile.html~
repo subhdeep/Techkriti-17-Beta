@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration form</title>
+        <script src="jquery-1.12.2.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+                                             <script src="jquery-cookie-master/src/jquery.cookie.js"></script>
+        <script src="a2.js"></script>
+
+        <style>
+            #btn-login{
+                text-decoration: none;
+                color: white;
+            }
+            
+            body {
+               width: 100%;
+    height: 100%;
+    background: url('bg.png');
+    background-size: cover;
+          }
+          
+          *[role="form"] {
+              max-width: 844px;
+              padding: 15px;
+              margin: 0 auto;
+              background-color: #fff;
+              border-radius: 0.3em;
+          }
+          
+          *[role="form"] h2 {
+              text-align: center;
+          }
+          
+          
+        </style>
+        
+
+   
+	</head>
+	<body>
+        
+      <div class="container">
+    	   <div class="row">
+			 <div id="loginbox" style=" position:absolute;margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-1">                    
+               <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Profile</div>
+
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >                            
+                        <form id="loginform" class="form-horizontal" role="form">
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="name" type="text" class="form-control" name="name" value="" placeholder="name" required>                                        
+                                    </div>
+                                
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="rollno" type="text" class="form-control" name="rollno" placeholder="Roll No." required>
+                                    </div>
+
+
+                                <div style="margin-top:10px" class="form-group">
+                                    <div class="col-sm-12 controls">
+                                      <button  class="btn btn-success col-md-6" onclick="goon()";">Logout </button>
+                                      <button id="register" class="col-md-6 btn btn-primary" onclick="goon1()">Pay</button>
+                                    </div>
+                                </div>
+                            </form>  
+                             <script type="text/javascript">
+    function goon()
+    {
+              $.removeCookie("name",{ path: '/' });
+        $.removeCookie("rollno",{ path: '/' });
+                if($.cookie("school")!=null)
+{
+                $.removeCookie("school",{ path: '/' });}
+
+      if($.cookie("next")!=null)
+{
+                $.removeCookie("next",{ path: '/' });}
+window.location='http://2016.techkriti.org/tosc1';
+    }   
+function goon1()
+{
+
+window.location='http://2016.techkriti.org/tosc1';
+}
+</script>
+                        </div>                     
+                    </div>  
+                </div>
+            
+         </div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+        <script src="jquery-1.12.2.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+                                             <script src="jquery-cookie-master/src/jquery.cookie.js"></script>
+        <script src="a2.js"></script>
+
+        <style>
+            .row{
+            	    margin-top: 100px;
+            }
+            #btn-login{
+                text-decoration: none;
+                color: white;
+            }
+            
+            body {
+font-family:'Raleway';
+               width: 100%;
+              height: 100%;
+              background: url('bg.png');
+              background-size: cover;
+          }
+          
+          *[role="form"] {
+              max-width: 844px;
+              padding: 15px;
+              margin: 0 auto;
+              background-color: #fff;
+              border-radius: 0.3em;
+          }
+          
+          *[role="form"] h2 {
+              text-align: center;
+          }     
+            #details input,label{
+                    margin: 1% 0%;
+            } 
+            #details input{
+                   background: white;
+            }     
+        </style>
+          
+        </style>
+        
+
+   
+	</head>
+	<body>
+        
+      <div class="container">
+           <a href="http://2016.techkriti.org/tosc"><img  style="display:inline-block;height:83px;float:left;margin-left:-6%"src="red1.png"/></a>
+    	   <div class="row">
+                      
+
+                <div class=" col-md-8 col-lg-8 col-md-offset-2"> 
+                <div class=" panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Profile</div>
+
+                    </div>  
+                        <form id="loginform" class="form-horizontal" role="form">
+                            <div id="details" class="col-md-12">
+                              <label class="col-md-4 col-lg-3">Username: </label><input class="col-md-8 col-lg-9" id="name" type="text" class="form-control" name="name" value="" placeholder="name" disabled/>
+                              <label class="col-md-4 col-lg-3 ">Password: </label><input class="col-md-8 col-lg-9" id="rollno" type="text" class="form-control" name="rollno" placeholder="Roll No." disabled/>
+                            </div>
+
+
+                                <div style="margin-top:10px" class="form-group">
+                                    <div class="col-sm-12 controls">
+                                      <button  class="btn btn-success col-md-6" onclick="goon()";">Logout </button>
+                                     <div class="col-md-6 btn btn-primary" id="pay">  Pay</div>
+                                    </div>
+                                </div>
+                            </form>  
+                             <script type="text/javascript">
+    function goon()
+    {
+              $.removeCookie("name",{ path: '/' });
+        $.removeCookie("rollno",{ path: '/' });
+                if($.cookie("school")!=null)
+{
+                $.removeCookie("school",{ path: '/' });}
+
+ if($.cookie("phoneno")!=null)
+{
+                $.removeCookie("phoneno",{ path: '/' });}
+ if($.cookie("city")!=null)
+{
+                $.removeCookie("city",{ path: '/' });}
+
+if($.cookie("email")!=null)
+{
+                $.removeCookie("email",{ path: '/' });}
+      if($.cookie("next")!=null)
+{
+                $.removeCookie("next",{ path: '/' });}
+window.location='http://2016.techkriti.org/tosc1';
+    }   
+function goon1()
+{
+
+window.location='http://2016.techkriti.org/pay.html';
+}
+</script>
+                        </div>                     
+                    </div>  
+            
+         </div>
+		</div>
+	</body>
+</html>

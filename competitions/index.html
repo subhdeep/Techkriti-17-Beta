@@ -12,102 +12,195 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/component.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style type='text/css'>
+@media only screen and (min-width: 993px)
+{
+.container {
+    width: 76%;
+}
+}
+</style>
   </head>
-  <body>
-    <div class="container">
-      <div class="row" id="my-nav">
-          <a href="/">
-            <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
+
+  <body style="background-image: url('competitions.jpg');background-size: cover;overflow:hidden;height:100%;">
+
+  <div class="navigate hide-on-med-and-up">
+      
+      <!--Back button-->
+      <div>
+        <a href="/"><i class="material-icons" id="back-icon">arrow_back</i></a>
+      </div>
+
+
+      <div onclick="navi()">
+        <h4 style="margin-left: 20px !important;" class="nav-name">Competitions</h4>
+        <i class="material-icons"  id="nav-icon">&#xE5D2;</i>
+      </div>
+      <center>
+        <div id="mob-nav">
+          <div class="mob-hover col s12">
+            <ul id="mob-nav-items">
+              <a class="active" href="/">
               Home
-            </div>
+          </a>
+<a href="/about">
+              About
           </a>
           <a href="/competitions">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
               Competitions
-            </div>
           </a>
-          <a href="/technocruise">
-            <div class="col m2 s4 center-align nav-pad nav-hover nav-font">
+          <a target='_blank' href="http://www.techkriti.org/zonals/">
               Technocruise
-            </div>
           </a>
-          <a href="/tosc">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
+          <a target='_blank' href="http://www.techkriti.org/tosc">
               TOSC
-            </div>
           </a>
-          <a href="/about">
-            <div class="col m2 s4 s4 center-align nav-pad nav-hover nav-font">
-              Gallery
-            </div>
+          
+          <a target='_blank' href="http://2016.techkriti.org/sponsors">
+              Sponsors
+          </a>
+          <a  href="/contact">
+              Contact Us
+          </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+      <center>
+    <div class="row hide-on-small-only" id="my-nav">
+         <nav class="cl-effect-4" style="background-color: transparent;">
+          <a href="/">
+              Home
+          </a>
+<a href="/about">
+              About
+          </a>
+          <a class="active" href="/competitions">
+              Competitions
+          </a>
+          <a target='_blank' href="http://www.techkriti.org/zonals/">
+              Technocruise
+          </a>
+          <a target='_blank' href="http://www.techkriti.org/tosc">
+              TOSC
+          </a>
+         
+<a target='_blank' href="http://2016.techkriti.org/sponsors">
+              Sponsors
           </a>
           <a href="/contact">
-            <div class="col m2 offset-s4 s4 center-align nav-pad nav-hover nav-font">
               Contact Us
-            </div>
           </a>
+          </nav>
         </div>
-      <div class="row" id="comp-container">
-        <div class="col s6 offset-s3 m3 comp-box">
-<a href= https://2017.techkriti.org/events>
-
-          <div class="comp-border nav-font">
+        </center>
+        <div class="social hide-on-small-only">
+        <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
+        <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+        <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+        <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+        <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713"><i class="fa fa-linkedin"></i></a>
+  </div>
+  
+      <div class=" row" id="comp-container">
+        <div class=" col offset-s3 s6 m3 comp-box">
+<a href=/events/technical.php>
+          <div class="tech comp-border nav-font">
             <center>
-<img class='fa' aria-hidden="true" style='width:50px;' src='technical.png'>
-              <div class="heading">
+<!-- <img class='fa fa1' aria-hidden="true" style='width:50px;' src='technical.png'>
+ -->              <div class="heading">
                 Technical
               </div>
               <p class="description">
-                WHERE SKILLS AMPLIFY
+                WHERE SKILLS<br>AMPLIFY
                 </p>
             </center>
           </div>
 </a>
         </div>
-        <div class="col s6 offset-s3 m3 comp-box">
-          <div class="comp-border nav-font">
+        <div class=" col offset-s3 s6 m3 comp-box">
+<a href=/events/social.php>
+          <div class="soc comp-border nav-font">
             <center>
-<img class='fa' aria-hidden="true" style='width:50px;' src='social.png'>
               <div class="heading">
                 Social
               </div>
               <p class="description">
-                WHERE CREATIVITY EMERGES
+                WHERE CREATIVITY<br>EMERGES
                 </p>
             </center>
           </div>
+</a>
         </div>
-        <div class="col s6 offset-s3 m3 comp-box">
-          <div class="comp-border nav-font">
+        <div class=" col offset-s3 s6 m3 comp-box">
+<a href=/events/entrepreneurial.php>
+          <div class="entre comp-border nav-font">
             <center>
-<img class='fa' aria-hidden="true" style='width:50px;' src='entrepreneur.png'>
               <div class="heading">
                 Entrepreneurial
               </div>
               <p class="description">
-                WHERE IDEAS FLOURISH
+                WHERE IDEAS<br>FLOURISH
                 </p>
             </center>
           </div>
+</a>
         </div>
-        <div class="col s6 offset-s3 m3 comp-box">
-          <div class="comp-border nav-font">
+        <div class=" col offset-s3 s6 m3 comp-box">
+<a href=/events/international.php>
+          <div class="inter comp-border nav-font">
             <center>
-<img class='fa' aria-hidden="true" style='width:50px;' src='international.png'>
               <div class="heading">
                 International
               </div>
               <p class="description">
-                WHERE NATIONS UNITE
+                WHERE NATIONS<br>UNITE
                 </p>
             </center>
           </div>
+ </a>
         </div>
       </div>
+      <div class="row social-mobile hide-on-med-and-up">
+    <div class="col s2 offset-s1">
+      <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
     </div>
+    <div class="col s2">
+      <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </div>
+    </div>
+    <script>
+    var nav = document.getElementById('mob-nav');
+    nav.style.display = "none";
+    var flag = 0;
+    function navi() {
+      if(flag == 0) {
+     document.getElementById('mob-nav').style.display = "block";
+    flag = 1;
+  }
+  else {
+     document.getElementById('mob-nav').style.display = "none";
+    flag = 0;
+  }
+}
+  </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>

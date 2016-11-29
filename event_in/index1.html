@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Techkriti'17
+    </title>
+    <meta charset="utf-8"> <!-- set character encoding for the document -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Custom Stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/component.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="jquery-1.12.2.min.js"></script>
+        <script src="jquery-cookie-master/src/jquery_cookie.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://bootswatch.com/cosmo/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style1.css">
+          <script src="js/index.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+	$("#loading").delay(500).fadeOut(000);
+    }); 
+    </script>
+<style>
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+.tile-w {
+    display: inline-block;
+    max-width: 700px;
+    min-width: 600px;
+    text-align: left;
+}
+form {
+    padding: 30px 50px;
+    border: solid 1px rgb(216,216,216);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    margin: 0 10px 20px 10px;
+    background: #fff;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+	*,*:after,*:before{
+		box-sizing:border-box;
+		/*font-family:roboto,sans-serif;*/
+		/*color: #777;*/
+	}
+	
+        .ambnav{
+            color: rgb(101,101,101);font-size: 18px;padding: 10px;text-align:center
+        }    
+	form{
+		padding: 30px 50px;
+		border:solid 1px rgb(216,216,216);
+		box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+		border-radius: 3px;
+		margin: 0 10px 20px 10px;
+		background: #fff;
+	}
+	small{
+		color: #777;
+		font-size: 12px;
+	}
+.ambnav a{
+    font-size: 2em;
+    font-weight: bold;
+    color: darkcyan;
+        } 
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+opacity:1;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+
+background-color: #f1f1f1;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}   
+	a{
+		text-decoration:none;
+	}
+	.tile-y{
+		position: relative;
+		text-align: center;
+	}
+	.tile-w{
+		display: inline-block;
+		max-width:700px;
+		min-width:600px;
+		text-align: left;
+	}
+	label{
+		display: block;
+		margin-bottom: 10px;
+		/*font-weight: bold;*/
+		margin-top: 5px;
+	}
+	label.radio{
+		color: #777;
+		font-size: 14px;
+	}
+	label textarea{
+		min-width: 80%;
+		resize: vertical;
+	}
+    .control__indicator {
+    position: absolute;
+    top: -1px;
+border-radius:13px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+        }
+    .control input:checked ~ .control__indicator {
+    background: #2aa1c0;
+}    
+#register {
+    background: rgb(75, 141, 249);
+    color: #fff;
+    width: 90px;
+cursor: pointer;
+    border: solid 1px;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+    .control{
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    }
+        .control input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+        }
+	input,textarea{
+    width: 100%;
+    border-radius: 4px;
+    height: 40px;
+    padding: 5px;
+    border: solid 2px rgb(187, 187, 187);
+	}
+	textarea{
+		min-height: 70px;
+	}
+	[type=submit]{
+		background: rgb(75, 141, 249);
+		color: #fff;
+		border:solid 1px;
+		padding: 8px 15px;
+		border-radius: 3px;
+		font-weight: bold;
+	}
+	[type=reset]{
+		padding: 8px 15px;
+		border:solid 1px #aaa;
+		border-radius: 3px;
+		font-weight: bold;
+	}
+	legend span{
+		font-weight: normal;
+		color: rgb(196,59,29);
+	}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 18px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+#abcd
+{
+display:inline;
+}
+        #cond{
+            color:blue;
+            cursor: pointer;
+        }
+
+        .modal-content p,h1{
+            margin: 0px;
+        }
+        .butts {
+    background: rgb(75, 141, 249);
+    color: #fff;
+    width: 90px;
+    cursor: pointer;
+display:inline;
+    border: solid 1px;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+	</style>
+
+
+  </head>
+  <body>
+
+
+<!-- The Modal -->
+
+  <div id="loading">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div class="object" id="object_one"></div>
+<div class="object" id="object_two"></div>
+<div class="object" id="object_three"></div>
+<div class="object" id="object_four"></div>
+<div class="object" id="object_big"></div>
+</div>
+</div>
+ 
+</div>
+    <div class="navigate hide-on-med-and-up">
+      
+      <!--Back button-->
+      <div>
+        <a href="/"><i class="material-icons" id="back-icon">arrow_back</i></a>
+      </div>
+
+
+      <div onclick="navi()">
+      <i class="material-icons"  id="nav-icon">&#xE5D2;</i>
+      </div>
+      <center>
+        <div id="mob-nav">
+          <div class="mob-hover col s12">
+            <ul id="mob-nav-items">
+              <a class="active" href="/">
+              Home
+          </a>
+<a href="/about">
+              About
+          </a>
+          <a href="/competitions">
+              Competitions
+          </a>
+          <a target='_blank' href="http://www.techkriti.org/zonals/">
+              Technocruise
+          </a>
+          <a target='_blank' href="http://www.techkriti.org/tosc">
+              TOSC
+          </a>
+          
+<a target='_blank' href="http://2016.techkriti.org/sponsors">
+              Sponsors
+          </a>
+          <a href="/contact">
+              Contact Us
+          </a>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+     <div class="container">
+      <center>
+        <center>
+    <div class="row hide-on-small-only" id="my-nav">
+         <nav class="cl-effect-4" style=" background-color: rgba(29, 28, 28,0.5);">
+          <a href="/">
+              Home
+          </a>
+<a href="/about">
+              About
+          </a>
+          <a class="active" href="/competitions">
+              Competitions
+          </a>
+          <a target='_blank' href="http://www.techkriti.org/zonals/">
+              Technocruise
+          </a>
+          <a target='_blank' href="http://www.techkriti.org/tosc">
+              TOSC
+          </a>
+        
+<a target='_blank' href="http://2016.techkriti.org/sponsors">
+              Sponsors
+          </a>
+          <a href="/contact">
+              Contact Us
+          </a>
+ 
+
+          </nav>
+        </div>
+        </center>
+
+        <div class="social hide-on-small-only">
+        <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
+        <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+        <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+        <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+        <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713">
+            <i class="fa fa-linkedin"></i>
+        </a>
+    </div>
+      </div>
+      <div>
+         <div class="container">
+  <div class="row">
+<div class="col-md-5 col-xs-10 col-xs-offset-2 col-md-offset-5 col-sm-5">
+<span  id ='name'>
+Name
+</span>
+</div>
+    <div class="col-md-12 col-sm-5">
+<button id='myBtn'>Register Now</button>  <div id='abcd' data='0' class="dropdown">
+    <a class="dropbtn" id='just_check'>Login</a>
+    <div class="dropdown-content">
+      <a id="just_profile">Profile</a>
+      <a id='logout' >Logout</a>
+
+    </div>
+  </div>     <div class="tabs-left">
+        <ul id="list" class="nav nav-tabs">
+        </ul>
+        <div id="event-desc" class="tab-content">
+          <div class="tab-pane active" id="f"></div>
+        </div><!-- /tab-content -->
+      </div><!-- /tabbable -->
+    </div><!-- /col -->
+  </div><!-- /row -->
+</div><!-- /container -->
+      </div>
+    </center>
+  </div>
+  <div id="event-links">
+    <ul id='list1'>
+      
+    </ul>
+  </div>
+</div>
+
+   
+      <ul id="slide-out" class="side-nav" >
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Technical</a>
+            <div class="collapsible-body">
+              <ul>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">Techkriti Grand Prix </a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                              <li><a href="/event_in/#Techkriti Grand Prix">Techkriti Grand Prix</a></li>                     
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">Design Events</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                             <li><a href="/event_in/#Bridge Design Challenge">Bridge Design Challenge</a></li>
+                            <li><a href="/event_in/#Scientoon">Scientoon</a></li>
+                            <li><a href="/event_in/#Concatenate">Concatenate</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">ECDC</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                            <li><a href="/event_in/#Electromania">Electromania</a></li>
+                            <li><a href="/event_in/#Embedded">Embedded</a></li>
+                          <li><a href="/event_in/#Electrade">Electrade</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">Robogames</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                            <li><a href="/event_in/#IARC">IARC</a></li>
+                            <li><a href="/event_in/#Manoeuvre">Manoeuvre</a></li>
+                            <li><a href="/event_in/#IRGT">IRGT</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">Software Corner</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                            <li><a href="/event_in/#Chaos">Chaos</a></li>
+                            <li><a href="/event_in/#IOPC">IOPC</a></li>
+                            <li><a href="/event_in/#Crypto">Crypto</a></li>
+                            <li><a href="/event_in/#"></a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">Take Off</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                            <li><a href="/event_in/#Hoverush">Hover Rugby</a></li>
+                            <li><a href="/event_in/#Multirotor">Multirotor</a></li>
+                            <li><a href="/event_in/#Rule The Sky">Rule The Sky</a></li>
+                            <li><a href="/event_in/#Sky Sparks">Sky Sparks</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header"> Mixed Bowl</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                            <li><a href="/event_in/#IORC">IORC</a></li>
+                            <li><a href="/event_in/#WhatsUp">WhatsUp</a></li>
+                            <li><a href="/event_in/#AstroQuiz">AstroQuiz</a></li>
+                            <li><a href="/event_in/#Astro Treasure">Astro Treasure</a></li>
+                            <li><a href="/event_in/#Nutcracker">Nutcracker</a></li>
+                            <li><a href="/event_in/#CrimeRun">CrimeRun</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">IMP</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                              <li><a href="/event_in/#IMP">IMP</a></li>
+
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Social</a>
+            <div class="collapsible-body">
+              <ul>
+                  <li class="no-padding">
+                    <ul class="collapsible link_nav collapsible-accordion">
+                      <li><a href="https://2017.techkriti.org/event_in/#Soccon">Soccon</a></li>                 
+                  <li><a href="/event_in/#29 States">29 States</a></li>                 
+                  <li><a href="/event_in/#Techkriti Innovation Challenge">Techkriti Innovation Challenge</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Entrepreneurial</a>
+            <div class="collapsible-body">
+              <ul>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">Business</a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                              <li><a href="/event_in/#Battlefield">Battlefield</a></li>
+                  <li><a href="/event_in/#Marketing Villa">Marketing Villa</a></li>
+                  <li><a href="/event_in/#auction war">Auction War</a></li>
+                  <li><a href="/event_in/#Countdown (Online)">Countdown(Online)</a></li>
+                  <li><a href="/event_in/#Best Manager">Best Manager</a></li>                     
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                      <li>
+                        <a class="collapsible-header">Entrepreneurial Events </a>
+                        <div class="link_nav collapsible-body">
+                          <ul>
+                             <li><a href="/event_in/#Business Venture">Business Venture</a></li>
+                  <li><a href="/event_in/#Social Track">Social Track</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">International</a>
+            <div class="collapsible-body">
+              <ul>
+                  <li class="no-padding">
+                    <ul class="collapsible link_nav collapsible-accordion">
+                      <li><a href="/event_in/#IARC">IARC</a></li>
+                  <li><a href="/event_in/#Multirotor">Multirotor</a></li>
+                  <li><a href="/event_in/#IORC">IORC</a></li>
+                  <li><a href="/event_in/#IOPC">IOPC</a></li>
+                  <li><a href="/event_in/#Techkriti Grand Prix">Techkriti Grand Prix</a></li>
+                  <li><a href="/event_in/#Techkriti Innovation Challenge">Techkriti Innovation Challenge</a></li>
+                  <li><a href="/event_in/#IRGT">IRGT</a></li>
+                  <li><a href="/event_in/#Sky Sparks">Sky Sparks</a></li>
+                    </ul>
+                  </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+<!--   <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+ -->      
+  <a href="#" data-activates="slide-out" class=" more-events button-collapse"><p>More Events &darr;</p></a>
+
+
+
+
+
+<!-- <div class=" more-events">
+  <p>More Events &darr;</p>
+</div> -->
+<div class="row social-mobile hide-on-med-and-up">
+    <div class="col s2 offset-s1">
+      <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+    </div>
+    <div class="col s2">
+      <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713"><i class="fa fa-linkedin"></i></a>
+    </div>
+  </div>
+
+<script>
+    var nav = document.getElementById('mob-nav');
+    nav.style.display = "none";
+    var flag = 0;
+    function navi() {
+      if(flag == 0) {
+     document.getElementById('mob-nav').style.display = "block";
+    flag = 1;
+  }
+  else {
+     document.getElementById('mob-nav').style.display = "none";
+    flag = 0;
+  }
+}
+  </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<script src="jquery.mousewheel.min.js"></script>
+
+<script type="text/javascript">
+
+  // Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //$('.collapsible').collapsible();
+        
+  $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 240
+      edge: 'right', // Choose the horizontal origin
+      closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      draggable: true // Choose whether you can drag to open on touch screens
+    }
+  );
+       
+       
+  // Show sideNav
+  $('.button-collapse').sideNav('show');
+  // Hide sideNav
+  $('.button-collapse').sideNav('hide');
+  // Destroy sideNav
+  $('.button-collapse').sideNav('destroy');
+
+    </script>
+      <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+      <script>
+  $(document).ready(function() {
+   $('#slide-out').css('opacity','0');
+   $('#sidenav-overlay').css('opacity','0');
+   $('.more-events').on('click',function(){
+   $('#slide-out').css('opacity','1');
+      $('#sidenav-overlay').css('opacity','1');
+   });
+});
+
+</script>
+</body>
+</html>
