@@ -243,10 +243,10 @@ style="
 <li>On successfully sharing a post, a congratulatory message is  displayed.</li>
 <li>One point for the Share + one for each like you get on your post </li>
 <li>Points will be given on the scale of 0 to 5 for the Ideas (5 points for the best Idea)</li>
-<li>Score will comprise of shares, likes and points for ideas.</li>
-<li>Please refrain from posting as 'only me' otherwise serious actions will be taken. </li>
-<li>Likes will be counted only for posts you shared.</li>
-<li>Please refrain from posting as 'only me' otherwise serious actions will be taken.</li>
+<li>Score will comprise of shares, likes of 'Public' posts and points for ideas.</li>
+
+<li>A post can be shared maximum 3 times.</li>
+
 
 
 

@@ -86,9 +86,11 @@
               </div>
               <div class="events event-6 ex3">
                 <ul class="event-list-font">
+                  <li><a href="/event_in/#Capture the flag">Capture the flag</a></li>
                   <li><a href="/event_in/#Chaos">Chaos</a></li>
                   <li><a href="/event_in/#IOPC">IOPC</a></li>
                   <li><a href="/event_in/#Crypto">Crypto</a></li>
+
                   <li><a href="/event_in/#"></a></li>
                 </ul>
               </div>

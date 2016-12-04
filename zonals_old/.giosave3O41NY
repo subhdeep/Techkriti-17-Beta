@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Technocruise</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link href="assets/css/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+    <link href="assets/css/plugins/hover/hover.min.css" rel="stylesheet">
+    <link href="assets/css/plugins/owl.carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/plugins/owl.carousel/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/plugins/owl.carousel/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+
+    <link id="changeable-colors" rel="stylesheet" href="assets/css/spectrum-orange.css">
+    <link href="assets/css/animate.css" rel="stylesheet">
+
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    $('.logo').hide();
+    
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 250) {
+    $('.logo').fadeIn();
+  } else {
+    $('.logo').fadeOut();
+  }
+});
+
+    $("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+        e.preventDefault();
+        $(this).siblings('a.active').removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+        $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+    });
+});
+    $(function(){
+var $animation_elements = $('.portfolio-item');
+var $animation_elements1 = $('.doc-item');
+var $window = $(window);
+
+function check_if_in_view() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+ 
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+ 
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+      $element.addClass('slideInUp');
+    } 
+  });
+}
+function check_if_in_view1() {
+  var window_height = $window.height();
+  var window_top_position = $window.scrollTop();
+  var window_bottom_position = (window_top_position + window_height);
+ 
+  $.each($animation_elements, function() {
+    var $element = $(this);
+    var element_height = $element.outerHeight();
+    var element_top_position = $element.offset().top;
+    var element_bottom_position = (element_top_position + element_height);
+ 
+    //check to see if this current container is within viewport
+    if ((element_bottom_position >= window_top_position) &&
+        (element_top_position <= window_bottom_position)) {
+      $element.addClass('slideInUp');
+    } 
+  });
+}
+$window.on('scroll resize', check_if_in_view1);
+$window.trigger('scroll');
+});
+
+    </script>
+<style type="text/css">
+.register{
+    background-color: #3b5998;
+    margin-top: 3px!important;
+        border-radius: 3px;
+}
+.register a{
+ padding: 3px !important;
+ margin: 0px;
+}
+.register i{
+        background-color: #2d519d;
+    padding: 9px;
+}
+
+.mob h3{
+        margin: 0px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+.mob li{
+	border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin-top: 5px;
+    list-style: none;
+}
+.mob ul{
+    font-size: 1em;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    padding-left: 0px;
+}
+/*  bhoechie tab */
+div.bhoechie-tab-container{
+     z-index: 10;
+    background-color: #f4f5f7;
+    padding: 0 !important;
+    border-radius: 4px;
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 50px;
+    opacity: 0.97;
+}
+div.bhoechie-tab-menu{
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group{
+  margin-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group>a{
+  margin-bottom: 0;
+}
+div.bhoechie-tab-menu div.list-group>a .glyphicon,
+div.bhoechie-tab-menu div.list-group>a .fa {
+  color: #5A55A3;
+}
+div.bhoechie-tab-menu div.list-group>a:first-child{
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a:last-child{
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+}
+div.bhoechie-tab-menu div.list-group>a.active,
+div.bhoechie-tab-menu div.list-group>a.active .glyphicon,
+div.bhoechie-tab-menu div.list-group>a.active .fa{
+  background-color: #5A55A3;
+  background-image: #5A55A3;
+  color: #ffffff;
+}
+div.bhoechie-tab-menu div.list-group>a.active:after{
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -13px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #5A55A3;
+}
+
+div.bhoechie-tab-content{
+  background-color: #f4f5f7;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+div.bhoechie-tab div.bhoechie-tab-content:not(.active){
+  display: none;
+}
+.carousel-fade .carousel-inner .active{
+    transition: 0.4s
+}
+.navbar-dark.top-nav-collapse .nav li.register a:after{
+    background: transparent;
+}
+.navbar-dark .nav li a:after, .navbar-light .nav li.register a:after{
+    background: transparent;
+}
+.modal-backdrop{
+    z-index: 0;
+}
+</style>
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <div id="wrapper">
+
+        <nav class="navbar navbar-dark navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="#page-top">
+                        <span class="logo">
+                            <img src="logo.png"/>
+                        </span>
+                    </a>
+                </div>
+
+                
+                    
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                
+                    <ul class="nav navbar-nav">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#features">workshop</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#cities">Cities</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li class="page-scroll register">
+                            <a href="/register1/login.php"><i class=" fa fa-facebook"></i>Register</a>
+                        </li>
+                                                 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header id="myCarousel" class="carousel slide carousel-fade intro-slider">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="fill" style="background-image:url('assets/img/workshop/techno.jpg');"></div>
+                </div>
+                <div class="item">
+                    <div class="fill" style="background-image:url('assets/img/workshop/android.jpg');"></div>
+                </div>
+                <div class="item">
+                    <div class="fill" style="background-image:url('assets/img/workshop/ethical.jpg');"></div>
+                </div>
+                <div class="item">
+                    <div class="fill" style="background-image:url('assets/img/workshop/flying.jpg');"></div>
+                </div>
+                <div class="item">
+                    <div class="fill" style="background-image:url('assets/img/workshop/sixth.jpg');"></div>
+                </div>
+                <div class="item">
+                    <div class="fill" style="background-image:url('assets/img/workshop/iot.jpg');"></div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <section id="about" class="about-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center" data-scrollreveal="move 0">
+                        <h2>About</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+                <div class="row" data-scrollreveal="enter left">
+                    <div class="col-lg-5">
+                        <img src="map.png" class="img-circle img-responsive img-centered dark-faded-border" alt="">
+                    </div>
+                    <div class="col-lg-6 text-center about-techno" data-scrollreveal="enter right">
+                        <!-- <h2>About</h2>
+                        <hr class="primary"> -->
+                        <p>Technocruise is the pre-festival Zonal round event of Techkriti which comprises of Preliminary rounds of some major competitions and professional technical workshops to enhance the learning of students and to encourage the zeal of the participants. Technocruise covers all major cities of India and thus spans the entire height and width of the nation. Last year we witnessed a participation of over 8000 in workshops and events from nearly 250 colleges all over India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="blog-1 bg-lighter">
+            <div class="container" style="width: 100%;">
+                <div class="row">
+                    <div class="col-lg-12 text-center" data-scrollreveal="move 0">
+                        <h2>Workshops</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+                <div class="row " data-scrollreveal="enter bottom">
+                    <div class="isotope">
+                        <div id="E" class="col-md-offset-1 bounce animated col-sm-6 col-xs-6 col-md-2 portfolio-item graphic">
+                            <a href="#portfolio-modal-1" class="portfolio-link" data-toggle="modal">
+                                <img src="assets/img/icon/ethical.jpg" class="img-centered" alt="">
+
+                                <div class="mob caption">
+                                    <h3>Ethical Hacking </h3>
+                                    <p style="padding:9px;font-size:1em;text-align: center;">Ethical Hacking - is an important tool in many national security agencies and even companies..... </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="A" class="bounce animated col-sm-6 col-xs-6 col-md-2 portfolio-item graphic">
+                            <a href="#portfolio-modal-12" class="portfolio-link" data-toggle="modal">
+                                <img src="assets/img/icon/android.jpg" class="img-centered" alt="">
+
+                                <div class="mob caption">
+                                    <h3>Android App Development  </h3>
+                                    <p style="padding:9px;font-size:1em;text-align: center;">Android is an open-source software stack for mobile devices that includes ..... </p>
+                                </div>
+                            </a>
+                        </div>
+                       <div id="S" class="bounce animated col-sm-6 col-xs-6 col-md-2 portfolio-item graphic">
+                            <a href="#portfolio-modal-15" class="portfolio-link" data-toggle="modal">
+                                <img src="assets/img/icon/sixth.jpg" class="img-centered" alt="">
+
+                                <div class="mob caption">
+                                    <h3>Sixth Sense  </h3>
+                                    <p style="padding:9px;font-size:1em;text-align: center;">The workshop provides college students a base to Machine vision which covers all ..... </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="I" class="bounce animated col-sm-6 col-xs-6 col-md-2 portfolio-item graphic">
+                            <a href="#portfolio-modal-14" class="portfolio-link" data-toggle="modal">
+                                <img src="assets/img/icon/iot.jpg" class="img-centered" alt="">
+
+                                <div class="mob caption">
+                                    <h3>Internet Of Things </h3>
+                                    <p style="padding:9px;font-size:1em;text-align: center;">How beautiful it is when your door can update its Facebook Status every time..... </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="F" class="bounce animated col-sm-6 col-xs-6 col-md-2 portfolio-item graphic">
+                            <a href="#portfolio-modal-13" class="portfolio-link" data-toggle="modal">
+                                <img src="assets/img/icon/flying.jpg" class="img-centered" alt="">
+
+                                <div class="mob caption">
+                                    <h3>Flying Wing  </h3>
+                                    <p style="padding:9px;font-size:1em;text-align: center;">Flying Wing is the future of aviation. There is only one flying wing based aircraft in ..... </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="cities" class="portfolio-1 bg-lighter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center" data-scrollreveal="move 0">
+                        <h2>Cities</h2>
+                        <hr class="primary">
+                        <p class="mob">Click on the images to know more about workshops organizing in your city </p>
+                    </div>
+                </div>
+                <div class="row " data-scrollreveal="enter bottom">
+                    <div class="isotope">
+                        <div class="bounce animated col-sm-3 col-xs-4 portfolio-item web">
+                            <a href="#portfolio-modal-3" class="portfolio-link" data-toggle="modal">
+                                <div class="mob caption">
+                                    <div style="width: 100%;top: 0px;overflow: hidden;position: absolute;height: 100%;">
+                                    <h3>DEHRADUN</h3>
+                                     <ul>
+                                     	<li>Flying Wing</li>
+                                     	<li>Sixth Sense-Robotics</li>
+                                     	<li>Ethical Hacking</li>
+                                     </ul>
+                                    </div>
+                                 </div>
+                                <img src="city1.jpg" class="img-centered" alt="">
+                            </a>
+                        </div>
+                        <div class="bounce animated col-sm-3 col-xs-4 portfolio-item graphic">
+                            <a href="#portfolio-modal-3" class="portfolio-link" data-toggle="modal">
+                                <div class="mob caption">
+                                    <div style="width: 100%;top: 0px;overflow: hidden;position: absolute;height: 100%;">
+                                    <h3>BILASPUR</h3>
+                                     <p style="font-size: 2.5em;margin-top: 25px;">Coming Soon</p>
+                                    </div>
+                                 </div>                                <img src="city2.jpg" class="img-centered" alt="">
+                            </a>
+                        </div>
+                        <div class="bounce animated col-sm-3 col-xs-4 portfolio-item print">
+                            <a href="#portfolio-modal-3" class="portfolio-link" data-toggle="modal">
+                                <div class="mob caption">
+                                    <div style="width: 100%;top: 0px;overflow: hidden;position: absolute;height: 100%;">
+                                    <h3>PUNE</h3>
+                                     <ul>
+                                     	<li>Sixth Sense</li>                                	
+                                     </ul>
+                                    </div>
+                                 </div>
+                                <img src="city4.jpg" class="img-centered" alt="">
+                            </a>
+                        </div>
+                        <div class="bounce animated col-sm-3 col-xs-4 portfolio-item web">
+                            <a href="#portfolio-modal-3" class="portfolio-link" data-toggle="modal">
+                                <div class="mob caption">
+                                    <div style="width: 100%;top: 0px;overflow: hidden;position: absolute;height: 100%;">
+                                    <h3>BHUBHANESHWAR</h3>
+                                     <ul>
+                                     	<li>Sixth Sense-Robotics</li>
+                                     </ul>
+                                    </div>
+                                 </div>
+                                <img src="city5.jpg" class="img-centered" alt="">
+                            </a>
+                        </div>
+                        <div class="bounce animated col-sm-3 col-xs-4 portfolio-item graphic">
+                            <a href="#portfolio-modal-3" class="portfolio-link" data-toggle="modal">
+                                <div class="mob caption">
+                                    <div style="width: 100%;top: 0px;overflow: hidden;position: absolute;height: 100%;">
+                                    <h3>ALLAHABAD</h3>
+                                    <ul>
+                                     	<li>Ethical Hacking</li>
+                                     </ul>
+                                    </div>
+                                 </div>
+                                <img src="city6.jpg" class="img-centered" alt="">
+                            </a>
+                        </div>
+                        <div class="bounce animated col-sm-3 col-xs-4 portfolio-item print">
+                            <a href="#portfolio-modal-3" class="portfolio-link" data-toggle="modal">
+                               <div class="mob caption">
+                                    <div style="width: 100%;top: 0px;overflow: hidden;position: absolute;height: 100%;">
+                                    <h3>Ahmedabad</h3>
+                                    <p style="font-size: 2.5em; margin-top: 25px;">Coming Soon</p>
+                                    </div>
+                                 </div>
+                                <img src="city7.jpg" class="img-centered" alt="">
+                            </a>
+                        </div>
+                        <div class="bounce animated col-sm-3 col-xs-4 portfolio-item web">
+                            <a href="#portfolio-modal-3" class="portfolio-link" data-toggle="modal">
+                                <div class="mob caption">
+                                    <div style="width: 100%;top: 0px;overflow: hidden;position: absolute;height: 100%;">
+                                    <h3>Bangalore</h3>
+                                   <p style="font-size: 2.5em;margin-top: 25px;">Coming Soon</p>
+                                    </div>
+                                 </div>
+                                <img src="city8.jpg" class="img-centered" alt="">
+                            </a>
+                        </div>
+                        <div class="bounce animated col-sm-3 col-xs-4 portfolio-item graphic">
+                            <a href="#portfolio-modal-3" class="portfolio-link" data-toggle="modal">
+                                <div class="mob caption">
+                                    <div style="width: 100%;top: 0px;overflow: hidden;position: absolute;height: 100%;">
+                                    <h3>RAIPUR</h3>
+                                    <p style="font-size: 2.5em;margin-top: 25px;">Coming Soon</p>
+                                    </div>
+                                 </div>
+                                <img src="city9.jpg" class="img-centered" alt="">
+                            </a>
+                        </div>
+                        <div class="bounce animated col-sm-3 col-xs-4 portfolio-item print">
+                            <a href="#portfolio-modal-3" class="portfolio-link" data-toggle="modal">
+                                <div class="mob caption">
+                                    <div style="width: 100%;top: 0px;overflow: hidden;position: absolute;height: 100%;">
+                                    <h3>KOTA</h3>
+                                    <p style="font-size: 2.5em;margin-top: 25px;">Coming Soon</p>
+                                    </div>
+                                 </div>
+                                <img src="city1.jpg" class="img-centered" alt="">
+                            </a>
+                        </div>
+                        <div class="bounce animated col-sm-3 col-xs-4 portfolio-item print">
+                            <a href="#portfolio-modal-3" class="portfolio-link" data-toggle="modal">
+                                <div class="mob caption">
+                                    <div style="width: 100%;top: 0px;overflow: hidden;position: absolute;height: 100%;">
+                                    <h3>INDORE</h3>
+                                    <p style="font-size: 2.5em;margin-top: 25px;">Coming Soon</p>
+                                    </div>
+                                 </div>                                <img src="city2.jpg" class="img-centered" alt="">
+                            </a>
+                        </div>
+                        <div class="bounce animated col-sm-3 col-xs-4 portfolio-item print">
+                            <a href="#portfolio-modal-3" class="portfolio-link" data-toggle="modal">
+                                <div class="mob caption">
+                                    <div style="width: 100%;top: 0px;overflow: hidden;position: absolute;height: 100%;">
+                                     <h3>HYDERABAD</h3>
+                                    <p style="font-size: 2.5em;margin-top: 25px;">Coming Soon</p>
+                                    </div>
+                                 </div>
+                                <img src="city4.jpg" class="img-centered" alt="">
+                            </a>
+  

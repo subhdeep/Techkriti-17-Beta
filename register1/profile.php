@@ -49,14 +49,15 @@ fjs.parentNode.insertBefore(js, fjs);
           <!--  <option  value="BHUVANESHWAR">BHUVANESHWAR(CV RAMAN)</option> -->
           <!--  <option  value="AHMEDABAD">AHMEDABAD(NIRMA)</option> 
             <option  value="BENGALURU">BENGALURU</option>
-            <option  value="INDORE">INDORE(SGITS)</option> 
-            <option  value="JABALPUR">JABALPUR</option>-->
-            <option  value="HYDERABAD">HYDERABAD</option>
+            <option  value="INDORE">INDORE(SGITS)</option>--> 
+            <option selected value="BHUVANESHWAR">BHUBANESHWAR</option>
+
           </select></h5>
           <h5><span >Select Workshop :&nbsp;&nbsp;</span>
             <select id="workshop" name="workshop" class="dropdown"">
-              <option selected value="sixth sense">sixth sense</option>
               <option value="iot">iot</option>
+              <option selected value="android">android</option>
+
 
 
 

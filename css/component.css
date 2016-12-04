@@ -263,7 +263,8 @@
     background-color: white;
     }
     #mob-nav-items{
-    	padding: 10%
+    	padding: 10%;
+      background-color: darkslategrey;
     }
     #nav-icon {
     float: right;
@@ -271,11 +272,11 @@
     margin-right: 4vw;
 }
     #mob-nav a{
-          border-bottom: 1px solid black;
-        color: black;
+    border-bottom: 1px solid black;
+    color: black;
     width: 100%;
     display: block;
-    background-color: white;	
+    background-color: bisque;	
     }
 }
 

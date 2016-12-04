@@ -14,7 +14,7 @@ $fb = new Facebook\Facebook([
   'app_secret' => '5d15212758aa311fd1317001837d455a',
   'default_graph_version' => 'v2.7',
 ]);
-
+unset($_SESSION['facebook_access_token']);
 $helper = $fb->getRedirectLoginHelper();
 $permissions = ['email']; // optional
 $loginUrl = $helper->getLoginUrl('https://www.techkriti.org/register1/login-callback1.php', $permissions);

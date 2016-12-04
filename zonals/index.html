@@ -53,11 +53,14 @@ $('a.live').on('click',function(){
     $('.ethicalC').addClass('active');
    }
    if($(this).attr('data-city') == 'BHUBHANESHWAR'){
-    $('.sdate').text('');
-    $('.sdate').text('');
-    $('.androidC').addClass('active');
-    $('.androidC1').addClass('active');
-    $('.iotC,.ethicalC,.flyingC').css('display','none');
+    $('.icenter,.acenter').text('Center: ITER, BHUBANESHWAR');
+    $('.adate').text('Date-14th Jan 2016');
+    $('.idate').text('Date-15th Jan 2016');
+    $('.itime,.atime').text('Time-9:00am to 6:00pm');
+
+     $('.androidC').addClass('active');
+   	$('.sixthC,.flyingC,.ethicalC').css('display','none');
+     $('.androidC1').addClass('active');
    }
    if($(this).attr('data-city') == 'ALLAHABAD'){
 $('.ecenter,.acenter').text('Center: Indian Institute of Information Technology, Allahabad');
@@ -109,6 +112,9 @@ $('.ecenter,.acenter').text('Center: Indian Institute of Information Technology,
    	$('.sixthC,.flyingC,.iotC').css('display','none');
      $('.ethicalC1').addClass('active');
       }
+
+
+
    if($(this).attr('data-city') == 'JABALPUR'){
     $('.sdate').text('');
     $('.sdate').text('');
@@ -504,6 +510,24 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
                 </div>
                 <div class="row city_data" data-scrollreveal="enter bottom">
                     <div class="isotope ">
+
+
+ 
+                        <div class="bounce animated col-sm-3 col-xs-4 portfolio-item web">
+                            <a href="#portfolio-modal-3" data-city='BHUBHANESHWAR' class="portfolio-link live" data-toggle="modal">
+                                <div class="mob caption">
+                                    <div style="width: 100%;top: -8px;overflow: hidden;position: absolute;height: 100%;">
+                                    <h3>BHUBHANESHWAR</h3>
+
+                                     <ul>
+                                        <li>ANDROID APP DEVLOPMENT</li>
+                                      <li>INTERNET OF THINGS</li>
+                                     </ul> 
+                                    </div>
+                                 </div>
+                                <img src="city/bhubhaneshwar.jpg" class="img-centered" alt="">
+                            </a>
+                        </div>
                         <div class="bounce animated col-sm-3 col-xs-4 portfolio-item web">
                             <a href="#" class="portfolio-link soon" data-city='DEHRADUN' data-toggle="modal">
                                 <div class="mob caption">
@@ -563,13 +587,13 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
                             </a>
                         </div>
                         <div class="bounce animated col-sm-3 col-xs-4 portfolio-item print">
-                            <a href="#portfolio-modal-3" class="portfolio-link live" data-city='HYDERABAD' data-toggle="modal">
+                            <a href="#" class="portfolio-link soon" data-city='HYDERABAD' data-toggle="modal">
                                 <div class="mob caption">
                                     <div style="width: 100%;top: -8px;overflow: hidden;position: absolute;height: 100%;">
                                      <h3>HYDERABAD</h3>
-                                    <ul>
-                                      <li>ANDROID APP DEVLOPMENT</li>
-                                      <li>ETHICAL HACKING</li>
+                                   <ul>
+                                     	<li>REGISTRATION COMPLETE</li>
+
                                      </ul>
                                     </div>
                                  </div>
@@ -606,22 +630,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
                                 <img src="city/jabalpur.jpg" class="img-centered" alt="">
                             </a>
                         </div>
-                        
-                        <div class="bounce animated col-sm-3 col-xs-4 portfolio-item web">
-                            <a href="#" data-city='BHUBHANESHWAR' class="portfolio-link live soon" data-toggle="modal">
-                                <div class="mob caption">
-                                    <div style="width: 100%;top: -8px;overflow: hidden;position: absolute;height: 100%;">
-                                    <h3>BHUBHANESHWAR</h3>
-                                    <p style="font-size: 1.5em;margin-top: 25px;text-align:center;">Coming Soon</p>
-                                    <!-- <ul>
-                                     	<li>SIXTH SENSE-ROBOTICS</li>
-                                     	<li>ANDROID APP DEVLOPMENT</li>
-                                     </ul> -->
-                                    </div>
-                                 </div>
-                                <img src="city/bhubhaneshwar.jpg" class="img-centered" alt="">
-                            </a>
-                        </div>
+                       
                         <div class="bounce animated col-sm-3 col-xs-4 portfolio-item print">
                             <a href="#" class="portfolio-link live soon" data-city='AHMEDABAD' data-toggle="modal">
                                <div class="mob caption">
@@ -749,7 +758,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
                             <div class="col-xs-6 col-sm-4 col-md-4 item about-img-3">
                                 <div class="info">
                                     <img class="img-responsive img-circle visible-xs" src="assets/img/contact/Vikas.jpg" alt="">
-                                    <h3> Vikas&nbsp; Kumar</h3>
+                                    <h3>Vikas Kumar</h3>
                                     <p>zonals@techkriti.org</p>
                                     <p>8756660488</p>
                                     <ul class="list-inline">

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-$('#slide-out').css('opacity','0');
+
 var competition = window.location.hash.substr(1);
 var title=[];
 var desc=[];
@@ -8,21 +8,88 @@ var title_arr=[];
 var k=0;
 var max_size=0;
 var tech_id=0;
-
+var start="";
+var prize="";
 $.ajax({                                      
       url: 'get_name.php',   
       type: 'POST',
       dataType: 'json',    
       success: function(data2)
 {
-if(data2!='false')
+if((data2!='false') && (data2!='false1'))
 {
 $('#just_check').html(data2);
+$('#just_check1').html(data2);
 
+var name="",email="",college="",phone="",techid="";
+$.ajax({                                      
+      url: 'profile_user.php',   
+      type: 'POST',              
+      dataType: 'json',    
+      success: function(data2)
+{
+if((data2!='false'))
+{
+$.each(data2, function(index, element2) {
+
+name=element2.name;
+email=element2.email;
+phone=element2.phone;//fjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+college=element2.college;
+techid=element2.techid;
+$('#list_comp').append("<span style='display: block;font-size: 175%;font-weight:bold;'>MEMBER DETAILS</span><br>");
+$('#list_comp').append("<div><span style='font-weight:bold;margin-top:3%;font-size: 120%;'>NAME: &nbsp;&nbsp;&nbsp;</span><span>"+name+"</span></div>");
+$('#list_comp').append("<div><span style='font-weight:bold;font-size: 120%;'>EMAIL: &nbsp;&nbsp;&nbsp;</span><span>"+email+"</span></div>");
+$('#list_comp').append("<div><span style='font-weight:bold;font-size: 120%;'>PHONE: &nbsp;&nbsp;&nbsp;</span><span>"+phone+"</span></div>");
+$('#list_comp').append("<div><span style='font-weight:bold;font-size: 120%;'>TECHID: &nbsp;&nbsp;&nbsp;</span><span>"+techid+"</span></div>");
+$('#list_comp').append("<div><span style='font-weight:bold;font-size: 120%;'>COLLEGE: &nbsp;&nbsp;&nbsp;</span><span>"+college+"</span></div>");
+});
+}
+}
+});
+
+
+
+
+
+
+var competition="",members="";
+$.ajax({                                      
+      url: 'profile.php',   
+      type: 'POST',              
+      dataType: 'json',    
+      success: function(data2)
+{
+if(data2!='false')
+{
+console.log(data2);
+ $('#tbody').append("<tr><td><span style='font-weight:bold;font-size: 120%;'>Competition</span></td><td><span style='font-weight:bold;font-size: 120%;padding-left:50%;'>Members</span></td></tr>");
+$.each(data2, function(index, element2) {
+console.log(element2.competition);
+competition=element2.competition;
+members=element2.names;
+var cell1='<td><span>'+competition+'</span></td>';
+var cell2='<td><span style="padding-left:50%;">'+members+'</span></td>';
+var final='<tr>'+cell1+cell2+'</tr>'
+
+ $('#tbody').append(final);
+
+
+
+});
+}
+}
+});
+}
+else if(data2=='false1')
+{
+location.reload(true);
 }
 else
 {
 $('#abcd').removeClass('dropdown');
+$('#abcd1').removeClass('dropdown');
+
 
 }
 
@@ -37,17 +104,22 @@ var modal3=document.getElementById('myModal3');//competition_register
 var modal4=document.getElementById('myModal4');//check_mail
 var modal5=document.getElementById('myModal5');//profile
 var modal6=document.getElementById('myModal6');//Change Password
+var modal7=document.getElementById('myModal7');//Resend Email
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 var signup=document.getElementById("signup_login");
+var signup_login_btn=document.getElementById("signup_login_button");
+var resend=document.getElementById("resend");
 var forgot=document.getElementById("forgot_login");
 var change_pass=document.getElementById("change_pass");
 var just_profile=document.getElementById("just_profile");
+var just_profile1=document.getElementById("just_profile1");
 // Get the <span> element that closes the modal
 
 var span = document.getElementsByClassName("close")[0];
-var span1 = document.getElementsByClassName("close")[1];var span2 = document.getElementsByClassName("close")[3];var span3 = document.getElementsByClassName("close")[2];var span4 = document.getElementsByClassName("close")[4];var span5 = document.getElementsByClassName("close")[5];
+var span1 = document.getElementsByClassName("close")[1];var span2 = document.getElementsByClassName("close")[2];var span3 = document.getElementsByClassName("close")[3];var span4 = document.getElementsByClassName("close")[4];var span5 = document.getElementsByClassName("close")[5];
 var span6 = document.getElementsByClassName("close")[6];
+var span7 = document.getElementsByClassName("close")[7];
 $('#abcd').on('click',function()
 {
 var str=$(this).hasClass('dropdown');
@@ -59,9 +131,29 @@ if(str == false)
 modal.style.display = 'block';
 $('#abcd').attr('data', '1');
 
+$('#abcd1').attr('data', '1');
+
 }
 
 });
+
+$('#abcd1').on('click',function()
+{
+var str=$(this).hasClass('dropdown');
+
+if(str == false)
+
+{
+
+modal.style.display = 'block';
+$('#abcd').attr('data', '1');
+
+$('#abcd1').attr('data', '1');
+
+}
+
+});
+
 // When the user clicks on the button, open the modal 
 btn.onclick = function() {
 
@@ -91,16 +183,24 @@ signup.onclick = function() {
     modal1.style.display = "block";
     modal.style.display = "none";
 }
-profile.onclick = function() {
-    modal5.style.display = "block";
-    modal3.style.display = "none";
+signup_login_btn.onclick = function() {
+    modal.style.display = "block";
+    modal1.style.display = "none";
 }
 just_profile.onclick = function() {
     modal5.style.display = "block";
     modal3.style.display = "none";
 }
+just_profile1.onclick = function() {
+    modal5.style.display = "block";
+    modal3.style.display = "none";
+}
 forgot.onclick = function() {
     modal2.style.display = "block";
+    modal.style.display = "none";
+}
+resend.onclick = function() {
+    modal7.style.display = "block";
     modal.style.display = "none";
 }
 change_pass.onclick = function() {
@@ -151,6 +251,12 @@ span6.onclick = function() {
 
 
 }
+span7.onclick = function() {
+    modal7.style.display = "none";
+
+
+
+}
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -170,6 +276,23 @@ $.ajax({
       {
 
 }
+
+
+});
+location.reload(true)
+});
+
+$('#logout1').on('click',function()
+{
+$.ajax({                                      
+      url: 'logout.php',   
+      type: 'POST',              
+      dataType: 'json',    
+      success: function(data)
+      {
+
+}
+
 
 });
 location.reload(true)
@@ -194,13 +317,24 @@ $.ajax({
       {
 
 $.each(data1, function(index, element1) {
+prize=element1.prize;
 images=element1.images;
 ep=element1.ep;
 max_size=element1.max_t_size;
+start=element1.start;
+if(prize =='0')
+{
+$('.prizetab').css('opacity',0);
+}
 
+else
+{
+$('#prize').text("INR "+prize);}
 
-
-
+if(start == 0)
+{
+$('#myBtn').css('visibility','hidden');
+}
 var i=0;
 
 for(i=1;i<=max_size;i++)
@@ -208,12 +342,15 @@ for(i=1;i<=max_size;i++)
 
 if(i==1)
 {
-$.ajax({                                      
+$.ajax({                                
       url: 'check.php',   
       type: 'POST',
       dataType: 'json',    
       success: function(data3)
 {
+
+
+
 if(data3!='false')
 {
 
@@ -228,12 +365,16 @@ $('#person1').val(data3);
 }
 else
 {
-$('#compie').append("<label><legend>PERSON "+i+"<span></span></legend><input  required type='text' data='"+i+"' name='name'  class='fixed_comp' id='person"+i+"' placeholder='eg. Rahul Bhardwaj'></label>");
-$('#compie').append("<span id='error3"+i+"'></span>");
+
+
+$('#compie').append("<div class='group'><input  class='inputMaterial fixed_comp' required type='text' name='name' data='"+i+"' id='person"+i+"'> <span class='highlight'></span><span class='bar'></span><label>PERSON "+i+" tech id<span>*</span></label><span class='error' id='error3"+i+"'></span></div>");
+ 
+
+
 }
 }
-$('#compie').append("<span  id='error3'></span>'");
-$('#compie').append("<div class='butts' id='com_register'>Submit</div>'");
+$('#compie').append("<span class='error' id='error3'></span>'");
+$('#compie').append("<div class='butts' id='com_register'>Submit</div>");
 
 });
 
@@ -297,7 +438,9 @@ $('#submit').on('click',function()
 {
 var username=$('#user').val();
 var password=$('#pwd').val();
+
 var dataString="username="+username+"&pass="+password+"&gender=male";
+console.log(dataString);
 $.ajax({                                      
       url: 'login.php',   
       type: 'POST',              
@@ -307,13 +450,85 @@ $.ajax({
 {
 if(data2!='false')
 {
+
+
+var name="",email="",college="",phone="",techid="";
+$.ajax({                                      
+      url: 'profile_user.php',   
+      type: 'POST',              
+      dataType: 'json',    
+      success: function(data2)
+{
+if(data2!='false')//cud be error
+{
+$.each(data2, function(index, element2) {
+
+name=element2.name;
+email=element2.email;
+phone=element2.phone;//fjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+college=element2.college;
+techid=element2.techid;
+$('#list_comp').html('');
+$('#person1').val(techid);
+$('#list_comp').append("<span style='display: block;font-size: 175%;font-weight:bold;'>MEMBER DETAILS</span><br>");
+$('#list_comp').append("<div><span style='font-weight:bold;margin-top:3%;font-size: 120%;'>NAME: &nbsp;&nbsp;&nbsp;</span><span>"+name+"</span></div>");
+$('#list_comp').append("<div><span style='font-weight:bold;font-size: 120%;'>EMAIL: &nbsp;&nbsp;&nbsp;</span><span>"+email+"</span></div>");
+$('#list_comp').append("<div><span style='font-weight:bold;font-size: 120%;'>PHONE: &nbsp;&nbsp;&nbsp;</span><span>"+phone+"</span></div>");
+$('#list_comp').append("<div><span style='font-weight:bold;font-size: 120%;'>TECHID: &nbsp;&nbsp;&nbsp;</span><span>"+techid+"</span></div>");
+$('#list_comp').append("<div><span style='font-weight:bold;font-size: 120%;'>COLLEGE: &nbsp;&nbsp;&nbsp;</span><span>"+college+"</span></div>");
+});
+}
+}
+});
+
+
+
+
+
+
+var competition="",members="";
+$.ajax({                                      
+      url: 'profile.php',   
+      type: 'POST',              
+      dataType: 'json',    
+      success: function(data2)
+{
+if(data2!='false')
+{
+$('#tbody').html('');
+ $('#tbody').append("<tr><td><span style='font-weight:bold;font-size:120%;'>Competition</span></td><td><span style='font-weight:bold;font-size:120%;padding-left:50%;'>Members</span></td></tr>");
+$.each(data2, function(index, element2) {
+console.log(element2.competition);
+competition=element2.competition;
+members=element2.names;
+var cell1='<td><span>'+competition+'</span></td>';
+var cell2='<td><span style="padding-left:50%;">'+members+'</span></td>';
+var final='<tr>'+cell1+cell2+'</tr>'
+
+ $('#tbody').append(final);
+
+
+
+});
+}
+}
+});
+
+
+
+
 $('#abcd').addClass('dropdown');
+$('#abcd1').addClass('dropdown');
+
 $('#just_check').html(data2);
+$('#just_check1').html(data2);
 modal.style.display='none';
 
 if($('#abcd').attr('data')=='1')
 {
-$('#abcd').attr('data')=='0';
+$('#abcd').attr('data')='0';
+$('#abcd1').attr('data')='0';
+
 }
 else
 {
@@ -332,12 +547,15 @@ $('#compie').on('click','#com_register',function()
 var team=$('#team').val();
 var k=0,str="";
 $( ".fixed_comp" ).each(function(index,element) {
+if(($(this).val())!="")
+{
 if(k==0)
 {
 str=str+$(this).val();
 }
 else
 {str=str+","+$(this).val();}
+}
 k=k+1;
 
 });
@@ -353,6 +571,7 @@ $.ajax({
 if(data2=='true')
 {
 modal3.style.display='none';
+location.reload(true);
 }
 else
 {
@@ -405,28 +624,8 @@ $('#error3'+attr).html(data2);
 
 
 });
-$('#profile').on('click',function()
+$('#just_profile').on('click',function()
 {
-var competition="",members="";
-$.ajax({                                      
-      url: 'profile.php',   
-      type: 'POST',              
-      dataType: 'json',    
-      success: function(data2)
-{
-if(data2!='false')
-{
-$.each(data2, function(index, element2) {
-console.log(element2.competition);
-competition=element2.competition;
-members=element2.members;
-$('#list_comp').append("<span>"+competition+"</span><span>"+members+"</span>");
-
-
-});
-}
-}
-});
 });
 
 
@@ -456,6 +655,39 @@ $('#error2').html(data2);
 
 });
 });
+
+$('#resend_submit').on('click',function()
+{
+var email=$('#resend_email').val();
+
+var dataString="email="+email;
+$.ajax({                                      
+      url: 'resend_email.php',   
+      type: 'POST',              
+      data:  dataString,                 
+      dataType: 'json',    
+      success: function(data2)
+{
+if(data2=='true')
+{
+modal7.style.display='none';
+modal4.style.display='block';
+}
+
+else
+{
+$('#error7').html(data2);
+}
+}
+
+});
+});
+
+
+
+
+
+
 $('#changes').on('click',function()
 {
 var old_pass=$('#old_pass').val();
@@ -488,16 +720,16 @@ $('#error6').html(data2);
 
 $('#signup').on('click',function()
 {
-var name=$('#name').val();
+var name=$('#names').val();
 var username=$('#username').val();
 var email=$('#email').val();
-var gender=$("input[name=gender").val();
+var gender=$("input[name=gender]:checked").val();
 var facebook=$('#facebook').val();
 var phone=$('#contact').val();
 var pass=$('#password').val();
+var college=$('#college').val();
 
-
-var dataString="college=iitk&email="+email+"&facebook="+facebook+"&gender="+gender+"&name="+name+"&pass="+pass+"&phone="+phone+"&username="+username;
+var dataString="college="+college+"&email="+email+"&facebook="+facebook+"&gender="+gender+"&name="+name+"&pass="+pass+"&phone="+phone+"&username="+username;
 $.ajax({                                      
       url: 'signup.php',   
       type: 'POST',              

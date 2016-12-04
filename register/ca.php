@@ -209,9 +209,29 @@ style="
       </ul>
     </div>
     <div class="container">
+ <center> <div class="row">
+          <div class="col m12 s12">
+<span id='forget'>Pending........ </span>
+            <div class="row" id="poster" style='margin-top:3%;'>
+              <div class="col m12">
+<div class="fb-post" data-href="https://www.facebook.com/techkriti.iitk/photos/a.275293999149030.76339.158756710802760/1343026545709098/?type=3&amp;theater" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/techkriti.iitk/posts/1343026545709098:0" class="fb-xfbml-parse-ignore"><p>We present to you the fifth city of our zonals - BHUBHANESHWAR
+Venue : Institute of Technical Education and Research  (...</p>Posted by <a href="https://www.facebook.com/techkriti.iitk/">Techkriti, IIT Kanpur</a> on&nbsp;<a href="https://www.facebook.com/techkriti.iitk/posts/1343026545709098:0">Friday, December 2, 2016</a></blockquote></div>
+              </div>
+            </div>
+           
+            <div class="row">
+              <div class="col m12 s12">
+            <div  id="share5" data-num='post5' data-link='https://www.facebook.com/techkriti.iitk/photos/a.275293999149030.76339.158756710802760/1343026545709098/?type=3&theater'><button style="width:77%; margin-top:10px;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i>|Share</button></div>
+              </div>
+            </div>
+          </div>
+        </div> </center>
+
+
+
    <center> <div class="row">
           <div class="col m12 s12">
-<span id='forget'>Congratulations! Your post was shared. </span>
+
             <div class="row" id="poster" style='margin-top:3%;'>
               <div class="col m12">
 <div class="fb-post" data-href="https://www.facebook.com/techkriti.iitk/photos/a.478651925479902.112479.158756710802760/1333460683332351/?type=3&amp;theater" data-width="500" data-show-text="true"><blockquote cite="https://www.facebook.com/techkriti.iitk/photos/a.478651925479902.112479.158756710802760/1333460683332351/?type=3" class="fb-xfbml-parse-ignore"><p>Humankind has been driven to wonder what technological leap might come next. Stay tuned with Techkriti, IIT Kanpur to...</p>Posted by <a href="https://www.facebook.com/techkriti.iitk/">Techkriti, IIT Kanpur</a> on&nbsp;<a href="https://www.facebook.com/techkriti.iitk/photos/a.478651925479902.112479.158756710802760/1333460683332351/?type=3">Thursday, November 24, 2016</a></blockquote></div>
@@ -220,7 +240,7 @@ style="
            
             <div class="row">
               <div class="col m12 s12">
-            <div  id="share4" data-link='https://www.facebook.com/techkriti.iitk/photos/a.478651925479902.112479.158756710802760/1333460683332351/?type=3&theater'><button style="width:77%; margin-top:10px;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i>|Share</button></div>
+            <div  id="share4" data-num='post4' data-link='https://www.facebook.com/techkriti.iitk/photos/a.478651925479902.112479.158756710802760/1333460683332351/?type=3&theater'><button style="width:77%; margin-top:10px;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i>|Share</button></div>
               </div>
             </div>
           </div>
@@ -248,7 +268,7 @@ Techkriti, IIT Kanpur and...</p>Posted by <a href="https://www.facebook.com/tech
            
             <div class="row">
               <div class="col m12 s12">
-            <div  id="share1" data-link='https://www.facebook.com/techkriti.iitk/photos/a.275293999149030.76339.158756710802760/1323626707649082/?type=3&amp;theater'><button style="width:77%; margin-top:10px;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i>|Share</button></div>
+            <div  id="share1" data-num='post1' data-link='https://www.facebook.com/techkriti.iitk/photos/a.275293999149030.76339.158756710802760/1323626707649082/?type=3&amp;theater'><button style="width:77%; margin-top:10px;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i>|Share</button></div>
               </div>
             </div>
           </div>
@@ -268,7 +288,7 @@ Techkriti, IIT Kanpur and...</p>Posted by <a href="https://www.facebook.com/tech
            
             <div class="row">
               <div class="col m12 s12">
-            <div  id="share3" data-link='https://www.facebook.com/techkriti.iitk/photos/a.275293999149030.76339.158756710802760/1317422524936167/?type=3&theater'><button style="width:77%; margin-top:10px;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i>|Share</button></div>
+            <div  id="share3" data-num='post3' data-link='https://www.facebook.com/techkriti.iitk/photos/a.275293999149030.76339.158756710802760/1317422524936167/?type=3&theater'><button style="width:77%; margin-top:10px;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i>|Share</button></div>
               </div>
             </div>
           </div>
@@ -287,7 +307,7 @@ Techkriti, IIT Kanpur and...</p>Posted by <a href="https://www.facebook.com/tech
               </div>
               <div class="row">
                 <div class="col m12 s12">
-                 <div  id="share2" data-link='https://www.facebook.com/techkriti.iitk/posts/1283057848372635'><button style="width:77%; margin-top:10px;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i>|Share</button></div>
+                 <div  id="share2" data-num='post2' data-link='https://www.facebook.com/techkriti.iitk/posts/1283057848372635'><button style="width:77%; margin-top:10px;" type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"></i>|Share</button></div>
                 </div>
               </div>
             </div>
@@ -304,9 +324,10 @@ $(document).ready( function() {
   }
   );
 });
-$('#share1,#share2,#share3,#share4').on('click',function() {
+$('#share1,#share2,#share3,#share4,#share5').on('click',function() {
 var link=$(this).attr('data-link');
-var dataString="link="+link;
+var num=$(this).attr('data-num');
+var dataString="link="+link+"&num="+num;
 $.ajax({                                      
       url: 'share_post.php',   
       type: 'POST',              
@@ -315,12 +336,23 @@ $.ajax({
       success: function(data)
       {
 
+if(data==false)
+{
+$('#forget').html("Sorry!!You have already shared this post 3 times");
+}
+else
+{
 
+$('#forget').html("Congratulations! Your post was shared.");
+}
 }
 });
 
 $("#forget").show();
-setTimeout(function() { $("#forget").hide(); }, 10000);
+setTimeout(function() { 
+$("#forget").hide(); 
+$("#forget").html('Pending...........');
+}, 50000);
 window.scrollTo(0,0);
 var shares,likes,url="";
 

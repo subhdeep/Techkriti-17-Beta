@@ -20,8 +20,10 @@ while ($row = mysqli_fetch_array($result)) {
  $product["images"] = $row["images"];
  $product["ep"] = $row["ep"];
  $product["max_t_size"] = $row["max_t_size"];
+ $product["prize"] = $row["prize"];
  $product["pdf"] = $row["pdf"];
  $product["sponsors"] = $row["sponsors"];
+ $product["start"] = $row["start"];
  array_push($response["products"], $product);
         
 }

@@ -10,62 +10,614 @@
     <!--Stylesheets-->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
 
+
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" href="css/materialize.min.css?version=2">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--Custom Stylesheet-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?version=2">
     <link rel="stylesheet" href="../css/component.css">
+<link rel='stlesheet' href='css/reg.css'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="jquery-1.12.2.min.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="loader1.js?version=3"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<script src="jquery.mousewheel.min.js"></script>
+        <script src="jquery-cookie-master/src/jquery_cookie.js"></script>
+
     <link href="https://bootswatch.com/cosmo/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style1.css">
-    <script src="loader.js"></script>
+    <link rel="stylesheet" href="css/style1.css?version=3">
           <script src="js/index.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
 	$("#loading").delay(500).fadeOut(000);
     }); 
     </script>
+   
+
 <style>
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500);
+
+
+
+/* BOX LOGIN */
+.box{
+	position: relative;
+	margin: auto;
+	height: 410px;
+  top: 40px;
+	left: 0;
+	z-index: 200;
+	right: 0;
+	width:400px;
+	color:#666;
+	border-radius: 3px;
+	background: #FFF;
+  margin-bottom: 100px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  overflow: hidden;
 }
 
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+#header{
+  background: #009688;
+  position: relative;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+#cont-lock{
+  width: 100%;
+  height: 65px;
+  position: relative;
 }
 
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
+.lock{
+  text-align: center;
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  line-height: 65px;
+  font-size: 28px;
+}
+
+#bottom-head{
+  position: relative;
+  background: #00796b;
+  height: 35px;
+}
+
+#bottom-head::after{
+  content: '';
+  width: 0px;
+  height: 0px;
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 7px solid white;
+  border-right: 7px solid rgba(0,0,0,0);
+  border-left: 7px solid rgba(0,0,0,0);
+  border-top: 7px solid rgba(0,0,0,0);
+}
+
+.box h1{
+  margin-left: 20px;
+  margin-top: 0;
+	font-size: 24px;
+  font-weight: 300;
+  color: #cfd8dc;
+  line-height: 35px;
+}
+
+.box button{
+	background: #cfd8dc;
+	border:0;
+	color: #009688;
+	padding:10px;
+	font-size: 16px;
+  font-weight: 300;
+	width:330px;
+	margin:20px auto;
+	display:block;
+	cursor:pointer;
+    -webkit-transition: all 0.4s;
+	transition: all 0.4s;
+	border-radius: 2px;
+}
+
+.box button:active{
+	background: #009688;
+  color: #263238;
+}
+
+.box button:hover{
+		background: #009688;
+  color: #FFF;
+    -webkit-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.box p{
+	font-size:14px;
+	text-align:center;
+}
+
+.group 			  { 
+  position:relative; 
+  margin-bottom: 25px; 
+
+}
+
+.inputMaterial 				{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+
+.inputMaterial:focus 		{ outline:none;}
+
+/* LABEL ======================================= */
+
+label 				 {
+  color:#999; 
+  font-size:14px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.inputMaterial:focus ~ label, .inputMaterial:valid ~ label 		{
+  top:-20px;
+  font-size:14px;
+  color: #009688;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background: #009688; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+.inputMaterial:focus ~ .bar:before, .inputMaterial:focus ~ .bar:after {
+  width:50%;
+}
+
+
+/* active state */
+.inputMaterial:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+#footer-box{
+  width: 100%;
+  height: 50px;
+  background: #00695c;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-text{
+  color: #cfd8dc;
+  
+}
+
+.sign-up{
+  color: white;
+  cursor: pointer;
+}
+
+.sign-up:hover{
+   color: #b2dfdb; 
+}
+
+
+$transition: all 0.3s;
+$shadow-L1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow-L2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+$shadow-L3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+
+#container-a{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  overflow: hidden;
+  transition: $transition;
+  box-shadow: $shadow-L3;
+      
+  /*&:hover{
+    width: 150px;
+    border-radius: 50px;
+    transition: $transition;
+  }*/
+  
+  #badge{
+  width: 100%;
+  height: 100%;
+  background-image: url("https://lh3.googleusercontent.com/-X-aQXHatDQY/Uy86XLOyEdI/AAAAAAAAAF0/TBEZvkCnLVE/w140-h140-p/fb3a11ae-1fb4-4c31-b2b9-bf0cfa835c27"); 
+  background-size: 100%;
+  transition: $transition;
+  position: absolute;
+  
+  
+    &:hover .codepen{
+     display: block;
+    }
+  }
+  
+  &:hover #letter{
+      display: block;
+  }
+  
+  &:hover #badge{
+    width: 150px;
+    height: 150px;
+    transition: $transition;
+    filter: blur(7px);
+  } 
+ 
+  #letter{
+    display: none;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    span{
+      font-family: 'Roboto';
+      font-size: 32px;
+      color: white;
+      text-align: center;
+      line-height: 60px;
+      margin: auto;
+      left: 0;
+      right: 0;
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+}
+
+
+#container-floating{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  top: 20px;
+  right: 20px;
+  z-index: 50px;
+  
+  &:hover{
+    height: 400px;
+    width: 60px;
+    top: 20px;
+    right: 20px;
+  }
+  
+  &:hover .nds{
+    animation: bounce-nds 0.1s linear;
+    animation-fill-mode:  forwards;
+  }
+  &:hover .nd3{
+    animation-delay: 0.08s;
+  }
+  &:hover .nd4{
+    animation-delay: 0.15s;
+  }
+  &:hover .nd5{
+    animation-delay: 0.2s;
+  }
+  
+  .nds{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 300;
+    transform:  scale(0);
+    right: 33px;
     cursor: pointer;
+    &:hover{
+      box-shadow: $shadow-L3;
+      transition: $transition;
+      width: 50px;
+      right: 25px;
+      height: 50px;
+    }
+  }
+
+  .nd1{
+    background-image: url("http://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png");
+    background-size: 100%;
+    top: 110px;
+    animation-delay: 0.1s;
+    animation: bounce-out-nds 0.3s linear;
+    animation-fill-mode:  forwards;
+    box-shadow: $shadow-L2;
+    transition: $transition;
+  }
+
+  .nd3{
+    background: url("https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_color-512.png");
+    background-size: 100%;
+    top: 165px;
+    animation-delay: 0.15s;
+    animation: bounce-out-nds 0.15s linear;
+    animation-fill-mode:  forwards;
+    box-shadow: $shadow-L2;
+    transition: $transition;
+  }
+
+  .nd4{
+    background: url("http://www.studiotomasi.org/images/gplusicon.svg");
+    background-size: 100%;
+    top: 225px;
+    animation-delay: 0.1s;
+    animation: bounce-out-nds 0.1s linear;
+    animation-fill-mode:  forwards;
+    box-shadow: $shadow-L2;
+    transition: $transition;
+  }
+  
 }
+
+
+@keyframes bounce-nds{
+    from {opacity: 0;}
+    to {opacity: 1; transform: scale(1);}
+}
+
+@keyframes bounce-out-nds{
+    from {opacity: 1; transform: scale(1);}
+    to {opacity: 0; transform: scale(0);}
+}
+
+
+.profile-name{
+    line-height: 60px;
+    left: -70px;
+    position: absolute;
+    font-family: 'Roboto';
+    color: #455a64;
+}
+
+.profile-name:hover{
+  text-decoration: underline;
+}
+
+a:link, a:visited{
+  text-decoration: none;
+}
+
+
+
+#names::-webkit-input-placeholder {
+  color: gray;
+}
+#names::-moz-placeholder { /* Firefox 19+ */
+  color: gray;
+}
+#names:-ms-input-placeholder { /* IE 10+ */
+  color: gray;
+}
+#names:-moz-placeholder { /* Firefox 18- */
+  color: gray;
+}
+
+#username::-webkit-input-placeholder {
+  color: gray;
+}
+#username::-moz-placeholder { /* Firefox 19+ */
+  color: gray;
+}
+#username:-ms-input-placeholder { /* IE 10+ */
+  color: gray;
+}
+#username:-moz-placeholder { /* Firefox 18- */
+  color: gray;
+}#contact::-webkit-input-placeholder {
+  color: gray;
+}
+#contact::-moz-placeholder { /* Firefox 19+ */
+  color: gray;
+}
+#contact:-ms-input-placeholder { /* IE 10+ */
+  color: gray;
+}
+#contact:-moz-placeholder { /* Firefox 18- */
+  color: gray;
+}
+
+#college::-webkit-input-placeholder {
+  color: gray;
+}
+#college::-moz-placeholder { /* Firefox 19+ */
+  color: gray;
+}
+#college:-ms-input-placeholder { /* IE 10+ */
+  color: gray;
+}
+#college:-moz-placeholder { /* Firefox 18- */
+  color: gray;
+}
+#facebook::-webkit-input-placeholder {
+  color: gray;
+}
+#facebook::-moz-placeholder { /* Firefox 19+ */
+  color: gray;
+}
+#facebook:-ms-input-placeholder { /* IE 10+ */
+  color: gray;
+}
+#facebook:-moz-placeholder { /* Firefox 18- */
+  color: gray;
+}
+#password::-webkit-input-placeholder {
+  color: gray;
+}
+#password::-moz-placeholder { /* Firefox 19+ */
+  color: gray;
+}
+#password:-ms-input-placeholder { /* IE 10+ */
+  color: gray;
+}
+#password:-moz-placeholder { /* Firefox 18- */
+  color: gray;
+}
+
+
+
+
+
+
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
+
+.prizemoney._mobile {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+    -ms-flex-align: center;
+}
+.modal
+{
+z-index:6;
+}
+
 </style>
   </head>
   <body>
@@ -75,12 +627,314 @@
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
+
+
+<form class="tile-w">
+<span class='heading'>LOGIN</span>
     <span class="close">x</span>
-    <p>Some text in the Modal..</p>
+			 <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="user">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>Username/Email<span>*</span></label>
+</div>
+ <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="pwd">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>Password<span>*</span></label>
+</div>
+<span class='error' id='error'></span>
+<div class='butts' id='submit'>Submit</div>
+<div class='butts' id='signup_login'>signup</div>
+<div class='butts'  id='forgot_login'>Forgot Password</div>
+<div class='butts'  id='resend'>Resend Email</div>
+
+</form>
+
+
+</div>
+<div style='max-height:100%;' id="myModal1" class="modal">
+
+  <!-- Modal content -->
+
+<form id='form-for-signup' class="tile-w">
+
+<span class='heading'>SIGNUP</span>
+    <span class="close">x</span>
+
+
+	    <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="names">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>Name<span>*</span></label>
+</div>
+
+ <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="username">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>Username<span>*</span></label>
+<span id='error11'></span>
+</div>
+
+			
+
+
+ <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="email">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>Email<span>*</span></label>
+</div>
+ <div style='margin-bottom:35px;' class="group">      
+<label style='pointer-events:visible;display:inline' class=" control radio">Male<input type="radio" name="gender" id="gender1" value="Male">
+                <div class="control__indicator"></div></label>
+				<label style='pointer-events:visible;display:inline' class=" control radio">Female<input type="radio"  name="gender" id="gender2"  value="Female">
+                <div class="control__indicator"></div></label>
+               
+			</label>
+
+</div>
+ <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="contact">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>Phone No.<span>*</span></label>
+</div>
+
+
+ <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="college">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>College Name<span>*</span></label>
+</div>
+
+			 <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="facebook">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>Facebook Profile link<span>*</span></label>
+</div>
+
+
+ <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="password">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>Password<span>*</span></label>
+</div>
+
+<span class='error' id='error1'></span>
+<div class='butts' id='signup'>Submit</div>
+<div class='butts' id='signup_login_button'>Login</div>
+
+</form>
+
+
+</div>
+
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+
+
+<form class="tile-w">
+<span class='heading'>RECOVER</span>
+    <span class="close">x</span>
+			 <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="forgot_email">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>Email<span>*</span></label>
+</div>
+
+				 <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="forgot_username">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>Username<span>*</span></label>
+</div>
+<span class='error' id='error2'></span>
+<div class='butts' id='forgot'>Submit</div>
+</form>
   </div>
 
 </div>
+
+
+
+
+<div id="myModal3" style='max-height:130%;height:100%;' class="modal">
+
+  <!-- Modal content -->
+
+
+
+<form id='compie' class="tile-w">
+<span class='heading'>REGISTER</span>
+    <span class="close">x</span>
+ <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="team">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>TEAM NAME<span>*</span></label>
+</div>
+		 <div class="group">      
+
+     
+				<input  class="inputMaterial fixed_comp" required type="text" fixed_comp name="name" id="person1">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>PERSON 1<span>*</span></label>
+</div>
+</form>
+
+
+</div>
+
+<div id="myModal4" class="modal">
+
+  <!-- Modal content -->
+  <div  class="modal-content">
+    <span class="close">x</span>
+
+			
+<p style="font-size: 140%; margin-top: 4%;">Check your mailbox</p>
+  </div>
+
+</div>
+
+
+<div id="myModal5" class="modal"><!--Profile-->
+
+  <!-- Modal content -->
+<div class='modal-content'>
+    <span class="close">x</span>
+
+			
+<div class="row">
+<div id='list_comp' class="col-md-5 col-xs-12" style="margin-bottom: 5%;">
+
+</div>
+<div style='margin-bottom:6%;' id='list_comp1' class="col-md-5 col-xs-12">
+<span style='display: block;font-size: 175%;font-weight:bold;'>COMPETITION DETAILS</span><br>
+<table border='3' id='mytable'>
+<tbody style="
+    display: block;
+    margin-left: 1%;
+    margin-right: 1%;
+" id="tbody">
+</tbody>
+</table>
+
+</div></div>
+<div id='change_pass' class='butts'>Change Password</div>
+
+</div>
+
+</div>
+<div id="myModal6" class="modal">
+
+  <!-- Modal content -->
+
+
+<form class="tile-w">
+<span style='margin-left:29%;' class='heading'>CHANGE PASSWORD</span>
+    <span class="close">x</span>
+			 <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="old_pass">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>Old Password<span>*</span></label>
+</div>
+			 <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="new_pass">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>New Password<span>*</span></label>
+</div>
+<span class='error' id='error6'></span>
+<div class='butts' id='changes'>Change</div>
+</form>
+
+
+</div>
+
+<div id="myModal7" class="modal">
+
+  <!-- Modal content -->
+
+
+<form class="tile-w">
+<span class='heading'>RESEND</span>
+    <span class="close">x</span>
+			 <div class="group">      
+
+     
+				<input  class="inputMaterial" required type="text" name="name" id="resend_email">
+ <span class="highlight"></span>
+      <span class="bar"></span>
+
+			<label>Email<span>*</span></label>
+</div>
+		
+<span class='error' id='error7'></span>
+<div class='butts' id='resend_submit'>Submit</div>
+</form>
+  </div>
+
+</div>
+
+
+
+
+
   <div id="loading">
 <div id="loading-center">
 <div id="loading-center-absolute">
@@ -130,6 +984,15 @@
           <a href="/contact">
               Contact Us
           </a>
+          <div id='abcd1' data='0' class="dropdown">
+    <a class="dropbtn" id='just_check1' onclick="navi1()">Login</a>
+    <div class="dropdown-content">
+      <span id="just_profile1" style="color: black;cursor:pointer;">Profile</span><br>
+      <span id="logout1" style="color: black;cursor:pointer;">Logout</span>
+
+    </div></div>
+
+
             </ul>
           </div>
         </div>
@@ -162,6 +1025,15 @@
           <a href="/contact">
               Contact Us
           </a>
+          <div id='abcd' data='0' class="dropdown">
+    <a class="dropbtn" id='just_check'>Login</a>
+    <div class="dropdown-content">
+      <span id="just_profile" style="color: black;cursor:pointer;">Profile</span><br>
+      <span id="logout" style="color: black;cursor:pointer;">Logout</span>
+
+    </div></div>
+ 
+
           </nav>
         </div>
         </center>
@@ -179,13 +1051,19 @@
       <div>
          <div class="container">
   <div class="row">
-<div class="col-md-5 col-xs-10 col-xs-offset-2 col-md-offset-5 col-sm-5">
+
+    <div class="col-md-12 col-sm-5">
+<button class='butts' style='' id='myBtn'>REGISTER</button>
+
+
+<div class='comp_name' style=''>
 <span  id ='name'>
 Name
 </span>
 </div>
-    <div class="col-md-12 col-sm-5">
-      <div class="tabs-left">
+
+<div class="prizemoney _mobile" id='prize_money' style='display:inline-block;'><div class="prizetab" style="position:relative;z-index:5;height:100px;display:inline-block"><img style="height: 133px;" src="prize2.png"><div style="position:absolute;width:100%;text-align:center;bottom:2px;color:#fff" id='prize' class="ng-binding">INR 1,00,000</div></div><!-- ngIf: !mobile --></div>
+    <div class="tabs-left">
         <ul id="list" class="nav nav-tabs">
         </ul>
         <div id="event-desc" class="tab-content">
@@ -206,7 +1084,7 @@ Name
 </div>
 
    
-      <ul id="slide-out" class="side-nav" >
+      <ul id="demo" class="side-nav" data='0' style="margin-top: 8vh;">
       <li class="no-padding">
         <ul class="collapsible collapsible-accordion">
           <li>
@@ -273,6 +1151,7 @@ Name
                         <a class="collapsible-header">Software Corner</a>
                         <div class="link_nav collapsible-body">
                           <ul>
+                  <li><a href="/event_in/#Capture the flag">Capture the flag</a></li>
                             <li><a href="/event_in/#Chaos">Chaos</a></li>
                             <li><a href="/event_in/#IOPC">IOPC</a></li>
                             <li><a href="/event_in/#Crypto">Crypto</a></li>
@@ -288,7 +1167,7 @@ Name
                         <a class="collapsible-header">Take Off</a>
                         <div class="link_nav collapsible-body">
                           <ul>
-                            <li><a href="/event_in/#Hoverush">Hover Rugby</a></li>
+                            <li><a href="/event_in/#Hover Rugby">Hover Rugby</a></li>
                             <li><a href="/event_in/#Multirotor">Multirotor</a></li>
                             <li><a href="/event_in/#Rule The Sky">Rule The Sky</a></li>
                             <li><a href="/event_in/#Sky Sparks">Sky Sparks</a></li>
@@ -378,8 +1257,12 @@ Name
                         <a class="collapsible-header">Entrepreneurial Events </a>
                         <div class="link_nav collapsible-body">
                           <ul>
-                             <li><a href="/event_in/#Business Venture">Business Venture</a></li>
+                           <li><a href="/event_in/#Upstart pioneer">Upstart Pioneer
+ 
+
+               <li><a href="/event_in/#Pitch premier">Pitch Premier</a></li>
                   <li><a href="/event_in/#Social Track">Social Track</a></li>
+                  <li><a href="/event_in/#Elevator Pitch">Elevator Pitch</a></li>
                           </ul>
                         </div>
                       </li>
@@ -417,14 +1300,14 @@ Name
     </ul>
 <!--   <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
  -->      
-  <a href="#" data-activates="slide-out" class=" more-events button-collapse"><p>More Events &darr;</p></a>
+  <a href="#" data-activates="demo"  class="more-events button-collapse">  <p>More Events &darr;</p></a>
 
 
 
 
 
 <!-- <div class=" more-events">
-  <p>More Events &darr;</p>
+
 </div> -->
 <div class="row social-mobile hide-on-med-and-up">
     <div class="col s2 offset-s1">
@@ -458,17 +1341,21 @@ Name
     flag = 0;
   }
 }
+
+	function navi1() {
+		document.getElementById('mob-nav').style.display = "none";
+		flag=0;
+	}	
   </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-<script src="jquery.mousewheel.min.js"></script>
+
+
 
 <script type="text/javascript">
 
   // Initialize collapse button
   $(".button-collapse").sideNav();
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
-  //$('.collapsible').collapsible();
+  $('.collapsible').collapsible();
         
   $('.button-collapse').sideNav({
       menuWidth: 300, // Default is 240
@@ -479,24 +1366,32 @@ Name
   );
        
        
-  // Show sideNav
-  $('.button-collapse').sideNav('show');
-  // Hide sideNav
-  $('.button-collapse').sideNav('hide');
-  // Destroy sideNav
-  $('.button-collapse').sideNav('destroy');
+  
 
     </script>
       <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
       <script>
   $(document).ready(function() {
-   $('#slide-out').css('opacity','0');
-   $('#sidenav-overlay').css('opacity','0');
-   $('.more-events').on('click',function(){
-   $('#slide-out').css('opacity','1');
-      $('#sidenav-overlay').css('opacity','1');
-   });
+
+/*   $('.more-events').on('click',function(){
+
+if( $('#slide-out').attr('data')=='0')
+{
+     $('.button-collapse').sideNav('show');
+$('#slide-out').attr('data')='1';
+
+console.log("open");
+}
+else
+{
+     $('.button-collapse').sideNav('hide');
+$('#slide-out').attr('data')='0';
+console.log("close");
+}
+        
+});*/
 });
+
 
 </script>
 </body>

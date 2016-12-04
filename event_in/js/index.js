@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   $('#slide-out').css('transform','translateX(100%)!important');
+
 });
 
 var tabsFn = (function() {
