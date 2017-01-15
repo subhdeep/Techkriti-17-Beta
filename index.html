@@ -6,79 +6,156 @@
     </title>
     <meta charset="utf-8"> <!-- set character encoding for the document -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="keywords" content="techkriti, IIT, Kanpur, IITK, entrepreneurship, technical, battlefield, robowars, soccer, software, business plan, rubik, cube, tech, college fest,
+  lectures, Talks, technology, competitions, events, workshops, exhibitions, science, fest, robotics, delhi, robotics, techfest, college festival, asia's largest, Engineer, Sukhwinder Singh, Marshall Strabala, Virtually Progressive World, Society" />
+  <meta name="description" content="Techkriti is the annual Technical and Entrepreneurial festival of IIT Kanpur to be held from '23rd-26th March 2017'" />
+    <meta property="og:title" content="Techkriti 2017" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://2017.techkriti.org/" />
+  <meta property="og:site_name" content="Techkriti" />
+  <meta property="og:description" content="Techkriti is the annual Technological and Entrepreneurial festival of IIT Kanpur to be held from '23rd-26th March 2017'" />
+  <meta property=og:image content=http://2017.techkriti.org/images/techkriti.jpg>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <script>
-      function cursorMoved(e){
-      }
-    </script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">    
     <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript">
+    $(document).ready(function(){
+	$("#loading").fadeOut();
+    }); 
+      $(".cl-effect-4 a").on('click',function(){
+           $(this).addClass('active');
+           console.log('gg');
+           $(this).siblings().removeClass('active');
+      });
+    </script>
+<style type='text/css'>
+@media only screen and (min-width: 993px)
+{
+.container {
+    width: 76%;
+}
+}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-87266524-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
   </head>
   <body onmousemove="cursorMoved(event)">
-    <div class="hide-on-med-and-up">
+  
+  <!--center><img id="robo" src="images/3.jpg" class="responsive-img" ></center>
+    <video autoplay="" loop=""  id="bgvid-cover" >
+                  <source src="new.mp4" type="video/mp4">
+    </video-->
+    <div id="loading">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div class="object" id="object_one"></div>
+<div class="object" id="object_two"></div>
+<div class="object" id="object_three"></div>
+<div class="object" id="object_four"></div>
+<div class="object" id="object_big"></div>
+</div>
+</div>
+ 
+</div>
+    <center>
+    	<div class="navigate hide-on-med-and-up">
       <div onclick="navi()">
-      <i class="material-icons">view_quilt</i>
+      <i class="material-icons"  id="nav-icon">&#xE5D2;</i>
       </div>
       <center>
         <div id="mob-nav">
           <div class="mob-hover col s12">
             <ul id="mob-nav-items">
-              <li>Home</li>
-              <li>Competitions</li>
-              <li>Technocruise</li>
-              <li>TOSC</li>
-              <li>Gallery</li>
-              <li>Contact Us</li>
+              <a class="active" href="/">
+              Home
+          </a>
+<a href="/about">
+              About
+          </a>
+          <a href="/competitions">
+              Competitions
+          </a>
+          <a target='_blank' href="http://www.techkriti.org/zonals/">
+              Technocruise
+          </a>
+          <a target='_blank' href="http://www.techkriti.org/tosc">
+              TOSC
+          </a>
+          
+<a target='_blank' href="http://2016.techkriti.org/sponsors">
+              Sponsors
+          </a>
+          <a href="/contact">
+              Contact Us
+          </a>
             </ul>
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="row hide-on-small-only" id="my-nav">         
-          <a href="/">
-            <div class="col m2 hide-on-small-only center-align nav-pad nav-hover nav-font">
+         <div class="row hide-on-small-only" id="my-nav">
+         <nav class="cl-effect-4" style="    background-color: rgba(29, 28, 28,0.5);">
+          <a class="active" href="/">
               Home
-            </div>
+          </a>
+<a href="/about">
+              About
           </a>
           <a href="/competitions">
-            <div class="col m2  hide-on-small-only offset-s4 s4 center-align nav-pad nav-hover nav-font">
               Competitions
-            </div>
           </a>
-          <a href="/technocruise">
-            <div class="col m2 s4  hide-on-small-only center-align nav-pad nav-hover nav-font">
+          <a target='_blank' href="http://www.techkriti.org/zonals/">
               Technocruise
-            </div>
           </a>
-          <a href="/tosc">
-            <div class="col m2 offset-s4 s4  hide-on-small-only center-align nav-pad nav-hover nav-font">
+          <a target='_blank' href="http://www.techkriti.org/tosc">
               TOSC
-            </div>
           </a>
-          <a href="/about">
-            <div class="col m2 s4 s4  hide-on-small-only center-align nav-pad nav-hover nav-font">
-              Gallery
-            </div>
+        
+<a target='_blank' href="http://2016.techkriti.org/sponsors">
+              Sponsors
           </a>
           <a href="/contact">
-            <div class="col m2 offset-s4 s4  hide-on-small-only center-align nav-pad nav-hover nav-font">
               Contact Us
-            </div>
           </a>
+          </nav>
         </div>
         <div class="row">
-          <div class="col offset-m2 m8  s12 center-align">
-            <p class="flow-text" id="techkriti">TECHKRITI' 17</p>
-            <p id='subtitle' class="flow-text"></p>
-          </div>
+          <div class="col offset-m2 m8  s12 center-align"  style="
+    top: 25vh;
+    position: relative;
+">
+<!--              <p class="flow-text" id="techkriti">TECHKRITI' 17</p>
+ -->           
+            <img class="log" src="images/logo.png">
+<!--                         <p id="date" style="font-size: 2vw;margin-top: 0px;"> </p> 
+ --> <p id='subtitle' class="flow-text"></p>
+<!--             <img src="images/logo-1.png">
+ -->          </div>
         </div>
       </div>
     </div>
-
+    <div class="social">
+        <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
+        <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
+        <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
+        <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
+        <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713">
+            <i class="fa fa-linkedin"></i>
+        </a>
+    </div>
     <!--<div class="bottom-graph-container">¬-->
       <!--<button id="turnoffanimations-button" onclick="toggleAnimations()" class="turnoffanimations-button">Turn off animations</button>¬-->
       <!--</div>¬-->
@@ -89,37 +166,15 @@
     </center>
     <div class="bottom-graph frequency-time-large" id="bottomGraph"></div>
   </div>
-  <div class="social hide-on-small-only">
-        <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
-        <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
-        <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
-        <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
-        <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713"><i class="fa fa-linkedin"></i></a>
-  </div>
-  <div class="row social-mobile hide-on-med-and-up">
-    <div class="col s2 offset-s1">
-      <a class="fb" target="_blank" href="http://www.facebook.com/techkriti.iitk"><i class="fa fa-facebook"></i></a>
-    </div>
-    <div class="col s2">
-      <a class="gp" target="_blank" href="https://plus.google.com/+TechkritiOrg_iitk"><i class="fa fa-google-plus"></i></a>
-    </div>
-    <div class="col s2">
-      <a class="tw" target="_blank" href="http://www.twitter.com/techkriti_iitk"><i class="fa fa-twitter"></i></a>
-    </div>
-    <div class="col s2">
-      <a class="yt" target="_blank" href="http://www.youtube.com/techkritiIITK"><i class="fa fa-youtube-play"></i></a>
-    </div>
-    <div class="col s2">
-      <a class="ln" target="_blank" href="https://www.linkedin.com/company/techkriti%2713"><i class="fa fa-linkedin"></i></a>
-    </div>
-  </div>
+  
+  
   <script src="script/frequency-graph.js"></script>
   <script>
     var nav = document.getElementById('mob-nav');
-nav.style.display = "none";
-var flag = 0;
-function navi() {
-  if(flag == 0) {
+    nav.style.display = "none";
+    var flag = 0;
+    function navi() {
+      if(flag == 0) {
      document.getElementById('mob-nav').style.display = "block";
     flag = 1;
   }
@@ -130,21 +185,25 @@ function navi() {
 }
   </script>
   <script>
-    var title = "Factualising               Fictions";
-window.addEventListener('load',function(){
-  var subtitlediv = document.getElementById('subtitle');
-  var count = 0;
-  var interval = setInterval(function(){
-    if(count != 0 && title[count - 1] != ' '){
-      subtitlediv.innerHTML = title.substring(0,count);
-    }
-    if(count == title.length){
-      clearInterval(interval);
-    }
-    count++;
-  },40);
-});
+      $('.log').delay(400).fadeIn(2000);
+setTimeout(function(){var title = "23rd-26th March 2017";
+	var subtitlediv = document.getElementById('subtitle');
+	var count = 0;
+	var interval = setInterval(function(){
+		if(count != 0 && title[count - 1] != ' '){
+			subtitlediv.innerHTML = title.substring(0,count);
+		}
+		if(count == title.length){
+			clearInterval(interval);
+		}
+		count++;
+	},50)},2000);
+    
+
+  // setInterval(function(){document.getElementById('date').innerHTML=' ';},1500);
+
 </script>
 </center>
 </body>
 </html>
+

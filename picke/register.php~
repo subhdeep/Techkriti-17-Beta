@@ -1,0 +1,75 @@
+<?php include('header.php') ?>
+  <body>
+      <div id="a" class="container">
+        <div class="info">
+          <h1>Registration Form</h1>
+        </div>
+      </div>
+      <div id="b" class="form">
+        <div class="thumbnail"><img style="margin-top:-22%" src="tech.png"/></div>
+        <form class="register-form" id="regisform">
+          <input id="name" type="text" placeholder="name" name="fname" required/>
+          <select id="Class" name="class">
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+          </select>
+          <select id="City" name="city" id="city">
+                            <option value="BENGALURU">BENGALURU</option>
+                            <option value="DELHI">DELHI</option>
+                            <option value="JAIPUR">JAIPUR</option>
+                            <option value="GWALIOR">GWALIOR</option>
+                            <option value="INDORE">INDORE</option>
+                            <option selected value="KANPUR">KANPUR</option>
+                            <option value="KOTA">KOTA</option>
+                            <option value="KOLKATA">KOLKATA</option>
+                            <option value="LUCKNOW">LUCKNOW</option>
+                            <option value="MUMBAI">MUMBAI</option>
+                            <option value="PATNA">PATNA</option>
+                            <option value="SIKAR">SIKAR</option>
+                            <option value="UJJAIN">UJJAIN</option>
+                            <option value="VARANASI">VARANASI</option>
+          </select>
+          <input type="text" placeholder="School Name" name="school" id="school" list="schood" autocomplete="off" required/>                               
+          <datalist id="schood">
+             <option value="kv">kv</option>
+             <option value="dps">dps</option>
+           </datalist>
+          <input id="multi-name" type="text" placeholder="name" name="fname" required/>
+          <input id="email" type="text" placeholder="email address" name="email" required/>
+          <input id="contactNo" type="text" placeholder="Contact Number" name="contact" required/>
+<!--Finish is use to finally submit multi registration form-->            
+          <button class="group" id="register" onclick="goon2()">Finish</button>
+<!--next is use to  next multi registration form-->            
+          <button class="group" id="next" onclick="">Next</button>
+<!--register is use to finally submit single registration form-->            
+          <button id="single-register-2" onclick="goon1()">Register</button>
+          <p class="message"><span style="float:left;color:red"><a href="register.php">Back</a></span> Already registered? <a href="form1.php">Sign In</a></p>
+        </form>
+          <script type="text/javascript">
+    function goon1()
+    { console.log("fuck");
+        form=document.getElementById('regisform');
+        form.action='submit.php';
+        form.method='POST';
+    }   
+    function goon2()
+    {
+        form=document.getElementById('regisform');
+        form.action='submit1.php';
+        form.method='POST';
+    }   
+</script>
+        <div id="register-option">
+          <button id="multi-register">Register</button>
+          <button id="single-register">Next</button>
+          <form id="register1">
+          <p class="message">Already registered? <a href="form1.php">Sign In</a></p>
+          </form>
+		</div>
+         
+      </div>
+    
+  </body>
+</html>

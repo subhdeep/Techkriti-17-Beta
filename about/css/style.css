@@ -1,4 +1,20 @@
-
+.social-mobile {
+    bottom: 0px;
+    width: 100%;
+    }
+    .social-mobile a {
+        position: relative;
+        float: right;
+        height: 50px;
+        line-height: 50px;
+        width: 50px;
+        color: rgb(255, 255, 255);
+        background-color: rgb(196, 26, 30);
+        font-size: 16px;
+        text-align: center;
+        border-radius: 50%;
+        transition: all 300ms ease;
+    }
 
 a {
   text-decoration: none;
@@ -10,7 +26,7 @@ a {
 }
 
 .nav-font {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway ', sans-serif;
   /*TODO Add Media Query for container 100% for small width*/
   font-size: 1.5vw;
 }
@@ -24,6 +40,7 @@ a {
 }
 title {
 	display: none;
+
 }
 title:hover {
 	display: bolck;
@@ -36,7 +53,8 @@ title:hover {
 }
 
 .right-col {
-	border-left: 1px white solid;
+		border-left: 1px white solid;
+
 	margin-top: 5% !important;
 }
 
@@ -48,12 +66,15 @@ title:hover {
 	padding: 1% !important;
 	font-size: 200%;
 	transform: translateX(8%);
+color:white;
 }
 
 .right-title {
 	padding: 1% !important;
 	font-size: 200%;
 	transform: translateX(-8%);
+color:white;
+text-align:center;
 }
 
 .left-text-box, .right-text-box {
@@ -61,8 +82,9 @@ title:hover {
 }
 
 .left-text, .right-text {
-	font-size: 100%;
-}
+    font-size: 110%;
+    color: white;
+  }
 
 .left-card {
 	padding-left: 10%!important;
@@ -170,12 +192,14 @@ title:hover {
 }
 
 .thing{
+	    margin-top: 30px;
+
     text-align: left;
     display: inline-block;
     position: relative;
-    color: #222;
-    background-color: #fefefe;
-    flex-grow: 1;
+    color: #fff;
+    background-color: transparent;
+        flex-grow: 1;
     flex-shrink: 0;
     width: 100%;
     position: relative;
@@ -185,18 +209,132 @@ title:hover {
     box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.14),0px 2px 2px 0px rgba(0,0,0,0.098),0px 1px 5px 0px rgba(0,0,0,0.082);
 }
 .title{
-  font-weight: bold;
-    font-family: strip;
+        color: #000;
+    background-color: #e0d4d4;
+
+
     position: relative;
-    margin-top: -20px;
     height: 40px;
+    font-size: 1.4em;
+
     line-height: 40px;
     text-align: center;
-    background-color: inherit;
+
+
     border-radius: 3px;
     box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.14),0px 2px 2px 0px rgba(0,0,0,0.098),0px 1px 5px 0px rgba(0,0,0,0.082);
 }
 .explain{
   margin-top: 15px;
+      padding: 7px;
+text-align:center;
+    word-spacing: 1px;
+    line-height: 1.5em;
+        font-size: 1.15 em;
+}
 
+
+@media only screen and (max-width: 768px) {
+  .tech16{
+      margin-bottom: 40px;
+}
+ .row{
+ 	margin-bottom: 0px
+ }
+ .explain {
+    margin-top: 0px;
+    padding: 0px;
+    text-align: center;
+    word-spacing: 0px;
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+  .thing{
+  	margin-bottom: 0px;
+  }
+  .title{
+  	    margin-left: 3% !important;
+  	    height: 30px;
+    font-size: 1.2em;
+        line-height: 30px;
+  }
+  .left-title {
+    padding: 1% !important;
+    font-size: 200%;
+    transform: translateX(0px);
+text-align:center;
+  }
+  .left-card {
+    padding-left: 5%!important;
+    padding-right: 5%!important;
+    padding-top: 2%!important;
+    padding-bottom: 2%!important;
+    border: none;
+  }
+  .right-col {
+    border-left: none;
+    margin-top: 5% !important;
+   }
+   .left-col {
+    border-right: none;
+  }
+  .right-card:after {
+    box-sizing: border-box;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    border-bottom: transparent;
+  } 
+  .right-card:hover:after {
+    transition: none;
+    transform: translateX(0);
+    border-color: transparent;
+}
+.right-card:before {
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    border-top: transparent;
+    border-right: transparent;
+}
+.left-card:before {
+    box-sizing: border-box;
+    transform: translateX(100%);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-bottom: transparent;
+    border-top: transparent;
+}
+.left-card:hover:before {
+    transition: none;
+    transform: translateX(0);
+    height: 100%;
+    border-color: transparent;
+}
+.left-card:hover:after {
+    transition: none;
+    transform: translateX(0);
+    border-color: transparent;
+}
+.social-mobile{
+	    background-color: #272625;
+    position: fixed;
+        left: 10px;
+
+}
+.container{
+      margin: 25px auto !important;
+}
 }

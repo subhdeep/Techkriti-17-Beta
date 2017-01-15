@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>registration form</title>
+        <script src="jquery-1.12.2.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+                                             <script src="jquery-cookie-master/src/jquery.cookie.js"></script>
+        <script src="a6.js"></script>
+</head>
+<body>
+<div class="mein" id="meini">
+<table border='3' id='mytable'>
+<tbody style="
+    display: block;
+    margin-left: 1%;
+    margin-right: 1%;
+">
+<tr><td>SNo</td><td>NAME</td><td>CLASS</td><td>ROLL NUMBER</td></tr>
+</tbody>
+</table>
+</div>
+<input type="button" onclick="printDiv('meini')" value="print" />
+<script>
+function printDiv(divName) {
+      console.log(divName);
+      var printContents = document.getElementById(divName).innerHTML;     
+   var originalContents = document.body.innerHTML;       
+   document.body.innerHTML = printContents;      
+   window.print();      
+   //document.body.innerHTML = originalContents;
+   }
+</script>
+</body>
+<style>
+
+.mein{
+width:595px;
+height:842px;
+background: url("bg1.jpg");
+background-size:contain;
+margin-left:25%;
+}
+td{
+width:10%;}
+table
+{
+display:block;
+margin-top:5%;
+padding-top:150px;
+
+}
+</style>
+</html>

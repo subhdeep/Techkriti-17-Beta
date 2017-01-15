@@ -1,0 +1,141 @@
+body, html {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+.fa {
+    color: #0f1aba;
+}
+.social {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: auto;
+    margin: auto;
+    color: #fff;
+    z-index: 5;
+}
+.social a:hover{
+    background-color: #ffffff;
+}
+
+@media screen and (min-width: 600px){
+    .onepage-pagination {
+    left: 7%;
+    }
+}
+.social a {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin-right: 10px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #abcae2;
+}
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d;
+}
+
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%;
+}
+
+.small{
+    width: 100%!important;
+}
+
+.onepage-pagination {
+        position: relative;
+    z-index: 5;
+    margin: 0px;
+    left: 0%;
+    width: 100%;
+    overflow: auto;
+    list-style: none;
+    padding: 0px;
+}
+.onepage-pagination li {
+     padding: 1%;
+    display: inline-block;
+    text-align: center;
+}
+.onepage-pagination li a{
+  padding: 8px;
+  height: 10px;
+  display: block;
+      color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/*
+.onepage-pagination li a:before{
+  content: '';
+  position: relative;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+*/
+.onepage-pagination li a.active{
+    color: #0c6aa6;
+    border-bottom: 2px solid #0c6aa6;
+    padding-bottom: 20px;
+}
+
+.onepage-pagination li a.active:before{
+  width: 10px;
+  height: 10px;
+  background: white;
+  border: 1px solid white;
+  margin-top: -4px;
+}
+
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto;
+}
+
+.disabled-onepage-scroll .onepage-wrapper .section {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+}
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%;
+}
+
+
+.disabled-onepage-scroll .onepage-pagination {
+  display: none;
+}
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit;
+}

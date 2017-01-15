@@ -1,0 +1,101 @@
+a:hover {
+	text-decoration: none;
+}
+
+#iarc- {
+	background-color: brown;
+	font-size: 200%;
+	margin-top: 5vh;
+	opacity: 1;
+	box-shadow: 0 4px 8px 0 white, 0 4px 8px 0 white;
+	border-radius: 10px;
+	border: solid black 2px;
+}
+
+.iarc-nav-content {
+	 background-color: brown;
+	 border: solid black 1px;
+	 border-collapse: collapse;
+	 transition-property: background-color;
+	 transition-duration: 0.6s;
+}
+
+.iarc-nav-content:hover {
+	background-color: pink;
+}
+
+#man- {
+	background-color: pink;
+	font-size: 200%;
+	margin-top: 5vh;
+	opacity: 1;
+	box-shadow: 0 4px 8px 0 white, 0 4px 8px 0 white;
+	border-radius: 10px;
+	border: solid black 2px;
+}
+
+.man-nav-content {
+	 background-color: pink;
+	 border: solid black 1px;
+	 border-collapse: collapse;
+	 transition-property: background-color;
+	 transition-duration: 0.6s;
+}
+
+.man-nav-content:hover {
+	background-color: grey;
+}
+
+#sky- {
+	background-color: grey;
+	font-size: 200%;
+	margin-top: 5vh;
+	opacity: 1;
+	box-shadow: 0 4px 8px 0 white, 0 4px 8px 0 white;
+	border-radius: 10px;
+	border: solid black 2px;
+}
+
+.sky-nav-content {
+	 background-color: grey;
+	 border: solid black 1px;
+	 border-collapse: collapse;
+	 transition-property: background-color;
+	 transition-duration: 0.6s;
+}
+
+.sky-nav-content:hover {
+	background-color: blue;
+}
+
+#soc- {
+	background-color: blue;
+	font-size: 200%;
+	margin-top: 5vh;
+	opacity: 1;
+	box-shadow: 0 4px 8px 0 white, 0 4px 8px 0 white;
+	border-radius: 10px;
+	border: solid black 2px;
+}
+
+.soc-nav-content {
+	 background-color: blue;
+	 border: solid black 1px;
+	 border-collapse: collapse;
+	 transition-property: background-color;
+	 transition-duration: 0.6s;
+}
+
+.soc-nav-content:hover {
+	background-color: brown;
+}
+
+.tab-content {
+	position: relative;
+	top: 5vh;
+	overflow-y: auto;
+	opacity: 1;
+	height: 40vh;
+	background-color: #B4B4B4;
+	padding: 0% 2% 2% 2%;
+}

@@ -1,0 +1,51 @@
+$(document).ready(function(){
+
+   if($.cookie("school")!=null)
+{$('#school').attr("value",$.cookie("school"));
+ alert($.cookie("school"));
+
+}
+else
+{
+
+}
+   if($.cookie("city")!=null)
+{$('#city').attr("value",$.cookie("city"));
+
+}
+else
+{
+
+}
+if($.cookie("next")!=null)
+{  $('.register-form').slideToggle();
+		   $('#register-option').hide();
+
+}
+$('#City').change(function()
+{$('#schood').empty();
+alert($('#City').val());
+var cities=$('#City').val();
+ $.ajax({                                      
+      url: 'getit.php',   
+      type: 'POST',              
+      data: {"city": cities},                    
+      dataType: 'json',    
+      success: function(data)
+      {
+
+ 
+                $.each(data, function(index, element) {
+console.log(element.name);
+$('#schood').append("<option value='" + element.name + "'>");
+
+
+});
+        
+      } 
+    });
+});
+
+
+
+});

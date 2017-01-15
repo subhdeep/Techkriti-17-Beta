@@ -10,9 +10,23 @@
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="../css/component.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+  $("#loading").fadeOut();
+    });
+      $(".cl-effect-4 a").on('click',function(){
+           $(this).addClass('active');
+           console.log('gg');
+           $(this).siblings().removeClass('active');
+      });
+    </script>
     <style type="text/css">
       body{
         background-color: #000000
@@ -39,6 +53,54 @@
     </style>
   </head>
   <body>
+  <div id="loading">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div class="object" id="object_one"></div>
+<div class="object" id="object_two"></div>
+<div class="object" id="object_three"></div>
+<div class="object" id="object_four"></div>
+<div class="object" id="object_big"></div>
+</div>
+</div>
+ 
+</div>
+  <div class="navigate hide-on-med-and-up">
+      <div onclick="navi()">
+      <h4 class="nav-name">Contacts</h4>
+      <i class="material-icons"  id="nav-icon">&#xE5D2;</i>
+      </div>
+      <center>
+        <div id="mob-nav">
+          <div class="mob-hover col s12">
+            <ul id="mob-nav-items">
+              <a class="active" href="/">
+              Home
+          </a>
+  <a  href="/about">
+              About
+          </a>
+          <a href="/competitions">
+              Competitions
+          </a>
+          <a target='_blank' href="http://www.techkriti.org/zonals/">
+              Technocruise
+          </a>
+          <a target='_blank' href="http://www.techkriti.org/tosc">
+              TOSC
+          </a>
+        
+<a target='_blank' href="http://2016.techkriti.org/sponsors">
+              Sponsors
+          </a>
+
+          <a  href="/contact">
+              Contact Us
+          </a>
+            </ul>
+          </div>
+        </div>
+      </div>
     <div class="container">
       <div class="row" id="my-nav">
         <a href="/">

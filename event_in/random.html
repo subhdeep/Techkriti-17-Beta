@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+<style>
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+.tile-w {
+    display: inline-block;
+    max-width: 700px;
+    min-width: 600px;
+    text-align: left;
+    margin-left: 30%;
+}
+form {
+    padding: 30px 50px;
+    border: solid 1px rgb(216,216,216);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    margin: 0 10px 20px 10px;
+    background: #fff;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+<style type="text/css">
+	*,*:after,*:before{
+		box-sizing:border-box;
+		/*font-family:roboto,sans-serif;*/
+		/*color: #777;*/
+	}
+	
+        .ambnav{
+            color: rgb(101,101,101);font-size: 18px;padding: 10px;text-align:center
+        }    
+	form{
+		padding: 30px 50px;
+		border:solid 1px rgb(216,216,216);
+		box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+		border-radius: 3px;
+		margin: 0 10px 20px 10px;
+		background: #fff;
+	}
+	small{
+		color: #777;
+		font-size: 12px;
+	}
+.ambnav a{
+    font-size: 2em;
+    font-weight: bold;
+    color: darkcyan;
+        }    
+	a{
+		text-decoration:none;
+	}
+	.tile-y{
+		position: relative;
+		text-align: center;
+	}
+	.tile-w{
+		display: inline-block;
+		max-width:700px;
+		min-width:600px;
+		text-align: left;
+	}
+	label{
+		display: block;
+		margin-bottom: 10px;
+		/*font-weight: bold;*/
+		margin-top: 5px;
+	}
+	label.radio{
+		color: #777;
+		font-size: 14px;
+	}
+	label textarea{
+		min-width: 80%;
+		resize: vertical;
+	}
+    .control__indicator {
+    position: absolute;
+    top: -1px;
+border-radius:13px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+        }
+    .control input:checked ~ .control__indicator {
+    background: #2aa1c0;
+}    
+#register {
+    background: rgb(75, 141, 249);
+    color: #fff;
+    width: 90px;
+cursor: pointer;
+    border: solid 1px;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+    .control{
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    }
+        .control input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+        }
+	input,textarea{
+    width: 100%;
+    border-radius: 4px;
+    height: 40px;
+    padding: 5px;
+    border: solid 2px rgb(187, 187, 187);
+	}
+	textarea{
+		min-height: 70px;
+	}
+	[type=submit]{
+		background: rgb(75, 141, 249);
+		color: #fff;
+		border:solid 1px;
+		padding: 8px 15px;
+		border-radius: 3px;
+		font-weight: bold;
+	}
+	[type=reset]{
+		padding: 8px 15px;
+		border:solid 1px #aaa;
+		border-radius: 3px;
+		font-weight: bold;
+	}
+	legend span{
+		font-weight: normal;
+		color: rgb(196,59,29);
+	}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 25vh; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 18px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+
+        #cond{
+            color:blue;
+            cursor: pointer;
+        }
+
+        .modal-content p,h1{
+            margin: 0px;
+        }
+        .butts {
+    background: rgb(75, 141, 249);
+    color: #fff;
+    width: 90px;
+    cursor: pointer;
+display:inline;
+    border: solid 1px;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+	</style>
+
+</style>
+</head>
+<body>
+
+
+
+<!-- Trigger/Open The Modal -->
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+
+
+<form class="tile-w">
+    <span class="close">x</span>
+			<label>
+
+				<input  required type="text" name="name" id="pwd" placeholder="New Password">
+			</label>
+			
+<span id='error'></span>
+<div class='butts' id='submit'>Submit</div>
+
+</form>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+
+    modal.style.display = "block";
+
+
+// When the user clicks on <span> (x), close the modal
+
+
+// When the user clicks anywhere outside of the modal, close it
+
+
+</script>
+    <script src="jquery-1.12.2.min.js"></script>
+<script src='random.js'></script>
+</body>
+</html>

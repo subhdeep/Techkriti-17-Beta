@@ -1,0 +1,166 @@
+<!doctype html>
+<html >
+    
+    <head>
+        <title>Techkriti | TOSC</title>
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 959px)" href="css/animate.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'/>
+        <script src='jquery-1.12.2.min.js'></script>
+        <script src="jquery-cookie-master/src/jquery.cookie.js"></script>
+		<style>
+		#load{
+          width:100%;
+          height:100%;
+          position:fixed;
+          z-index:9999;
+          background:url("img/giphy.gif") no-repeat center center rgba(0,0,0,0.25)
+        }
+		</style>
+		<script>
+		document.onreadystatechange = function () {
+          var state = document.readyState
+          if (state == 'interactive') {
+               document.getElementById('contents').style.visibility="hidden";
+          } else if (state == 'complete') {
+              setTimeout(function(){
+                 document.getElementById('interactive');
+                 document.getElementById('load').style.visibility="hidden";
+                 document.getElementById('contents').style.visibility="visible";
+              });
+          }
+        }
+		</script>
+    </head>
+    <body >
+	   <div id="load"></div>
+	   <div id="contents">
+        <header id="header">
+        	<nav id="nav">
+		        	<button id="nav__btn" class="hide-xlarge hide-large hide-medium">
+	                    <span class="sr-only">Menu</span><span></span><span></span><span></span>
+	                </button>
+	        		<ul id="navlist">
+	        			<li><a href="#about">About</a></li>
+	        			<li><a href="#prizes">Prizes</a></li>
+	        			<li><a href=".detail">Details</a></li>
+	        			<li><a href="#selection">Procedure</a></li>
+	        			<li><a href="#testimonials">Testimonials</a></li>
+	        			<li><a href=".faq">FAQ</a></li>
+	        			<li><a href="#cities">Cities</a></li>
+	        			<li><a href="#gallary">Gallery</a></li>
+	        			<li><a href=".contact">Contact</a></li>
+	        		</ul>
+        	</nav>
+        </header>
+        
+        <div  class="container">
+<!--            <div><img src="img/tosc.jpg"/></div>   -->
+            <div><img src="img/Page.jpg"/></div>
+            <div><img src="img/Page1.jpg"/></div>
+    	</div>
+            
+        <div id="slide-button" class="buttons">
+            <a><img class="prev" src="img/left-arrow.png"></a>
+            <a><img class="next" src="img/right-arrow.png"></a>
+        </div>
+        
+        <div class="registers d" id="start" >
+            <div>
+            </div>
+        </div>
+	
+        
+        <main id="skrollr-body">
+        
+        	<section id="about">
+                <div class="register" id="start1">
+                 <div>
+                   <a  style="margin: 0% 40%;font-size: 1em;text-align: center;">Registration</a>
+                 </div>
+               </div>
+	        	<div class="wrap">
+	        		<h1 >About</h1>
+	        		<div class="about__content" >
+		        		<div class="grid">
+		        			<div class="box col span-3  small-12 xsmall-6">
+			        			<div class="about__logo">
+			        				<img  alt="" src="img/tosc-logo.png"/>
+		        				</div>
+		        			</div>
+		        			<div  class="box col span-9  small-12 xsmall-6">
+								<p>Techkriti is an annual international technological and entrepreneurial  festival organized by the students of Indian Institute of Technology, Kanpur. Etymologically, the word 'Techkriti' is composed of two words, 'Tech' in English which stands for technology and 'Kriti' in Sanskrit stands for creation. Hence, the word 'Techkriti' signifies creation or innovation in technology.</p>
+                                <p>Techkriti was first held in 1995, and has since grown into one of the largest technical festivals in Asia. The festival is held over four days every March, attracting participants from every corner of the country as well as from abroad, comprising a total footfall of over 25,000 from all over India and abroad.</p>
+                                <p>Techkriti Open School Championship is an annual school aptitude examination for classes 9th to 12th, conducted and organized by Techkriti. It consists of 3 Rounds. Round 1 is a written exam, based on which 1000 students will be asked to submit (online) the abstract of the project in Round 2 and for the final Round we will invite 100 selected students at IIT Kanpur to give a presentation about their abstract and win lots of prizes and goodies. </p>
+                                <p>Our mission is to strengthen and cultivate the talent of our nation at the grassroots level, which serves our sole motive. Through a series of events involving mental aptitude, logic, and scrutiny, it seeks to provide school students a platform to build fundamental experience and knowledge, to exercise co-ordination skills, and to think out of the box while providing solutions to practical problems</p>
+		        			</div>
+		        		</div>
+					</div>
+        		</div>
+        		<div class="hat">
+					<div class="triangle triangle--lg"><div></div></div>
+					<div class="triangle triangle--sm"><div></div></div>
+				</div>
+        		<div data-bottom-top="transform:translateY(30%)" data-top-bottom="transform:translateY(-10%)" class="bit bit--left">
+        			<svg viewBox="0 0 1373 680"><polygon class="a" points="0 0 1373 391 276 680 0 632 0 0"/></svg>
+        		</div>
+        	</section>
+
+        	<section id="prizes">
+	        	<div class="wrap">
+	        		<h1>prizes</h1>
+	        		
+	        		<ul style="list-style:none;overflow:hidden" class="prizes__content"> 		
+        			<li>
+        				<img src="img/prizes/p3.png" alt="">                
+        			</li>
+                    <li>
+        				<img src="img/prizes/p1.png" alt="">
+        			</li>
+	        		<li>
+        				<img src="img/prizes/p2.png" alt="">
+        			</li>
+                    <li>
+        				<img src="img/prizes/p4.png" alt="">                
+        			</li>
+                    <li>
+        				<img src="img/prizes/p5.png" alt="">
+        			</li>
+	        		<li>
+        				<img src="img/prizes/p6.png" alt="">
+        			</li>
+                    <li >
+        				<img src="img/prizes/p7.png" alt="">                
+        			</li>
+                    <li>
+        				<img src="img/prizes/p8.png" alt="">
+        			</li>
+	        		<li style="margin-left: 22%;">
+        				<img src="img/prizes/p9.png" alt="">
+        			</li>
+                    <li>
+        				<img src="img/prizes/p10.png" alt="">
+        			</li>
+					</ul>
+                    
+        		</div>
+                
+        		<div class="hat">
+					<div class="triangle triangle--lg"><div></div></div>
+					<div class="triangle triangle--sm"><div></div></div>
+				</div>
+        		<div id="hats" data-bottom-top="transform:translateY(30%)" data-top-bottom="transform:translateY(-10%)" class="bit bit--right">
+        			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1373 680"><polygon class="a" points="1373 680 0 289 1097 0 1373 48 1373 680"/></svg>
+        		</div>
+        	</section>
+            
+            
+            <div id="social" class="social">
+	        	<a target="_blank" href="https://www.facebook.com/tosc.iitk/?fref=ts"><i class="fa fa-facebook" ></i></a>
+		        <a target="_blank" class="t" href="//twitter.com/techkriti_iitk" style="background-color:#4099FF"><i class="fa fa-twitter" ></i></a>
+		        <a target="_blank" class="y" href="//youtube.com/TechkritiIITK" style="background-color:#b31217"><i class="fa fa-youtube-play"></i></a>
+		        <a target="_blank" class="in" href="https://www.instagram.com/techkriti.iitk/" style="background-color:#9b6954"><i class="fa fa-instagram"></i></a>
+		        <a target="_blank" class="li" href="https://www.linkedin.com/company/techkriti'13" style

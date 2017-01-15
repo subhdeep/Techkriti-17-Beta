@@ -178,7 +178,6 @@ a {
   font-weight: bold;
     font-family: strip;
     position: relative;
-    margin-top: -20px;
     height: 40px;
     line-height: 40px;
     text-align: center;
@@ -188,6 +187,7 @@ a {
 }
 .explain{
   margin-top: 15px;
+      padding: 10px;
 
 }
 .thing img{

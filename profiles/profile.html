@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration form</title>
+        <script src="jquery-1.12.2.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+<!-- JavaScript Includes -->
+		<script src="jquery-1.12.2.min.js"></script>
+        <script src="jquery-cookie-master/src/jquery.cookie.js"></script>
+		<script src="a2.js"></script>
+		<script src="assets/js/jquery.knob.js"></script>
+
+		<!-- jQuery File Upload Dependencies -->
+		<script src="assets/js/jquery.ui.widget.js"></script>
+		<script src="assets/js/jquery.iframe-transport.js"></script>
+		<script src="assets/js/jquery.fileupload.js"></script>
+		
+		<!-- Our main JS file -->
+		<script src="assets/js/script.js"></script>
+
+        <style>
+            #btn-login{
+                text-decoration: none;
+                color: white;
+            }
+            img{
+width:100%;
+}
+            body {
+font-family:'Raleway';
+               width: 100%;
+              height: 100%;
+              background: url('bg.png');
+              background-size: cover;
+          }
+          
+        #upload{
+    font-family:'PT Sans Narrow', sans-serif;
+    background-color:white;
+
+    
+
+    width:250px;
+    padding:30px;
+    border-radius:3px;
+
+    margin-left: 134px;
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 8.3);
+}
+
+#drop{
+    background-color: white;
+
+
+    border: 20px solid rgba(0, 0, 0, 0);
+    border-radius: 3px;
+    border-image: url('../img/border-image.png') 25 repeat;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size:16px;
+    font-weight:bold;
+    color:black;
+}
+
+#drop a{
+    background-color:#007a96;
+    padding:12px 26px;
+    color:#fff;
+    font-size:14px;
+    border-radius:2px;
+    cursor:pointer;
+    display:inline-block;
+    margin-top:12px;
+    line-height:1;
+}
+
+#drop a:hover{
+    background-color:#0986a3;
+}
+
+#drop input{
+    display:none;
+}
+
+#upload ul{
+    list-style:none;
+    margin:0 -30px;
+    
+}
+
+#upload ul li{
+
+    background-color:#333639;
+
+    background-image:-webkit-linear-gradient(top, #333639, #303335);
+    background-image:-moz-linear-gradient(top, #333639, #303335);
+    background-image:linear-gradient(top, #333639, #303335);
+
+    border-top:1px solid #3d4043;
+    border-bottom:1px solid #2b2e31;
+    padding:15px;
+    height: 52px;
+
+    position: relative;
+}
+
+#upload ul li input{
+    display: none;
+}
+
+#upload ul li p{
+    width: 144px;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #EEE;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+#upload ul li i{
+    font-weight: normal;
+    font-style:normal;
+    color:#7f7f7f;
+    display:block;
+}
+
+#upload ul li canvas{
+    top: 15px;
+    left: 32px;
+    position: absolute;
+}
+
+#upload ul li span{
+    width: 15px;
+    height: 12px;
+    background: url('../img/icons.png') no-repeat;
+    position: absolute;
+    top: 34px;
+    right: 33px;
+    cursor:pointer;
+}
+
+#upload ul li.working span{
+    height: 16px;
+    background-position: 0 -12px;
+}
+
+#upload ul li.error p{
+    color:red;
+}
+
+
+/*----------------------------
+    The Demo Footer
+-----------------------------*/
+
+
+footer{
+    background-color: #080808;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0,0,0,0.4);
+    height: 40px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+}
+
+footer h2{
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    top:0;
+    left: 50%;
+    bottom:0;
+    margin-left: -420px;
+    padding:13px 20px 0;
+    border:1px solid #000;
+    border-width:0 1px;
+    background-color:rgba(0,0,0,0.6);
+    box-shadow:0 0 5px #000 inset;
+    line-height: 1;
+    margin-top: 0;
+}
+
+footer h2 a{
+    color: #EEEEEE !important;
+    text-decoration:none !important;
+}
+
+footer h2 i{
+    font-style:normal;
+    color:#888;
+}
+
+#tzine-download{
+    opacity:0.9;
+    background-color:#257691;
+    font-size:11px;
+    text-align:center;
+    text-transform:uppercase;
+    width:150px;
+    height:28px;
+    line-height:28px;
+    text-decoration:none !important;
+
+    display: inline-block;
+    border-radius: 2px;
+    color: #fff !Important;
+    font-weight: bold;
+    box-shadow: 0 -1px 2px #1e5e74 inset;
+
+    border-top:1px solid #26849c;
+
+    text-shadow:1px 1px 1px #1e6176;
+    margin-top:6px;
+}
+
+#tzine-download:hover{
+    opacity:1;
+}
+
+#tzine-actions{
+    position:absolute;
+    top:0;
+    width:500px;
+    right:50%;
+    margin-right:-420px;
+    text-align:right;
+}
+
+#tzine-actions iframe{
+    display: inline-block;
+    height: 21px;
+    width: 95px;
+    position: relative;
+    float: left;
+    margin-top: 11px;
+} 
+        </style>
+        <script>
+            
+           var date = new Date().toDateString();
+           var myVar = setInterval(myTimer, 1000);
+            function myTimer() {
+                var d = new Date();
+
+            }
+        </script>
+
+   
+	</head>
+	<body>
+        
+     <div class="container">
+      <div class="row">
+      <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+       <br>
+<p  id="time" class=" text-info"></p>
+      </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+   
+   
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title" style="display:inline-block">NAME OF THE CANDIDATE:</h3>
+                            <h3 class="panel-title" style="display:inline-block;    margin-left: 22px;
+"id="name"></h3>
+            </div>
+
+<form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+    <img id="image_upload_preview" src="http://placehold.it/100x100" alt="your image" />
+
+			<div id="drop" style="background-size: cover;
+    background-repeat: no-repeat;">
+
+
+				<a>Browse</a>
+				<input id="uploa" type="file" name="upl" multiple />
+			</div>
+
+			<ul>
+				<!-- The file uploads will be shown here -->
+			</ul>
+
+		</form>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="panel-body">
+              <div class="row">
+<!--                <div class="col-md-3 col-md-offset-4 col-lg-3 " align="center"> <img alt="User Pic" src="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male2-512.png" width="100%"> </div>-->
+                <div class=" col-md-12 col-lg-12 "> 
+                   
+                  <table class="table table-user-information">
+                    <tbody>
+                      
+                      <tr>
+                        <td>Roll No</td>
+                        <td id="rollno">Kanpur</td>
+                      </tr>
+                      <tr>
+                        <td>School Name</td>
+                        <td id="school">Kvs</td>
+                      </tr>
+                        <tr>
+                        <td>Email Address</td>
+                        <td id="email">student@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>Contact No.</td>
+                        <td id="phoneno">8960620407</td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <div style="float:right">
+                  <div id ="logout" class="btn btn-primary">Log Out</div>
+                    </div>
+                </div>
+              </div>
+            </div>
+               
+            </div>
+        </div>
+      </div>
+    </div>
+	</body>
+</html>

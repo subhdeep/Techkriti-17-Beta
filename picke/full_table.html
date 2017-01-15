@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>registration form</title>
+        <script src="jquery-1.12.2.min.js"></script>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+                                             <script src="jquery-cookie-master/src/jquery.cookie.js"></script>
+        <script src="a6.js"></script>
+</head>
+<body>
+<a href="http://2016.techkriti.org/tosc"><img  style="display:inline-block;height:70px;float:left;margin-left:0%"src="red1.png"/></a>
+
+<input type="button" value="Print" style="
+    float: right;
+    margin-right: 15px;margin-top: 10px;
+" onclick="PrintElem('#meini')" />
+<div id="pay" style="margin-top: 10px;;float: right;width: 43px;padding: 4px;margin-right: 5px;background-color: buttonface;">Pay</div>
+<div class="mein" style="margin-top: 10px" id="meini">
+<span class="abc"></span>
+<table border='3' id='mytable'>
+<tbody style="
+    display: block;
+    margin-left: 1%;
+    margin-right: 1%;
+" id="tbody">
+<tr><td>SNo</td><td>NAME</td><td>CLASS</td><td>ROLL NUMBER</td></tr>
+</tbody>
+</table>
+
+
+
+</div>
+<script>
+function PrintElem(elem)
+    {
+        Popup($(elem).html());
+    }
+
+    function Popup(data) 
+    {
+        var mywindow = window.open('', 'meini', 'height=842,width=595');
+        mywindow.document.write('<html><head><title>Techkriti</title>');
+        mywindow.document.write('</head><body>');
+        mywindow.document.write(data);
+        mywindow.document.write('</body><style>body{background: url("bg1.jpg");background-size:contain;}td{width:10%;}table{display:block;margin-top:5%;}span{display:block;padding-top:200px;font-size:20px;margin-left:135px;}#mytable1{padding-top:200px;}</style></html>');
+        console.log(mywindow.document);
+        mywindow.document.close(); // necessary for IE >= 10
+        mywindow.focus(); // necessary for IE >= 10
+
+        mywindow.print();
+        mywindow.close();
+
+        return true;
+    }
+
+</script>
+</script>
+</body>
+<style>
+body{
+font-family:'Raleway';
+}
+.mein{
+width:550px;
+height:777px;
+background: url("bg1.jpg");
+background-size:contain;
+background-repeat: repeat-y;
+
+margin-left:25%;
+}
+td{
+width:10%;}
+span{
+display:block;
+padding-top:140px;
+font-size:20px;
+margin-left:135px;}
+table
+{
+display:block;
+margin-top:3%;
+
+
+}
+#mytable1
+{
+padding-top:141px;
+}
+
+</style>
+</html>

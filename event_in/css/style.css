@@ -1,3 +1,67 @@
+#sidenav-overlay{
+  background-color: transparent;
+  display: none;
+}
+
+.side-nav .collapsible-header:hover, .side-nav.fixed .collapsible-header:hover {
+    background-color: rgba(95, 79, 79, 0.5);
+}
+.side-nav .collapsible li, .side-nav.fixed .collapsible li {
+    background-color: #d7d7d7;
+    border: 2px solid black;
+}
+.side-nav .collapsible-header, .side-nav.fixed .collapsible-header {
+    border: none;
+    line-height: inherit;
+    height: inherit;
+    font-size: 2.5vh;
+    padding: 3px 16px;
+}
+.side-nav li.active {
+    background-color: #907c7c !important;
+}
+.side-nav{
+      background-color: #efeeee !important;
+
+}
+.side-nav .collapsible-body li.active a, .side-nav.fixed .collapsible-body li.active a {
+    color: #2f2f2f;
+}
+
+#list li:first-child{
+      background-color: rgba(255, 255, 255, 0.65098);
+    color: rgb(0, 0, 0);
+}
+
+
+.act{
+         background-color: #ece7e0;
+}
+
+#nav-icon {
+    color: white;
+}
+
+#list li:hover{
+  cursor: pointer;
+}
+#name{
+    color: #000;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1.35em;
+
+}
+a:hover, a:focus {
+    color: white !important;
+    text-decoration: none !important;
+}
+
 html {
   height: 100vh;
 }
@@ -16,7 +80,7 @@ body {
 }
 
 .body-wrapper {
-  background-color: rgba(104,0,0,.5);;
+  background-color: rgba(0,0,0,.5);;
 }
 
 a {
@@ -25,7 +89,7 @@ a {
 }
 
 #my-nav {
-  padding-top: 2%;
+  padding-top: 4%;
 }
 
 .nav-font {
@@ -87,23 +151,46 @@ font-size:1.3vw;
 }
 
 .more-events {
-  position: fixed;
-  bottom: 0;
-  color: white;
-  width: 100vw;
-  text-align: center;
-  /*z-index: -7000000;*/
+      /*position: fixed;
+    bottom: 0;
+    text-align: center;
+    color: white;*/
+    position: fixed;
+    top: 9vh;
+
+    text-align: center;
+    color: white;
+}
+.more-events p{
+  background: #2a2622;
+    cursor: pointer;
+      border: 1px solid white;
+    margin: auto;
+    text-align: center;
+    padding: 6px;
 }
 
+body::after {
+  content: "";
+
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
 #event-links {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-size: 1.0vw;
-  width: 100vw;
-  background: black;
-  bottom: 0;
-  position: fixed;
-  border: 2px solid white;
+      width: 100vw;
+    height: 7vh;
+    background: black;
+    bottom: 0;
+    position: fixed;
+    border-top: 2px solid white;
   display: none;
 }
 
@@ -129,22 +216,89 @@ font-size:1.3vw;
 }
 
 #event-desc {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.0vw;
-  height: 86%;
-  overflow-y: scroll;
-  animation-name: event2;
-  animation-duration: .7s;
-  animation-iteration-count: 1;
-  animation-timing-function: cubic-bezier(.08,.82,.32,1.33);
+      font-family: 'Raleway', sans-serif;
+    font-size: 1.0vw;
+    max-height: 310px;
+    height: 86%;
+    animation-name: event2;
+    animation-duration: .7s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(.08,.82,.32,1.33);
 }
 
 #event-links ul {
   list-style-type: none;
-  margin-right: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
 }
 
 #event-links ul li {
   display: inline;
   padding: 1vw;
+}
+
+#event-links ul a{
+  color: white
+}
+
+.slide_more{
+  bottom: 7vh;
+}
+.slide_more_1{
+  bottom: 0vh;
+}
+
+@media only screen and (max-width: 768px) {
+	#event-desc img{
+		width: 100%
+	}
+  .contents{
+    overflow: auto;
+  }
+.navigate center{
+  height: auto !important
+} 
+.row{
+  margin-bottom: 0px
+}
+.tab-content .tab-pane {
+    font-size: 2.2em !important;
+}
+#event-links {
+    height: 5vh !important;
+    bottom: 84px !important;
+}
+.nav-tabs li {
+    font-size: 0.5em !important;
+    padding: 10px 5px !important;
+ }
+.container .row {
+    margin-top: 50px !important;
+}
+.more-events {
+    top:9vh !important;
+}
+.more-events p{
+    padding: 5px;
+    font-size: 7px;
+}
+#name{
+      padding: 0px 10px;
+    font-size: 0.6em;
+}
+#slide-out a{
+ font-size: 1.2vh
+}
+.slide-out{
+  width: 100px
+
+}
+.side-nav li{
+  line-height: 30px
+}
+.side-nav{
+  top: 40px;
+  width:200px;
+}
+
 }
