@@ -1,0 +1,114 @@
+/*@import url(https://fonts.googleapis.com/css?family=Righteous);*/
+body {
+  background-color: #111111;
+  color: red
+}
+
+#parent_time {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  text-align: center;
+  color: #EEEEEE;
+  position: fixed;
+  font-family: "Righteous", cursive;
+}
+
+#video {
+  position: absolute;
+  height: 5%;
+  width: 5%;
+  left: 8%;
+  bottom: 2%;
+}
+
+#time {
+  font-size: 4em;
+  font-weight: 900;
+}
+
+#date {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+#intro {
+  color: #EEEEEE;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Righteous", cursive;
+  font-size: 10em;
+  font-weight: 900;
+}
+
+.weather {
+  position: fixed;
+  top: 10%;
+  left: 88%;
+  color: #EEEEEE
+}
+
+#temp {
+  color: #EEEEEE;
+  font-family: "Righteous", cursive;
+  font-weight: 700;
+  font-size: 4em;
+}
+
+#summary {
+  color: #EEEEEE;
+  font-family: "Righteous", cursive;
+  font-weight: 500;
+  font-size: 2em;
+}
+
+#temp_sum {
+  display: inline-block;
+  left: 75%;
+  top: 10%;
+  text-align: center;
+  position: fixed;
+}
+
+#weather {
+  position: relative;
+  color: #EEEEEE;
+  left: 8%;
+}
+
+#calendar {
+  color: #EEEEEE;
+  font-family: "Righteous", cursive;
+  font-size: 1.2em;
+  position: fixed;
+  top: 80%;
+  left: 5%;
+  border-color: #EEEEEE;
+  border: medium;
+}
+
+#push_bullet {
+  color: #EEEEEE;
+  font-family: "Righteous", cursive;
+  font-size: 1.2em;
+  position: fixed;
+  top: 80%;
+  right: 5%;
+  border-color: #EEEEEE;
+  border: medium;
+}
+
+#image {
+  display: none;
+}
+
+footer {
+  color: #EEEEEE;
+  font-family: "Righteous", cursive;
+  font-size: 1em;
+  bottom: 2%;
+  position: fixed;
+  left: 79%;
+}

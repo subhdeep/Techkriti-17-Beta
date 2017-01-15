@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+
+  "name": "Getting started example",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "chrome_url_overrides": {
+    "newtab": "popup.html"
+  },
+  "background": {
+    "scripts": ["jquery-3.1.1.min.js"]
+  },
+  "permissions": [
+    //"activeTab",
+    //"https://ajax.googleapis.com/"
+    "http://*/*",
+    "https://*/*",
+    "https://api.darksky.net/"
+  ],
+  "web_accessible_resources": [
+    "style.css"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "css": ["style.css"],
+      "js": ["jquery-3.1.1.min.js", "myScript.js", "skycons.js"]
+    }
+  ]
+}
